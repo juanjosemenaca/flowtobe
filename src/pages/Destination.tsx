@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowRight, Calendar, Users, Clock, Star, MapPin } from 'lucide-react';
@@ -206,7 +205,7 @@ const Destination = () => {
               </ul>
               
               <Link to="/booking">
-                <Button className="bg-travel-terracotta hover:bg-travel-teal text-white">
+                <Button variant="white" className="border border-gray-300">
                   Planifica tu viaje <ArrowRight className="ml-2" size={18} />
                 </Button>
               </Link>

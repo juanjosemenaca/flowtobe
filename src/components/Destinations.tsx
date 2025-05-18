@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -66,7 +65,7 @@ const DestinationCard = ({ name, description, image, link }: {
         <h3 className="text-2xl font-serif mb-1">{name}</h3>
         <p className="text-sm opacity-90 mb-3">{description}</p>
         <Link to={link}>
-          <Button variant="outline" size="sm" className="text-white border-white hover:bg-white hover:text-travel-dark">
+          <Button variant="white" size="sm">
             Explorar <ArrowRight className="ml-1 h-4 w-4" />
           </Button>
         </Link>

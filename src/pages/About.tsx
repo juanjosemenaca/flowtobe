@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Briefcase, Users, Heart, Globe } from 'lucide-react';
 import Header from '@/components/Header';
@@ -11,8 +10,11 @@ const About = () => {
       
       {/* Hero Section */}
       <div className="bg-travel-teal text-white pt-32 pb-16">
-        <div className="container text-center">
-          <h1 className="text-4xl md:text-5xl font-serif mb-4">Sobre Nosotros</h1>
+        <div className="container text-center flex flex-col items-center justify-center">
+          <div className="flex items-center justify-center mb-4">
+            <img src="/logo.jfif" alt="FlowToBali Logo" className="h-20 w-20 rounded-full object-cover mr-4" />
+            <h1 className="text-4xl md:text-5xl font-serif">Sobre Nosotros</h1>
+          </div>
           <p className="text-lg max-w-3xl mx-auto opacity-90">
             Somos expertos en viajes asiáticos comprometidos a crear experiencias auténticas y memorables.
           </p>

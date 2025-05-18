@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { MapPin, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -28,8 +27,9 @@ const Header = () => {
     >
       <div className="container flex items-center justify-between">
         <Link to="/" className="flex items-center">
+          <img src="/logo.jfif" alt="FlowToBali Logo" className="h-10 w-10 mr-3 rounded-full object-cover" />
           <h1 className={`text-2xl sm:text-3xl font-serif font-bold ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            Asia<span className="text-travel-terracotta">Viajes</span>
+            FLOWTOBALI
           </h1>
         </Link>
 

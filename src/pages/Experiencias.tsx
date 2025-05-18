@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
@@ -94,7 +93,7 @@ const ExperienceCard = ({ title, description, image, color, link }: {
         <h3 className="text-2xl font-serif mb-2">{title}</h3>
         <p className="mb-4 opacity-90">{description}</p>
         <Link to={link}>
-          <Button variant="outline" className="border-white text-white hover:bg-white hover:text-travel-dark">
+          <Button variant="white">
             Saber Más <ArrowRight className="ml-1 h-4 w-4" />
           </Button>
         </Link>
@@ -213,7 +212,7 @@ const Experiencias = () => {
             experiencias personalizadas según tus intereses, tiempo y presupuesto.
           </p>
           <Link to="/contact">
-            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-travel-teal">
+            <Button variant="white">
               Solicitar experiencia personalizada
             </Button>
           </Link>

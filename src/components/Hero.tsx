@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -53,7 +52,7 @@ const Hero = () => {
               <Button className="bg-travel-terracotta hover:bg-travel-teal text-white text-lg px-8 py-6">
                 Explorar Destinos
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-travel-dark text-lg px-6 py-6">
+              <Button variant="white" className="text-lg px-6 py-6">
                 Planifica Tu Viaje <ArrowRight className="ml-2" />
               </Button>
             </div>

@@ -23,7 +23,7 @@ const Privacy = () => {
           <div className="prose prose-lg mx-auto">
             <h2>Introducción</h2>
             <p>
-              Asia Viajes S.L. (en adelante, "AsiaViajes") se compromete a proteger y respetar tu privacidad. Esta política de privacidad establece la base sobre la cual cualquier dato personal que recopilemos de ti, o que tú nos proporciones, será procesado por nosotros.
+              FLOWTOBALY S.L. (en adelante, "AsiaViajes") se compromete a proteger y respetar tu privacidad. Esta política de privacidad establece la base sobre la cual cualquier dato personal que recopilemos de ti, o que tú nos proporciones, será procesado por nosotros.
             </p>
 
             <h2>Información que recopilamos</h2>
