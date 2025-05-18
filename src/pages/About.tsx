@@ -48,8 +48,8 @@ const About = () => {
             </div>
             <div>
               <img 
-                src="/rotating/mujer-asiatica-recortada-entrenando-en-guantes-de-boxeo-en-la-practica-de-muay-thai.jpg" 
-                alt="El equipo de FlowToBali" 
+                src="/general/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai.jpg" 
+                alt="El equipo de AsiaViajes" 
                 className="rounded-lg shadow-lg w-full h-[400px] object-cover"
               />
             </div>

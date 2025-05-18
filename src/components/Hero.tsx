@@ -4,36 +4,11 @@ import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const heroImages = [
-  {
-    id: 1,
-    url: "/rotating/mujer-asiatica-recortada-entrenando-en-guantes-de-boxeo-en-la-practica-de-muay-thai.jpg",
-    title: "",
-    subtitle: ""
-  },
-  {
-    id: 2,
-    url: "/rotating/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai.jpg",
-    title: "",
-    subtitle: ""
-  },
-  {
-    id: 3,
-    url: "/rotating/karangasem-agua-templo-palacio-en-bali.jpg",
-    title: "",
-    subtitle: ""
-  },
-  {
-    id: 4,
-    url: "/rotating/exuberantes-arrozales-en-terrazas-en-sa-pa-generados-por-ia.jpg",
-    title: "",
-    subtitle: ""
-  },
-  {
-    id: 5,
-    url: "/rotating/hermosa-playa-de-diamantes-en-la-isla-de-penida-bali-indonesia (1).jpg",
-    title: "",
-    subtitle: ""
-  }
+  { url: "/rotating/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai.jpg" },
+  { url: "/rotating/karangasem-agua-templo-palacio-en-bali.jpg" },
+  { url: "/rotating/belleza-mujer-posando-en-la-subida-naturaleza-bali.jpg" },
+  { url: "/rotating/templo-de-besakih-en-bali-indonesia.jpg" },
+  { url: "/rotating/playa.jpg" },
 ];
 
 const Hero = () => {
@@ -41,13 +16,13 @@ const Hero = () => {
     <section className="relative h-screen min-h-[600px] w-full overflow-hidden">
       {/* Rotating background images */}
       <div className="absolute inset-0">
-        {heroImages.map((image) => (
+        {heroImages.map((image, idx) => (
           <div
-            key={image.id}
+            key={idx}
             className="hero-slide absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${image.url})` }}
           >
-            <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div className="absolute inset-0 bg-black bg-opacity-20"></div>
           </div>
         ))}
       </div>

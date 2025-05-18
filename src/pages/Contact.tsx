@@ -191,8 +191,8 @@ const Contact = () => {
         <div className="container">
           <div className="h-96 rounded-lg overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce" 
-              alt="Mapa de ubicación" 
+              src="/general/mujer-asiatica-recortada-entrenando-en-guantes-de-boxeo-en-la-practica-de-muay-thai.jpg" 
+              alt="Entrenando Muay Thai" 
               className="w-full h-full object-cover"
             />
           </div>
