@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ArrowRight, Calendar, Users, MapPin, Info } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -7,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import emailjs from '@emailjs/browser';
 
 interface BookingFormData {
   firstName: string;
@@ -44,20 +44,55 @@ const ReservarAhora = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const templateParams = {
+        from_name: `${formData.firstName} ${formData.lastName}`,
+        from_email: formData.email,
+        phone: formData.phone,
+        destination: formData.destination,
+        travel_date: formData.travelDate,
+        duration: formData.duration,
+        travelers: formData.travelers,
+        special_requests: formData.specialRequests
+      };
+
+      await emailjs.send(
+        'service_8wui46p',
+        'template_unv20j4',
+        templateParams,
+        'zpJqcZ9zcplXgZ_tI'
+      );
+
       toast({
         title: "¡Solicitud recibida!",
         description: "Te contactaremos pronto para confirmar tu reserva.",
       });
       
+      // Reset form
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        destination: '',
+        travelDate: '',
+        duration: '7-10 días',
+        travelers: '2',
+        specialRequests: ''
+      });
+    } catch (error) {
+      toast({
+        title: "Error al enviar la solicitud",
+        description: "Por favor, intenta de nuevo más tarde.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-      // Reset form or redirect
-    }, 1500);
+    }
   };
 
   return (
