@@ -14,6 +14,8 @@ import Faq from "./pages/Faq";
 import Destination from "./pages/Destination";
 import Experience from "./pages/Experience";
 import Booking from "./pages/Booking";
+import Destinos from "./pages/Destinos";
+import Experiencias from "./pages/Experiencias";
 
 const queryClient = new QueryClient();
 
@@ -27,9 +29,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/destinations" element={<Index />} />
+          <Route path="/destinations" element={<Destinos />} />
           <Route path="/destinations/:country" element={<Destination />} />
-          <Route path="/experiences" element={<Index />} />
+          <Route path="/experiences" element={<Experiencias />} />
           <Route path="/experiences/:id" element={<Experience />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/privacy" element={<Privacy />} />

@@ -99,9 +99,11 @@ const Destinations = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button className="bg-travel-teal hover:bg-travel-terracotta text-white px-8">
-            Ver Todos los Destinos <ArrowRight className="ml-2" />
-          </Button>
+          <Link to="/destinations">
+            <Button className="bg-travel-teal hover:bg-travel-terracotta text-white px-8">
+              Ver Todos los Destinos <ArrowRight className="ml-2" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
