@@ -12,11 +12,11 @@ const Footer = () => {
           <div>
             <Link to="/" className="inline-block mb-6">
               <h2 className="text-2xl font-serif font-bold">
-                Asia<span className="text-travel-terracotta">Journeys</span>
+                Asia<span className="text-travel-terracotta">Viajes</span>
               </h2>
             </Link>
             <p className="text-gray-300 mb-6">
-              Discover the wonders of Asia with our curated travel experiences and personalized itineraries.
+              Descubre las maravillas de Asia con nuestras experiencias de viaje seleccionadas e itinerarios personalizados.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-travel-terracotta">
@@ -33,31 +33,31 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-serif mb-6">Quick Links</h3>
+            <h3 className="text-lg font-serif mb-6">Enlaces Rápidos</h3>
             <ul className="space-y-3">
               <li>
                 <Link to="/about" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  About Us
+                  Sobre Nosotros
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  Our Services
+                  Nuestros Servicios
                 </Link>
               </li>
               <li>
                 <Link to="/destinations" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  Destinations
+                  Destinos
                 </Link>
               </li>
               <li>
                 <Link to="/blog" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  Travel Blog
+                  Blog de Viajes
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  Contact Us
+                  Contáctanos
                 </Link>
               </li>
             </ul>
@@ -65,16 +65,16 @@ const Footer = () => {
 
           {/* Top Destinations */}
           <div>
-            <h3 className="text-lg font-serif mb-6">Top Destinations</h3>
+            <h3 className="text-lg font-serif mb-6">Destinos Principales</h3>
             <ul className="space-y-3">
               <li>
                 <Link to="/destinations/japan" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  Japan
+                  Japón
                 </Link>
               </li>
               <li>
                 <Link to="/destinations/thailand" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  Thailand
+                  Tailandia
                 </Link>
               </li>
               <li>
@@ -97,11 +97,11 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-serif mb-6">Contact Information</h3>
+            <h3 className="text-lg font-serif mb-6">Información de Contacto</h3>
             <div className="space-y-4">
               <div className="flex items-start">
                 <MapPin size={20} className="text-travel-terracotta mr-3 mt-1" />
-                <p className="text-gray-300">123 Travel Street, Singapore 123456</p>
+                <p className="text-gray-300">123 Calle Viajera, Singapur 123456</p>
               </div>
               <div className="flex items-start">
                 <Phone size={20} className="text-travel-terracotta mr-3 mt-1" />
@@ -109,7 +109,7 @@ const Footer = () => {
               </div>
               <div className="flex items-start">
                 <Mail size={20} className="text-travel-terracotta mr-3 mt-1" />
-                <p className="text-gray-300">info@asiajourneys.com</p>
+                <p className="text-gray-300">info@asiaviajes.com</p>
               </div>
             </div>
           </div>
@@ -119,17 +119,17 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} AsiaJourneys. All rights reserved.
+            &copy; {new Date().getFullYear()} AsiaViajes. Todos los derechos reservados.
           </p>
           <div className="flex space-x-6">
             <Link to="/privacy" className="text-gray-400 hover:text-travel-terracotta text-sm">
-              Privacy Policy
+              Política de Privacidad
             </Link>
             <Link to="/terms" className="text-gray-400 hover:text-travel-terracotta text-sm">
-              Terms of Service
+              Términos de Servicio
             </Link>
             <Link to="/faq" className="text-gray-400 hover:text-travel-terracotta text-sm">
-              FAQ
+              Preguntas Frecuentes
             </Link>
           </div>
         </div>

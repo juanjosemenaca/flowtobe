@@ -4,23 +4,23 @@ import React from 'react';
 const features = [
   {
     id: 1,
-    title: "Expert Local Guides",
-    description: "Our knowledgeable guides provide authentic cultural insights"
+    title: "Guías Locales Expertos",
+    description: "Nuestros conocedores guías proporcionan auténticas perspectivas culturales"
   },
   {
     id: 2,
-    title: "Handpicked Accommodations",
-    description: "Stay in comfort at our carefully selected hotels and resorts"
+    title: "Alojamientos Seleccionados",
+    description: "Hospédese cómodamente en nuestros hoteles y resorts cuidadosamente seleccionados"
   },
   {
     id: 3,
-    title: "Sustainable Travel",
-    description: "Ethical experiences that respect local communities and environments"
+    title: "Viajes Sostenibles",
+    description: "Experiencias éticas que respetan las comunidades locales y el medio ambiente"
   },
   {
     id: 4,
-    title: "24/7 Support",
-    description: "Travel with peace of mind knowing our team is always available"
+    title: "Soporte 24/7",
+    description: "Viaje con tranquilidad sabiendo que nuestro equipo está siempre disponible"
   }
 ];
 

@@ -29,33 +29,33 @@ const Header = () => {
       <div className="container flex items-center justify-between">
         <Link to="/" className="flex items-center">
           <h1 className={`text-2xl sm:text-3xl font-serif font-bold ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            Asia<span className="text-travel-terracotta">Journeys</span>
+            Asia<span className="text-travel-terracotta">Viajes</span>
           </h1>
         </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
           <Link to="/" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            Home
+            Inicio
           </Link>
           <Link to="/destinations" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            Destinations
+            Destinos
           </Link>
           <Link to="/experiences" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            Experiences
+            Experiencias
           </Link>
           <Link to="/about" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            About Us
+            Sobre Nosotros
           </Link>
           <Link to="/contact" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            Contact
+            Contacto
           </Link>
         </nav>
 
         <Button
           className={`hidden md:flex bg-travel-terracotta hover:bg-travel-teal text-white items-center gap-2`}
         >
-          <MapPin size={18} /> Book Now
+          <MapPin size={18} /> Reservar Ahora
         </Button>
 
         {/* Mobile menu button */}
@@ -76,41 +76,41 @@ const Header = () => {
               className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Home
+              Inicio
             </Link>
             <Link 
               to="/destinations" 
               className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Destinations
+              Destinos
             </Link>
             <Link 
               to="/experiences" 
               className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Experiences
+              Experiencias
             </Link>
             <Link 
               to="/about" 
               className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              About Us
+              Sobre Nosotros
             </Link>
             <Link 
               to="/contact" 
               className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Contact
+              Contacto
             </Link>
             <Button 
               className="bg-travel-terracotta hover:bg-travel-teal text-white w-full mt-2 flex items-center justify-center gap-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <MapPin size={18} /> Book Now
+              <MapPin size={18} /> Reservar Ahora
             </Button>
           </div>
         </div>

@@ -15,8 +15,8 @@ const Newsletter = () => {
     // Simple validation
     if (!email || !email.includes('@')) {
       toast({
-        title: "Invalid email",
-        description: "Please enter a valid email address.",
+        title: "Email inválido",
+        description: "Por favor ingrese una dirección de correo electrónico válida.",
         variant: "destructive",
       });
       return;
@@ -27,8 +27,8 @@ const Newsletter = () => {
     // Simulate API call
     setTimeout(() => {
       toast({
-        title: "Success!",
-        description: "You've successfully subscribed to our newsletter.",
+        title: "¡Éxito!",
+        description: "Te has suscrito correctamente a nuestro boletín.",
       });
       setEmail('');
       setIsSubmitting(false);
@@ -39,15 +39,15 @@ const Newsletter = () => {
     <section className="bg-travel-teal py-16 text-white">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-serif mb-4">Get Inspired for Your Next Journey</h2>
+          <h2 className="text-3xl md:text-4xl font-serif mb-4">Inspírate Para Tu Próximo Viaje</h2>
           <p className="text-lg opacity-90 mb-8">
-            Subscribe to our newsletter for travel tips, exclusive deals, and destination inspiration
+            Suscríbete a nuestro boletín para recibir consejos de viaje, ofertas exclusivas e inspiración de destinos
           </p>
           
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
             <Input
               type="email"
-              placeholder="Your email address"
+              placeholder="Tu dirección de correo electrónico"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="bg-white text-travel-dark placeholder:text-travel-sage"
@@ -58,12 +58,12 @@ const Newsletter = () => {
               disabled={isSubmitting}
               className="bg-travel-terracotta hover:bg-travel-gold text-white"
             >
-              {isSubmitting ? "Subscribing..." : "Subscribe"}
+              {isSubmitting ? "Suscribiendo..." : "Suscribirse"}
             </Button>
           </form>
           
           <p className="text-sm opacity-80 mt-6">
-            By subscribing, you agree to our Privacy Policy and consent to receive travel-related emails.
+            Al suscribirte, aceptas nuestra Política de Privacidad y consientes recibir correos relacionados con viajes.
           </p>
         </div>
       </div>

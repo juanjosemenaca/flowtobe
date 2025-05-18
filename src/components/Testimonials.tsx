@@ -4,22 +4,22 @@ import React from 'react';
 const testimonials = [
   {
     id: 1,
-    quote: "Our journey through Japan with Asia Journeys was absolutely incredible. Every detail was perfectly arranged and the local guides really made the experience special.",
-    author: "Sarah J.",
-    location: "Kyoto, Japan",
+    quote: "Nuestro viaje por Japón con AsiaViajes fue absolutamente increíble. Cada detalle fue perfectamente organizado y los guías locales realmente hicieron que la experiencia fuera especial.",
+    author: "Sara J.",
+    location: "Kioto, Japón",
     rating: 5
   },
   {
     id: 2,
-    quote: "The Thailand beach tour exceeded all our expectations. From the pristine beaches to the vibrant nightlife, everything was just as promised and more!",
-    author: "Michael T.",
-    location: "Phuket, Thailand",
+    quote: "El tour por las playas de Tailandia superó todas nuestras expectativas. Desde las playas vírgenes hasta la vibrante vida nocturna, ¡todo fue tal como lo prometieron y más!",
+    author: "Miguel T.",
+    location: "Phuket, Tailandia",
     rating: 5
   },
   {
     id: 3,
-    quote: "Vietnam's culture and landscapes are breathtaking, and Asia Journeys helped us explore it all. The food tours were a highlight we'll never forget.",
-    author: "Emily & David",
+    quote: "La cultura y los paisajes de Vietnam son impresionantes, y AsiaViajes nos ayudó a explorarlo todo. Los tours gastronómicos fueron algo que nunca olvidaremos.",
+    author: "Elena y David",
     location: "Hanoi, Vietnam",
     rating: 5
   }
@@ -68,9 +68,9 @@ const Testimonials = () => {
     <section className="py-20 bg-travel-cream">
       <div className="container">
         <div className="text-center mb-14">
-          <h2 className="text-4xl md:text-5xl font-serif text-travel-dark mb-4">What Travelers Say</h2>
+          <h2 className="text-4xl md:text-5xl font-serif text-travel-dark mb-4">Lo Que Dicen Los Viajeros</h2>
           <p className="text-travel-sage text-xl max-w-2xl mx-auto">
-            Real stories from travelers who experienced the magic of Asia with us
+            Historias reales de viajeros que experimentaron la magia de Asia con nosotros
           </p>
         </div>
 

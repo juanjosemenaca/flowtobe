@@ -6,29 +6,29 @@ import { ArrowRight } from 'lucide-react';
 const experienceCategories = [
   {
     id: 1,
-    title: "Cultural Immersion",
-    description: "Discover authentic local traditions",
+    title: "Inmersión Cultural",
+    description: "Descubre tradiciones locales auténticas",
     image: "https://images.unsplash.com/photo-1466442929976-97f336a657be",
     color: "bg-travel-teal"
   },
   {
     id: 2,
-    title: "Spiritual Journeys",
-    description: "Find peace in ancient temples",
+    title: "Viajes Espirituales",
+    description: "Encuentra paz en templos antiguos",
     image: "https://images.unsplash.com/photo-1426604966848-d7adac402bff",
     color: "bg-travel-terracotta"
   },
   {
     id: 3,
-    title: "Culinary Adventures",
-    description: "Taste authentic Asian flavors",
+    title: "Aventuras Culinarias",
+    description: "Saborea auténticos sabores asiáticos",
     image: "https://images.unsplash.com/photo-1464093515883-ec948246accb",
     color: "bg-travel-sage"
   },
   {
     id: 4,
-    title: "Wildlife Encounters",
-    description: "Connect with nature's wonders",
+    title: "Encuentros con la Vida Silvestre",
+    description: "Conecta con las maravillas naturales",
     image: "https://images.unsplash.com/photo-1472396961693-142e6e269027",
     color: "bg-travel-gold"
   }
@@ -54,7 +54,7 @@ const ExperienceCard = ({ title, description, image, color }: {
         <h3 className="text-2xl font-serif mb-2">{title}</h3>
         <p className="mb-4 opacity-90">{description}</p>
         <Button variant="outline" className="border-white text-white hover:bg-white hover:text-travel-dark">
-          Learn More <ArrowRight className="ml-1 h-4 w-4" />
+          Saber Más <ArrowRight className="ml-1 h-4 w-4" />
         </Button>
       </div>
     </div>
@@ -67,13 +67,13 @@ const Experiences = () => {
       <div className="container">
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <div>
-            <h2 className="text-4xl md:text-5xl font-serif text-travel-dark mb-4">Unforgettable Experiences</h2>
+            <h2 className="text-4xl md:text-5xl font-serif text-travel-dark mb-4">Experiencias Inolvidables</h2>
             <p className="text-travel-sage text-xl max-w-2xl">
-              Create memories that last a lifetime with our curated travel experiences
+              Crea recuerdos que duran toda la vida con nuestras experiencias de viaje seleccionadas
             </p>
           </div>
           <Button className="bg-travel-terracotta hover:bg-travel-teal text-white mt-6 md:mt-0 px-8">
-            All Experiences <ArrowRight className="ml-2" />
+            Todas las Experiencias <ArrowRight className="ml-2" />
           </Button>
         </div>
 

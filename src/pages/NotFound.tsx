@@ -10,7 +10,7 @@ const NotFound = () => {
 
   useEffect(() => {
     console.error(
-      "404 Error: User attempted to access non-existent route:",
+      "404 Error: Usuario intentó acceder a una ruta inexistente:",
       location.pathname
     );
   }, [location.pathname]);
@@ -21,13 +21,13 @@ const NotFound = () => {
       <div className="flex-grow flex items-center justify-center bg-travel-cream">
         <div className="container py-20 text-center">
           <h1 className="text-7xl md:text-9xl font-serif text-travel-teal mb-6">404</h1>
-          <p className="text-2xl md:text-3xl text-travel-dark mb-8">Oops! This destination doesn't exist</p>
+          <p className="text-2xl md:text-3xl text-travel-dark mb-8">¡Ups! Este destino no existe</p>
           <p className="text-travel-sage text-lg mb-10 max-w-md mx-auto">
-            The page you're looking for may have been moved or doesn't exist.
+            La página que estás buscando puede haber sido movida o no existe.
           </p>
           <Link to="/">
             <Button className="bg-travel-terracotta hover:bg-travel-teal text-white text-lg px-8 py-6">
-              Return to Homepage
+              Regresar a la Página de Inicio
             </Button>
           </Link>
         </div>
