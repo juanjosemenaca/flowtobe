@@ -36,7 +36,6 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Replace these values with your actual EmailJS credentials
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
@@ -45,10 +44,10 @@ const Contact = () => {
       };
 
       await emailjs.send(
-        'service_8wui46p', // Your EmailJS service ID
-        'template_9ib4dun', // Your EmailJS template ID
+        'service_8wui46p',
+        'template_unv20j4',
         templateParams,
-        'zpJqcZ9zcplXgZ_tI' // Your EmailJS public key
+        'zpJqcZ9zcplXgZ_tI'
       );
 
       toast({
