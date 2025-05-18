@@ -6,21 +6,33 @@ import { Link } from 'react-router-dom';
 const heroImages = [
   {
     id: 1,
-    url: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb",
-    title: "Experimenta China",
-    subtitle: "Descubre maravillas antiguas y obras modernas"
+    url: "/rotating/mujer-asiatica-recortada-entrenando-en-guantes-de-boxeo-en-la-practica-de-muay-thai.jpg",
+    title: "",
+    subtitle: ""
   },
   {
     id: 2,
-    url: "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
-    title: "Explora Tailandia",
-    subtitle: "Playas paradisíacas y tesoros culturales"
+    url: "/rotating/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai.jpg",
+    title: "",
+    subtitle: ""
   },
   {
     id: 3,
-    url: "https://images.unsplash.com/photo-1492321936769-b49830bc1d1e",
-    title: "Viaja a Japón",
-    subtitle: "Donde la tradición se encuentra con la innovación"
+    url: "/rotating/karangasem-agua-templo-palacio-en-bali.jpg",
+    title: "",
+    subtitle: ""
+  },
+  {
+    id: 4,
+    url: "/rotating/exuberantes-arrozales-en-terrazas-en-sa-pa-generados-por-ia.jpg",
+    title: "",
+    subtitle: ""
+  },
+  {
+    id: 5,
+    url: "/rotating/hermosa-playa-de-diamantes-en-la-isla-de-penida-bali-indonesia (1).jpg",
+    title: "",
+    subtitle: ""
   }
 ];
 

@@ -48,8 +48,8 @@ const About = () => {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1513608314222-a511dba01377" 
-                alt="El equipo de AsiaViajes" 
+                src="/rotating/mujer-asiatica-recortada-entrenando-en-guantes-de-boxeo-en-la-practica-de-muay-thai.jpg" 
+                alt="El equipo de FlowToBali" 
                 className="rounded-lg shadow-lg w-full h-[400px] object-cover"
               />
             </div>
