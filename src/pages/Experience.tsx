@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowRight, Calendar, Users, Clock, MapPin, Heart, Share2, Check } from 'lucide-react';
+import { ArrowRight, Calendar, Users, Clock, MapPin, Heart, Share2, Check, Star } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';

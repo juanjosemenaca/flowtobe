@@ -1,6 +1,6 @@
-
 import React, { useState } from 'react';
-import { ArrowRight, Check, Calendar, Users, MapPin, Info, CreditCard, Phone } from 'lucide-react';
+import { ArrowRight, Calendar, Users, Clock, MapPin, Info, CreditCard, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
