@@ -16,6 +16,7 @@ import Experience from "./pages/Experience";
 import Booking from "./pages/Booking";
 import Destinos from "./pages/Destinos";
 import Experiencias from "./pages/Experiencias";
+import ReservarAhora from "./pages/ReservarAhora";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/experiences" element={<Experiencias />} />
           <Route path="/experiences/:id" element={<Experience />} />
           <Route path="/booking" element={<Booking />} />
+          <Route path="/reservar" element={<ReservarAhora />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/faq" element={<Faq />} />

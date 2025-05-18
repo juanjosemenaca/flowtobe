@@ -52,11 +52,13 @@ const Header = () => {
           </Link>
         </nav>
 
-        <Button
-          className={`hidden md:flex bg-travel-terracotta hover:bg-travel-teal text-white items-center gap-2`}
-        >
-          <MapPin size={18} /> Reservar Ahora
-        </Button>
+        <Link to="/reservar">
+          <Button
+            className={`hidden md:flex bg-travel-terracotta hover:bg-travel-teal text-white items-center gap-2`}
+          >
+            <MapPin size={18} /> Reservar Ahora
+          </Button>
+        </Link>
 
         {/* Mobile menu button */}
         <button 
@@ -106,12 +108,16 @@ const Header = () => {
             >
               Contacto
             </Link>
-            <Button 
-              className="bg-travel-terracotta hover:bg-travel-teal text-white w-full mt-2 flex items-center justify-center gap-2"
+            <Link 
+              to="/reservar" 
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <MapPin size={18} /> Reservar Ahora
-            </Button>
+              <Button 
+                className="bg-travel-terracotta hover:bg-travel-teal text-white w-full mt-2 flex items-center justify-center gap-2"
+              >
+                <MapPin size={18} /> Reservar Ahora
+              </Button>
+            </Link>
           </div>
         </div>
       )}
