@@ -1,10 +1,11 @@
+
 import React, { useState } from 'react';
-import { ArrowRight, Calendar, Users, Clock, MapPin, Info, CreditCard, Phone } from 'lucide-react';
+import { ArrowRight, Calendar, Users, Clock, MapPin, Info, CreditCard, Phone, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/hooks/use-toast";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
