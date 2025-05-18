@@ -215,6 +215,9 @@ const Contact = () => {
               src="/general/mujer-asiatica-recortada-entrenando-en-guantes-de-boxeo-en-la-practica-de-muay-thai.jpg" 
               alt="Entrenando Muay Thai" 
               className="w-full h-full object-cover"
+              loading="lazy"
+              width={1200}
+              height={600}
             />
           </div>
         </div>

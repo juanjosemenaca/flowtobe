@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -12,6 +12,12 @@ const heroImages = [
 ];
 
 const Hero = () => {
+  useEffect(() => {
+    // Preload the first image
+    const img = new Image();
+    img.src = heroImages[0].url;
+  }, []);
+
   return (
     <section className="relative h-screen min-h-[600px] w-full overflow-hidden">
       {/* Rotating background images */}
@@ -20,7 +26,11 @@ const Hero = () => {
           <div
             key={idx}
             className="hero-slide absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${image.url})` }}
+            style={{ 
+              backgroundImage: `url(${image.url})`,
+              opacity: idx === 0 ? 1 : 0,
+              transition: 'opacity 1s ease-in-out'
+            }}
           >
             <div className="absolute inset-0 bg-black bg-opacity-20"></div>
           </div>
