@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { MapPin, Phone, Mail, CheckCircle } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -6,9 +6,11 @@ import { Label } from "@/components/ui/label";
 import { useToast } from "@/components/ui/use-toast";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const { toast } = useToast();
+  const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -29,12 +31,26 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
+
+    try {
+      // Replace these values with your actual EmailJS credentials
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      };
+
+      await emailjs.send(
+        'service_8wui46p', // Your EmailJS service ID
+        'template_9ib4dun', // Your EmailJS template ID
+        templateParams,
+        'zpJqcZ9zcplXgZ_tI' // Your EmailJS public key
+      );
+
       toast({
         title: "Mensaje enviado correctamente",
         description: "Nos pondremos en contacto contigo pronto. ¡Gracias!",
@@ -46,9 +62,15 @@ const Contact = () => {
         subject: '',
         message: ''
       });
-      
+    } catch (error) {
+      toast({
+        title: "Error al enviar el mensaje",
+        description: "Por favor, intenta de nuevo más tarde.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
 
   return (
@@ -121,7 +143,7 @@ const Contact = () => {
             <div>
               <h2 className="text-3xl font-serif text-travel-dark mb-8">Envíanos un Mensaje</h2>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6" ref={formRef}>
                 <div>
                   <Label htmlFor="name">Nombre Completo</Label>
                   <Input 
