@@ -55,7 +55,7 @@ const destinations = {
     name: "Tailandia",
     title: "El País de la Sonrisa",
     intro: "Sumérgete en la riqueza cultural y natural de Tailandia",
-    description: "Tailandia cautiva a los viajeros con sus templos ornamentados, playas paradisíacas y una de las cocinas más celebradas del mundo. Desde los santuarios budistas hasta las bulliciosas calles de Bangkok y las islas tropicales de aguas cristalinas, Tailandia ofrece experiencias para todos los gustos. El cálido carácter de su gente, conocida como "la tierra de la sonrisa", hará que te sientas bienvenido en cada momento de tu viaje.",
+    description: "Tailandia cautiva a los viajeros con sus templos ornamentados, playas paradisíacas y una de las cocinas más celebradas del mundo. Desde los santuarios budistas hasta las bulliciosas calles de Bangkok y las islas tropicales de aguas cristalinas, Tailandia ofrece experiencias para todos los gustos. El cálido carácter de su gente, conocida como 'la tierra de la sonrisa', hará que te sientas bienvenido en cada momento de tu viaje.",
     image: "https://images.unsplash.com/photo-1562602833-0f4ab2fc46e3",
     highlights: [
       "Visitar los magníficos templos de Bangkok",
