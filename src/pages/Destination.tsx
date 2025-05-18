@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowRight, Calendar, Users, Clock, Star, MapPin } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -139,6 +139,9 @@ const destinations = {
 };
 
 const Destination = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { country } = useParams();
   
   // Destino por defecto si no se encuentra en la lista

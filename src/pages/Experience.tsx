@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowRight, Calendar, Users, Clock, MapPin, Heart, Share2, Check, Star } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -131,6 +131,9 @@ const ExperienceGallery = ({ images }: { images: string[] }) => (
 );
 
 const Experience = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { id } = useParams();
   
   // Experiencia por defecto si no se encuentra

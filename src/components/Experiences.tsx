@@ -73,6 +73,11 @@ const Experiences = () => {
     <section className="py-20">
       <div className="container">
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
+          <Link to="/destinations" className="mb-6 md:mb-0 md:mr-8">
+            <Button className="bg-travel-terracotta hover:bg-travel-teal text-white text-lg px-8 py-6">
+              Explorar FLOWTOBALY
+            </Button>
+          </Link>
           <div>
             <h2 className="text-4xl md:text-5xl font-serif text-travel-dark mb-4">Experiencias Inolvidables</h2>
             <p className="text-travel-sage text-xl max-w-2xl">

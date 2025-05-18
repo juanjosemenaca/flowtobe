@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const heroImages = [
   {
@@ -48,13 +49,17 @@ const Hero = () => {
             <p className="text-xl md:text-2xl text-white mb-8 opacity-90 animate-fade-up" style={{animationDelay: '0.4s'}}>
               Explora templos antiguos, ciudades bulliciosas y playas vírgenes en los diversos paisajes de Asia
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start animate-fade-up" style={{animationDelay: '0.6s'}}>
-              <Button className="bg-travel-terracotta hover:bg-travel-teal text-white text-lg px-8 py-6">
-                Explorar Destinos
-              </Button>
-              <Button variant="white" className="text-lg px-6 py-6">
-                Planifica Tu Viaje <ArrowRight className="ml-2" />
-              </Button>
+            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center sm:justify-start animate-fade-up" style={{animationDelay: '0.6s'}}>
+              <Link to="/destinations">
+                <Button className="bg-travel-terracotta hover:bg-travel-teal text-white text-lg px-8 py-6">
+                  Explorar Destinos
+                </Button>
+              </Link>
+              <Link to="/experiences">
+                <Button variant="white" className="w-56 text-lg px-6 py-6 mx-auto sm:mx-0">
+                  Planifica Tu Viaje <ArrowRight className="ml-2" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
