@@ -1,9 +1,9 @@
 services:
   - type: web
     name: flow2bali
-    env: node
+    env: static
     buildCommand: npm install && npm run build
-    startCommand: serve -s dist
+    staticPublishPath: ./dist
     routes:
       - type: rewrite
         source: /*
