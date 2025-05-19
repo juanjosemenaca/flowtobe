@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: flow2bali
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: serve -s dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html 
