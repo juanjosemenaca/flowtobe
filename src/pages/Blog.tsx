@@ -1,11 +1,19 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Calendar, User, MessageSquare } from 'lucide-react';
+import { Calendar, User, MessageSquare } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { 
+  Pagination, 
+  PaginationContent, 
+  PaginationItem, 
+  PaginationLink, 
+  PaginationNext, 
+  PaginationPrevious
+} from "@/components/ui/pagination";
 
 // Sample blog post data
 const blogPosts = [
@@ -126,10 +134,27 @@ const BlogPostCard = ({ post }: { post: typeof blogPosts[0] }) => {
 
 const Blog = () => {
   const [activeCategory, setActiveCategory] = useState("Todos");
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 6;
 
   const filteredPosts = activeCategory === "Todos" 
     ? blogPosts 
     : blogPosts.filter(post => post.category.toLowerCase() === activeCategory.toLowerCase());
+
+  // Calculate total pages
+  const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
+  
+  // Get current posts
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
+
+  // Change page
+  const handlePageChange = (pageNumber: number) => {
+    setCurrentPage(pageNumber);
+    // Scroll to top when page changes
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -162,7 +187,10 @@ const Blog = () => {
                 key={category} 
                 variant={category === activeCategory ? "default" : "outline"}
                 className={category === activeCategory ? "bg-travel-terracotta hover:bg-travel-teal text-white" : ""}
-                onClick={() => setActiveCategory(category)}
+                onClick={() => {
+                  setActiveCategory(category);
+                  setCurrentPage(1); // Reset to first page when category changes
+                }}
               >
                 {category}
               </Button>
@@ -175,20 +203,42 @@ const Blog = () => {
       <section className="py-16 bg-travel-cream">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredPosts.map((post) => (
+            {currentPosts.map((post) => (
               <BlogPostCard key={post.id} post={post} />
             ))}
           </div>
           
           {/* Pagination */}
-          <div className="mt-16 flex justify-center">
-            <div className="flex gap-2">
-              <Button variant="outline" disabled>Anterior</Button>
-              <Button className="bg-travel-terracotta hover:bg-travel-teal text-white">1</Button>
-              <Button variant="outline">2</Button>
-              <Button variant="outline">3</Button>
-              <Button variant="outline">Siguiente</Button>
-            </div>
+          <div className="mt-16">
+            <Pagination>
+              <PaginationContent>
+                <PaginationItem>
+                  <PaginationPrevious 
+                    onClick={() => currentPage > 1 && handlePageChange(currentPage - 1)}
+                    className={`${currentPage === 1 ? 'pointer-events-none opacity-50' : 'cursor-pointer'}`} 
+                  />
+                </PaginationItem>
+                
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map(number => (
+                  <PaginationItem key={number}>
+                    <PaginationLink 
+                      isActive={number === currentPage}
+                      onClick={() => handlePageChange(number)}
+                      className="cursor-pointer"
+                    >
+                      {number}
+                    </PaginationLink>
+                  </PaginationItem>
+                ))}
+                
+                <PaginationItem>
+                  <PaginationNext 
+                    onClick={() => currentPage < totalPages && handlePageChange(currentPage + 1)}
+                    className={`${currentPage === totalPages ? 'pointer-events-none opacity-50' : 'cursor-pointer'}`} 
+                  />
+                </PaginationItem>
+              </PaginationContent>
+            </Pagination>
           </div>
         </div>
       </section>
