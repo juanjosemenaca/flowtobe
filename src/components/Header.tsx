@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { MapPin, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -43,6 +44,9 @@ const Header = () => {
           </Link>
           <Link to="/experiences" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
             Experiencias
+          </Link>
+          <Link to="/servicios" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
+            Servicios
           </Link>
           <Link to="/about" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
             Sobre Nosotros
@@ -93,6 +97,13 @@ const Header = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Experiencias
+            </Link>
+            <Link 
+              to="/servicios" 
+              className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Servicios
             </Link>
             <Link 
               to="/about" 
