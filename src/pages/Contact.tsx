@@ -80,7 +80,7 @@ const Contact = () => {
       <div className="bg-travel-teal text-white pt-32 pb-16">
         <div className="container text-center flex flex-col items-center justify-center">
           <div className="flex items-center justify-center mb-4">
-            <img src="/logo.jfif" alt="FlowToBali Logo" className="h-20 w-20 rounded-full object-cover mr-4" />
+            <img src="/logo.jfif" alt="Flow2Bali Logo" className="h-20 w-20 rounded-full object-cover mr-4" />
             <h1 className="text-4xl md:text-5xl font-serif">Contacto</h1>
           </div>
           <p className="text-lg max-w-3xl mx-auto opacity-90">
@@ -123,7 +123,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-serif text-travel-dark mb-2">Email</h3>
-                    <p className="text-travel-sage">info@asiaviajes.com</p>
+                    <p className="text-travel-sage">info@Flow2bali.com</p>
                   </div>
                 </div>
               </div>

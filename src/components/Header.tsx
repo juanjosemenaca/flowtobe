@@ -27,9 +27,9 @@ const Header = () => {
     >
       <div className="container flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <img src="/logo.jfif" alt="FlowToBali Logo" className="h-10 w-10 mr-3 rounded-full object-cover" />
+          <img src="/logo.jfif" alt="Flow2Bali Logo" className="h-10 w-10 mr-3 rounded-full object-cover" />
           <h1 className={`text-2xl sm:text-3xl font-serif font-bold ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            FLOWTOBALI
+            FLOW2BALI
           </h1>
         </Link>
 

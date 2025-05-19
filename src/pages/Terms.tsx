@@ -26,7 +26,7 @@ const Terms = () => {
           <div className="prose prose-lg mx-auto">
             <h2>Aceptación de los términos</h2>
             <p>
-              Al acceder y utilizar los servicios de AsiaViajes (en adelante, "el Servicio"), aceptas estar sujeto a estos Términos de Servicio. Si no estás de acuerdo con alguna parte de estos términos, no podrás acceder al Servicio.
+              Al acceder y utilizar los servicios de Flow2bali (en adelante, "el Servicio"), aceptas estar sujeto a estos Términos de Servicio. Si no estás de acuerdo con alguna parte de estos términos, no podrás acceder al Servicio.
             </p>
 
             <h2>Cambios en los términos</h2>
@@ -59,17 +59,17 @@ const Terms = () => {
 
             <h2>Propiedad intelectual</h2>
             <p>
-              El Servicio y su contenido original, características y funcionalidad son y seguirán siendo propiedad exclusiva de AsiaViajes y sus licenciantes. El Servicio está protegido por derechos de autor, marcas comerciales y otras leyes de España y otros países.
+              El Servicio y su contenido original, características y funcionalidad son y seguirán siendo propiedad exclusiva de Flow2bali y sus licenciantes. El Servicio está protegido por derechos de autor, marcas comerciales y otras leyes de España y otros países.
             </p>
 
             <h2>Limitación de responsabilidad</h2>
             <p>
-              En ningún caso AsiaViajes, sus directores, empleados, socios, agentes, proveedores o afiliados serán responsables por cualquier daño indirecto, incidental, especial, consecuente o punitivo, incluida, sin limitación, la pérdida de beneficios, datos, uso, buena voluntad u otras pérdidas intangibles, resultantes de tu acceso o uso o incapacidad para acceder o utilizar el Servicio.
+              En ningún caso Flow2bali, sus directores, empleados, socios, agentes, proveedores o afiliados serán responsables por cualquier daño indirecto, incidental, especial, consecuente o punitivo, incluida, sin limitación, la pérdida de beneficios, datos, uso, buena voluntad u otras pérdidas intangibles, resultantes de tu acceso o uso o incapacidad para acceder o utilizar el Servicio.
             </p>
 
             <h2>Indemnización</h2>
             <p>
-              Aceptas defender, indemnizar y mantener indemne a AsiaViajes de y contra cualquier reclamación, responsabilidad, daño, pérdida y gasto, incluyendo honorarios legales razonables, que surjan de o estén relacionados de alguna manera con tu uso del Servicio o cualquier violación de estos Términos.
+              Aceptas defender, indemnizar y mantener indemne a Flow2bali de y contra cualquier reclamación, responsabilidad, daño, pérdida y gasto, incluyendo honorarios legales razonables, que surjan de o estén relacionados de alguna manera con tu uso del Servicio o cualquier violación de estos Términos.
             </p>
 
             <h2>Ley aplicable</h2>
@@ -79,7 +79,7 @@ const Terms = () => {
 
             <h2>Contacto</h2>
             <p>
-              Las preguntas sobre los Términos deben enviarse a nosotros a info@asiaviajes.com.
+              Las preguntas sobre los Términos deben enviarse a nosotros a info@Flow2bali.com.
             </p>
 
             <p className="text-sm text-travel-sage mt-8">

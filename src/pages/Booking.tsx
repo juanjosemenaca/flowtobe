@@ -488,7 +488,7 @@ const Booking = () => {
               <h2 className="text-3xl font-serif text-travel-dark mb-4">¡Reserva Confirmada!</h2>
               
               <p className="text-travel-sage mb-8 max-w-2xl mx-auto">
-                Gracias por reservar con AsiaViajes. Hemos enviado un correo electrónico a <span className="font-medium">{formData.email}</span> con los detalles de tu reserva. Uno de nuestros asesores de viaje se pondrá en contacto contigo en las próximas 24 horas.
+                Gracias por reservar con Flow2bali. Hemos enviado un correo electrónico a <span className="font-medium">{formData.email}</span> con los detalles de tu reserva. Uno de nuestros asesores de viaje se pondrá en contacto contigo en las próximas 24 horas.
               </p>
               
               <div className="bg-travel-cream p-6 rounded-lg mb-8 max-w-md mx-auto">

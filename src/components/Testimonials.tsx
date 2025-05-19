@@ -4,7 +4,7 @@ import React from 'react';
 const testimonials = [
   {
     id: 1,
-    quote: "Nuestro viaje por Japón con AsiaViajes fue absolutamente increíble. Cada detalle fue perfectamente organizado y los guías locales realmente hicieron que la experiencia fuera especial.",
+    quote: "Nuestro viaje por Japón con Flow2bali fue absolutamente increíble. Cada detalle fue perfectamente organizado y los guías locales realmente hicieron que la experiencia fuera especial.",
     author: "Sara J.",
     location: "Kioto, Japón",
     rating: 5
@@ -18,7 +18,7 @@ const testimonials = [
   },
   {
     id: 3,
-    quote: "La cultura y los paisajes de Vietnam son impresionantes, y AsiaViajes nos ayudó a explorarlo todo. Los tours gastronómicos fueron algo que nunca olvidaremos.",
+    quote: "La cultura y los paisajes de Vietnam son impresionantes, y Flow2bali nos ayudó a explorarlo todo. Los tours gastronómicos fueron algo que nunca olvidaremos.",
     author: "Elena y David",
     location: "Hanoi, Vietnam",
     rating: 5

@@ -16,7 +16,7 @@ const About = () => {
       <div className="bg-travel-teal text-white pt-32 pb-16">
         <div className="container text-center flex flex-col items-center justify-center">
           <div className="flex items-center justify-center mb-4">
-            <img src="/logo.jfif" alt="FlowToBali Logo" className="h-20 w-20 rounded-full object-cover mr-4" />
+            <img src="/logo.jfif" alt="Flow2Bali Logo" className="h-20 w-20 rounded-full object-cover mr-4" />
             <h1 className="text-4xl md:text-5xl font-serif">Sobre Nosotros</h1>
           </div>
           <p className="text-lg max-w-3xl mx-auto opacity-90">
@@ -32,7 +32,7 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-serif text-travel-dark mb-6">Nuestra Historia</h2>
               <p className="text-travel-sage mb-4">
-                AsiaViajes comenzó con una simple pasión: compartir la belleza auténtica de Asia con el mundo.
+                Flow2bali comenzó con una simple pasión: compartir la belleza auténtica de Asia con el mundo.
                 Fundada en 2010 por un grupo de entusiastas viajeros y expertos locales, nos hemos dedicado 
                 a crear itinerarios que van más allá del turismo convencional.
               </p>
@@ -49,7 +49,7 @@ const About = () => {
             <div>
               <img 
                 src="/general/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai.jpg" 
-                alt="El equipo de AsiaViajes" 
+                alt="El equipo de Flow2bali" 
                 className="rounded-lg shadow-lg w-full h-[400px] object-cover"
               />
             </div>

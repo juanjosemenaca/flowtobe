@@ -91,8 +91,8 @@ const Faq = () => {
               <a href="/contact" className="bg-travel-terracotta hover:bg-travel-teal text-white px-6 py-3 rounded-md transition-colors">
                 Contactar
               </a>
-              <a href="mailto:info@asiaviajes.com" className="bg-travel-sage hover:bg-travel-teal text-white px-6 py-3 rounded-md transition-colors">
-                info@asiaviajes.com
+              <a href="mailto:info@Flow2bali.com" className="bg-travel-sage hover:bg-travel-teal text-white px-6 py-3 rounded-md transition-colors">
+                info@Flow2bali.com
               </a>
             </div>
           </div>
