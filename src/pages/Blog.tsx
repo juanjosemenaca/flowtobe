@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, User, MessageSquare } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -17,7 +17,8 @@ const blogPosts = [
     author: "María González",
     date: "15 mayo 2025",
     comments: 24,
-    category: "playas"
+    category: "playas",
+    slug: "las-10-playas-mas-impresionantes-de-bali"
   },
   {
     id: 2,
@@ -27,7 +28,8 @@ const blogPosts = [
     author: "Carlos Martínez",
     date: "3 mayo 2025",
     comments: 18,
-    category: "cultura"
+    category: "cultura",
+    slug: "guia-completa-templos-angkor-wat"
   },
   {
     id: 3,
@@ -37,7 +39,8 @@ const blogPosts = [
     author: "Laura Sánchez",
     date: "28 abril 2025",
     comments: 32,
-    category: "gastronomía"
+    category: "gastronomía",
+    slug: "comida-callejera-bangkok"
   },
   {
     id: 4,
@@ -47,7 +50,8 @@ const blogPosts = [
     author: "Javier López",
     date: "15 abril 2025",
     comments: 15,
-    category: "aventura"
+    category: "aventura",
+    slug: "trekkings-norte-vietnam"
   },
   {
     id: 5,
@@ -57,7 +61,8 @@ const blogPosts = [
     author: "Ana Rodríguez",
     date: "2 abril 2025",
     comments: 41,
-    category: "consejos"
+    category: "consejos",
+    slug: "guia-viajar-japon-floracion-cerezos"
   },
   {
     id: 6,
@@ -67,7 +72,8 @@ const blogPosts = [
     author: "Elena Torres",
     date: "25 marzo 2025",
     comments: 29,
-    category: "alojamiento"
+    category: "alojamiento",
+    slug: "hoteles-piscina-infinita-asia"
   }
 ];
 
@@ -79,44 +85,52 @@ const categories = [
 const BlogPostCard = ({ post }: { post: typeof blogPosts[0] }) => {
   return (
     <Card className="overflow-hidden transition-all hover:shadow-lg">
-      <div className="h-64 overflow-hidden">
-        <img 
-          src={post.image} 
-          alt={post.title} 
-          className="w-full h-full object-cover transition-transform hover:scale-105"
-        />
-      </div>
-      <CardContent className="pt-6">
-        <div className="mb-3">
-          <span className="inline-block px-3 py-1 text-xs text-white bg-travel-terracotta rounded-full capitalize">
-            {post.category}
-          </span>
+      <Link to={`/blog/${post.slug}`}>
+        <div className="h-64 overflow-hidden">
+          <img 
+            src={post.image} 
+            alt={post.title} 
+            className="w-full h-full object-cover transition-transform hover:scale-105"
+          />
         </div>
-        <h3 className="text-xl font-serif mb-3 text-travel-dark hover:text-travel-terracotta transition-colors">
-          {post.title}
-        </h3>
-        <p className="text-travel-sage mb-4">
-          {post.excerpt}
-        </p>
-      </CardContent>
-      <CardFooter className="flex items-center justify-between pt-0 text-sm text-travel-sage">
-        <div className="flex items-center gap-4">
+        <CardContent className="pt-6">
+          <div className="mb-3">
+            <span className="inline-block px-3 py-1 text-xs text-white bg-travel-terracotta rounded-full capitalize">
+              {post.category}
+            </span>
+          </div>
+          <h3 className="text-xl font-serif mb-3 text-travel-dark hover:text-travel-terracotta transition-colors">
+            {post.title}
+          </h3>
+          <p className="text-travel-sage mb-4">
+            {post.excerpt}
+          </p>
+        </CardContent>
+        <CardFooter className="flex items-center justify-between pt-0 text-sm text-travel-sage">
+          <div className="flex items-center gap-4">
+            <span className="flex items-center gap-1">
+              <User size={14} /> {post.author}
+            </span>
+            <span className="flex items-center gap-1">
+              <Calendar size={14} /> {post.date}
+            </span>
+          </div>
           <span className="flex items-center gap-1">
-            <User size={14} /> {post.author}
+            <MessageSquare size={14} /> {post.comments}
           </span>
-          <span className="flex items-center gap-1">
-            <Calendar size={14} /> {post.date}
-          </span>
-        </div>
-        <span className="flex items-center gap-1">
-          <MessageSquare size={14} /> {post.comments}
-        </span>
-      </CardFooter>
+        </CardFooter>
+      </Link>
     </Card>
   );
 };
 
 const Blog = () => {
+  const [activeCategory, setActiveCategory] = useState("Todos");
+
+  const filteredPosts = activeCategory === "Todos" 
+    ? blogPosts 
+    : blogPosts.filter(post => post.category.toLowerCase() === activeCategory.toLowerCase());
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -146,8 +160,9 @@ const Blog = () => {
             {categories.map((category) => (
               <Button 
                 key={category} 
-                variant={category === "Todos" ? "default" : "outline"}
-                className={category === "Todos" ? "bg-travel-terracotta hover:bg-travel-teal text-white" : ""}
+                variant={category === activeCategory ? "default" : "outline"}
+                className={category === activeCategory ? "bg-travel-terracotta hover:bg-travel-teal text-white" : ""}
+                onClick={() => setActiveCategory(category)}
               >
                 {category}
               </Button>
@@ -160,7 +175,7 @@ const Blog = () => {
       <section className="py-16 bg-travel-cream">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post) => (
+            {filteredPosts.map((post) => (
               <BlogPostCard key={post.id} post={post} />
             ))}
           </div>

@@ -19,6 +19,7 @@ import Experiencias from "./pages/Experiencias";
 import ReservarAhora from "./pages/ReservarAhora";
 import Servicios from "./pages/Servicios";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +41,7 @@ const App = () => (
           <Route path="/reservar" element={<ReservarAhora />} />
           <Route path="/servicios" element={<Servicios />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/faq" element={<Faq />} />
