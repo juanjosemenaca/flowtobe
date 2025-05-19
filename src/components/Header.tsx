@@ -48,6 +48,9 @@ const Header = () => {
           <Link to="/servicios" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
             Servicios
           </Link>
+          <Link to="/blog" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
+            Blog
+          </Link>
           <Link to="/about" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
             Sobre Nosotros
           </Link>
@@ -104,6 +107,13 @@ const Header = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Servicios
+            </Link>
+            <Link 
+              to="/blog" 
+              className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Blog
             </Link>
             <Link 
               to="/about" 
