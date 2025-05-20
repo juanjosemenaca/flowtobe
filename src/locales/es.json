@@ -70,6 +70,10 @@
   "destinations": {
     "title": "Nuestros Destinos",
     "subtitle": "Explora los destinos más fascinantes de Asia",
+    "discover": {
+      "title": "Descubre el Encanto de Asia",
+      "description": "Desde los majestuosos Himalayas hasta las playas paradisíacas del sudeste asiático, nuestros destinos ofrecen experiencias inolvidables para todo tipo de viajeros."
+    },
     "exploreButton": "Explorar",
     "viewAllButton": "Ver Todos los Destinos",
     "categories": {
@@ -123,6 +127,10 @@
         "Transporte local: El transporte público varía significativamente entre países; planifica con antelación."
       ],
       "moreInfo": "Más información para viajeros"
+    },
+    "custom": {
+      "description": "¿No encuentras lo que buscas? Contáctanos para diseñar un viaje personalizado a cualquier destino asiático.",
+      "cta": "Consulta Personalizada"
     }
   },
   "experiences": {
