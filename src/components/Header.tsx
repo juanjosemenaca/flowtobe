@@ -134,8 +134,12 @@ const Header = () => {
             >
               {t('nav.contact')}
             </Link>
+            
             <div className="px-2 py-2">
-              <LanguageSelector isScrolled={true} />
+              <LanguageSelector 
+                isScrolled={true} 
+                onLanguageChange={() => setIsMobileMenuOpen(false)}
+              />
             </div>
             <Link 
               to="/booking" 

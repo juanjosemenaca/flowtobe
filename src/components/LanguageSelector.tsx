@@ -1,12 +1,15 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 
 interface LanguageSelectorProps {
   isScrolled: boolean;
+  onLanguageChange?: () => void;
 }
 
-const LanguageSelector: React.FC<LanguageSelectorProps> = ({ isScrolled }) => {
+const LanguageSelector: React.FC<LanguageSelectorProps> = ({ isScrolled, onLanguageChange }) => {
   const { i18n, t } = useTranslation();
+  const navigate = useNavigate();
 
   const languages = [
     { code: 'es', name: 'Español' },
@@ -17,6 +20,10 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ isScrolled }) => {
 
   const handleLanguageChange = (languageCode: string) => {
     i18n.changeLanguage(languageCode);
+    if (onLanguageChange) {
+      onLanguageChange();
+    }
+    navigate('/');
   };
 
   const textColor = isScrolled ? 'text-travel-dark' : 'text-white';
