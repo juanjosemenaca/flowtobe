@@ -75,7 +75,7 @@ const Experiences = () => {
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <Link to="/destinations" className="mb-6 md:mb-0 md:mr-8">
             <Button className="bg-travel-terracotta hover:bg-travel-teal text-white text-lg px-8 py-6">
-              Explorar FLOWTOBALY
+              Explorar FLOW2BALY
             </Button>
           </Link>
           <div>

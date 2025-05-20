@@ -4,6 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import SEO from '@/components/SEO';
 
 const destinationCards = [
   {
@@ -100,6 +101,12 @@ const DestinationCard = ({ name, description, image, link }: {
 const Destinos = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Destinos Asiáticos | FLOW2BALY - Explora Asia"
+        description="Descubre los destinos más fascinantes de Asia: Japón, Tailandia, Vietnam, India, Indonesia, China, Corea del Sur, Myanmar y Malasia. Planifica tu viaje perfecto con FLOW2BALY."
+        keywords="destinos Asia, viajes Japón, turismo Tailandia, Vietnam viajes, India turismo, Indonesia viajes, China turismo, Corea del Sur viajes, Myanmar turismo, Malasia viajes"
+        canonical="/destinations"
+      />
       <Header />
       
       {/* Hero Section */}

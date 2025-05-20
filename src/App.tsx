@@ -1,10 +1,13 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
+import { useEffect } from 'react';
 import { useScrollToTop } from "./hooks/useScrollToTop";
+import { initGA, pageview } from './lib/analytics';
+import { measurePerformance } from './lib/performance';
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
@@ -24,6 +27,12 @@ import BlogPost from "./pages/BlogPost";
 
 const queryClient = new QueryClient();
 
+// Initialize Google Analytics
+initGA();
+
+// Initialize performance monitoring
+measurePerformance();
+
 // ScrollToTop component that uses the hook
 const ScrollToTop = () => {
   useScrollToTop();
@@ -31,6 +40,13 @@ const ScrollToTop = () => {
 };
 
 const AppRoutes = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Track page views
+    pageview(location.pathname + location.search);
+  }, [location]);
+
   return (
     <>
       <ScrollToTop />
@@ -58,15 +74,17 @@ const AppRoutes = () => {
 };
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <AppRoutes />
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <AppRoutes />
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  </HelmetProvider>
 );
 
 export default App;

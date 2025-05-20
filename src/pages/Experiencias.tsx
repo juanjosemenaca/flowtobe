@@ -4,6 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import SEO from '@/components/SEO';
 
 const experienceCategories = [
   {
@@ -105,6 +106,12 @@ const ExperienceCard = ({ title, description, image, color, link }: {
 const Experiencias = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Experiencias Únicas en Asia | FLOW2BALY"
+        description="Descubre experiencias auténticas en Asia: inmersión cultural, viajes espirituales, aventuras culinarias, encuentros con la vida silvestre y más. Vive Asia de una manera única con FLOW2BALY."
+        keywords="experiencias Asia, inmersión cultural Asia, viajes espirituales Asia, aventuras culinarias Asia, vida silvestre Asia, artesanías Asia, retiros bienestar Asia, fotografía Asia"
+        canonical="/experiences"
+      />
       <Header />
       
       {/* Hero Section */}
