@@ -1,13 +1,12 @@
-
 import React, { useState } from 'react';
-import { ArrowRight, Calendar, Users, Clock, MapPin, Info, CreditCard, Phone, Check } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { ArrowRight, Calendar, Users, MapPin, Info, Check } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { useTranslation } from 'react-i18next';
 
 interface FormData {
   firstName: string;
@@ -27,6 +26,7 @@ interface FormData {
 }
 
 const Booking = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [currentStep, setCurrentStep] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -37,7 +37,7 @@ const Booking = () => {
     phone: '',
     destination: '',
     travelDate: '',
-    duration: '7-10 días',
+    duration: t('booking.form.duration.default'),
     travelers: '2',
     specialRequests: '',
     cardName: '',
@@ -73,8 +73,8 @@ const Booking = () => {
     // Simulate form submission
     setTimeout(() => {
       toast({
-        title: "¡Reserva enviada con éxito!",
-        description: "Recibirás una confirmación por email en breve.",
+        title: t('booking.success.title'),
+        description: t('booking.success.description'),
       });
       
       setIsSubmitting(false);
@@ -89,9 +89,9 @@ const Booking = () => {
       {/* Hero Section */}
       <div className="bg-travel-teal text-white pt-32 pb-16">
         <div className="container text-center">
-          <h1 className="text-4xl md:text-5xl font-serif mb-4">Reserva tu Aventura</h1>
+          <h1 className="text-4xl md:text-5xl font-serif mb-4">{t('booking.title')}</h1>
           <p className="text-lg max-w-3xl mx-auto opacity-90">
-            A pocos pasos de vivir una experiencia inolvidable en Asia
+            {t('booking.subtitle')}
           </p>
         </div>
       </div>
@@ -108,41 +108,41 @@ const Booking = () => {
                 }`}>
                   {currentStep > 1 ? <Check size={20} /> : "1"}
                 </div>
-                <span className="ml-2 font-medium">Detalles</span>
+                <span className="ml-2 font-medium">{t('booking.steps.details')}</span>
               </div>
               
               <div className={`w-16 h-1 mx-4 ${currentStep > 1 ? 'bg-travel-terracotta' : 'bg-gray-300'}`}></div>
               
-              <div className={`flex items-center ${currentStep > 2 ? 'text-travel-terracotta' : currentStep === 2 ? 'text-travel-dark' : 'text-gray-400'}`}>
+              <div className={`flex items-center ${currentStep > 2 ? 'text-travel-terracotta' : 'text-travel-dark'}`}>
                 <div className={`w-10 h-10 rounded-full flex items-center justify-center ${
-                  currentStep > 2 ? 'bg-travel-terracotta text-white' : currentStep === 2 ? 'bg-travel-cream text-travel-dark' : 'bg-gray-200 text-gray-400'
+                  currentStep > 2 ? 'bg-travel-terracotta text-white' : 'bg-travel-cream text-travel-dark'
                 }`}>
                   {currentStep > 2 ? <Check size={20} /> : "2"}
                 </div>
-                <span className="ml-2 font-medium">Pago</span>
+                <span className="ml-2 font-medium">{t('booking.steps.payment')}</span>
               </div>
               
               <div className={`w-16 h-1 mx-4 ${currentStep > 2 ? 'bg-travel-terracotta' : 'bg-gray-300'}`}></div>
               
-              <div className={`flex items-center ${currentStep === 3 ? 'text-travel-terracotta' : 'text-gray-400'}`}>
+              <div className={`flex items-center ${currentStep === 3 ? 'text-travel-terracotta' : 'text-travel-dark'}`}>
                 <div className={`w-10 h-10 rounded-full flex items-center justify-center ${
-                  currentStep === 3 ? 'bg-travel-terracotta text-white' : 'bg-gray-200 text-gray-400'
+                  currentStep === 3 ? 'bg-travel-terracotta text-white' : 'bg-travel-cream text-travel-dark'
                 }`}>
-                  {currentStep === 3 ? <Check size={20} /> : "3"}
+                  3
                 </div>
-                <span className="ml-2 font-medium">Confirmación</span>
+                <span className="ml-2 font-medium">{t('booking.steps.confirmation')}</span>
               </div>
             </div>
           </div>
           
-          {/* Step 1: Travel Details */}
+          {/* Step 1: Details */}
           {currentStep === 1 && (
             <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
-              <h2 className="text-3xl font-serif text-travel-dark mb-6">Detalles de Viaje</h2>
+              <h2 className="text-3xl font-serif text-travel-dark mb-6">{t('booking.form.details.title')}</h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div>
-                  <Label htmlFor="firstName">Nombre</Label>
+                  <Label htmlFor="firstName">{t('booking.form.firstName')}</Label>
                   <Input
                     id="firstName"
                     name="firstName"
@@ -154,7 +154,7 @@ const Booking = () => {
                 </div>
                 
                 <div>
-                  <Label htmlFor="lastName">Apellidos</Label>
+                  <Label htmlFor="lastName">{t('booking.form.lastName')}</Label>
                   <Input
                     id="lastName"
                     name="lastName"
@@ -166,7 +166,7 @@ const Booking = () => {
                 </div>
                 
                 <div>
-                  <Label htmlFor="email">Email</Label>
+                  <Label htmlFor="email">{t('booking.form.email')}</Label>
                   <Input
                     id="email"
                     name="email"
@@ -179,7 +179,7 @@ const Booking = () => {
                 </div>
                 
                 <div>
-                  <Label htmlFor="phone">Teléfono</Label>
+                  <Label htmlFor="phone">{t('booking.form.phone')}</Label>
                   <Input
                     id="phone"
                     name="phone"
@@ -191,31 +191,28 @@ const Booking = () => {
                 </div>
               </div>
               
-              <h3 className="text-xl font-serif text-travel-dark mb-4">Información del Viaje</h3>
-              
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div>
-                  <Label htmlFor="destination">Destino</Label>
+                  <Label htmlFor="destination">{t('booking.form.destination')}</Label>
                   <select
                     id="destination"
                     name="destination"
                     value={formData.destination}
                     onChange={handleInputChange}
-                    required
                     className="w-full mt-1 border border-input rounded-md h-10 px-3 py-2"
                   >
-                    <option value="">Selecciona un destino</option>
-                    <option value="japan">Japón</option>
-                    <option value="thailand">Tailandia</option>
-                    <option value="vietnam">Vietnam</option>
-                    <option value="china">China</option>
-                    <option value="india">India</option>
-                    <option value="indonesia">Indonesia</option>
+                    <option value="">{t('booking.form.destination.placeholder')}</option>
+                    <option value="japan">{t('destinations.categories.japan.title')}</option>
+                    <option value="thailand">{t('destinations.categories.thailand.title')}</option>
+                    <option value="vietnam">{t('destinations.categories.vietnam.title')}</option>
+                    <option value="china">{t('destinations.categories.china.title')}</option>
+                    <option value="india">{t('destinations.categories.india.title')}</option>
+                    <option value="indonesia">{t('destinations.categories.indonesia.title')}</option>
                   </select>
                 </div>
                 
                 <div>
-                  <Label htmlFor="travelDate">Fecha de Viaje</Label>
+                  <Label htmlFor="travelDate">{t('booking.form.dates')}</Label>
                   <Input
                     id="travelDate"
                     name="travelDate"
@@ -228,7 +225,7 @@ const Booking = () => {
                 </div>
                 
                 <div>
-                  <Label htmlFor="duration">Duración</Label>
+                  <Label htmlFor="duration">{t('booking.form.duration.label')}</Label>
                   <select
                     id="duration"
                     name="duration"
@@ -236,15 +233,15 @@ const Booking = () => {
                     onChange={handleInputChange}
                     className="w-full mt-1 border border-input rounded-md h-10 px-3 py-2"
                   >
-                    <option value="3-6 días">3-6 días</option>
-                    <option value="7-10 días">7-10 días</option>
-                    <option value="11-14 días">11-14 días</option>
-                    <option value="15+ días">15+ días</option>
+                    <option value="3-6">{t('booking.form.duration.short')}</option>
+                    <option value="7-10">{t('booking.form.duration.medium')}</option>
+                    <option value="11-14">{t('booking.form.duration.long')}</option>
+                    <option value="15+">{t('booking.form.duration.veryLong')}</option>
                   </select>
                 </div>
                 
                 <div>
-                  <Label htmlFor="travelers">Número de Viajeros</Label>
+                  <Label htmlFor="travelers">{t('booking.form.guests')}</Label>
                   <select
                     id="travelers"
                     name="travelers"
@@ -252,18 +249,18 @@ const Booking = () => {
                     onChange={handleInputChange}
                     className="w-full mt-1 border border-input rounded-md h-10 px-3 py-2"
                   >
-                    <option value="1">1 persona</option>
-                    <option value="2">2 personas</option>
-                    <option value="3">3 personas</option>
-                    <option value="4">4 personas</option>
-                    <option value="5">5 personas</option>
-                    <option value="6+">6 o más personas</option>
+                    <option value="1">{t('booking.form.guests.single')}</option>
+                    <option value="2">{t('booking.form.guests.couple')}</option>
+                    <option value="3">{t('booking.form.guests.three')}</option>
+                    <option value="4">{t('booking.form.guests.four')}</option>
+                    <option value="5">{t('booking.form.guests.five')}</option>
+                    <option value="6+">{t('booking.form.guests.more')}</option>
                   </select>
                 </div>
               </div>
               
               <div className="mb-8">
-                <Label htmlFor="specialRequests">Requisitos Especiales o Preferencias</Label>
+                <Label htmlFor="specialRequests">{t('booking.form.notes')}</Label>
                 <textarea
                   id="specialRequests"
                   name="specialRequests"
@@ -271,7 +268,7 @@ const Booking = () => {
                   onChange={handleInputChange}
                   rows={4}
                   className="w-full mt-1 border border-input rounded-md px-3 py-2"
-                  placeholder="Por favor, compártenos cualquier requisito dietético, necesidad de accesibilidad o preferencia especial"
+                  placeholder={t('booking.form.notes.placeholder')}
                 />
               </div>
               
@@ -280,7 +277,7 @@ const Booking = () => {
                   onClick={nextStep} 
                   className="bg-travel-terracotta hover:bg-travel-teal text-white px-8"
                 >
-                  Continuar al Pago <ArrowRight className="ml-2" size={18} />
+                  {t('booking.form.continue')} <ArrowRight className="ml-2" size={18} />
                 </Button>
               </div>
             </div>
@@ -291,11 +288,11 @@ const Booking = () => {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="lg:col-span-2">
                 <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
-                  <h2 className="text-3xl font-serif text-travel-dark mb-6">Información de Pago</h2>
+                  <h2 className="text-3xl font-serif text-travel-dark mb-6">{t('booking.form.payment.title')}</h2>
                   
                   <div className="mb-6">
                     <div className="flex items-center justify-between mb-6">
-                      <h3 className="text-xl font-serif text-travel-dark">Detalles de la Tarjeta</h3>
+                      <h3 className="text-xl font-serif text-travel-dark">{t('booking.form.payment.cardDetails')}</h3>
                       <div className="flex space-x-2">
                         <span className="block w-10 h-6 bg-gray-200 rounded"></span>
                         <span className="block w-10 h-6 bg-gray-200 rounded"></span>
@@ -303,9 +300,9 @@ const Booking = () => {
                       </div>
                     </div>
                     
-                    <div className="grid grid-cols-1 gap-6">
+                    <div className="space-y-6">
                       <div>
-                        <Label htmlFor="cardName">Nombre en la Tarjeta</Label>
+                        <Label htmlFor="cardName">{t('booking.form.payment.cardName')}</Label>
                         <Input
                           id="cardName"
                           name="cardName"
@@ -313,12 +310,12 @@ const Booking = () => {
                           onChange={handleInputChange}
                           required
                           className="mt-1"
-                          placeholder="Como aparece en la tarjeta"
+                          placeholder={t('booking.form.payment.cardNamePlaceholder')}
                         />
                       </div>
                       
                       <div>
-                        <Label htmlFor="cardNumber">Número de Tarjeta</Label>
+                        <Label htmlFor="cardNumber">{t('booking.form.payment.cardNumber')}</Label>
                         <Input
                           id="cardNumber"
                           name="cardNumber"
@@ -326,13 +323,13 @@ const Booking = () => {
                           onChange={handleInputChange}
                           required
                           className="mt-1"
-                          placeholder="XXXX XXXX XXXX XXXX"
+                          placeholder={t('booking.form.payment.cardNumberPlaceholder')}
                         />
                       </div>
                       
-                      <div className="grid grid-cols-2 gap-4">
+                      <div className="grid grid-cols-2 gap-6">
                         <div>
-                          <Label htmlFor="expiryDate">Fecha de Expiración</Label>
+                          <Label htmlFor="expiryDate">{t('booking.form.payment.expiryDate')}</Label>
                           <Input
                             id="expiryDate"
                             name="expiryDate"
@@ -340,22 +337,20 @@ const Booking = () => {
                             onChange={handleInputChange}
                             required
                             className="mt-1"
-                            placeholder="MM/AA"
+                            placeholder={t('booking.form.payment.expiryDatePlaceholder')}
                           />
                         </div>
                         
                         <div>
-                          <Label htmlFor="cvv">Código de Seguridad (CVV)</Label>
+                          <Label htmlFor="cvv">{t('booking.form.payment.cvv')}</Label>
                           <Input
                             id="cvv"
                             name="cvv"
-                            type="password"
                             value={formData.cvv}
                             onChange={handleInputChange}
                             required
                             className="mt-1"
-                            placeholder="XXX"
-                            maxLength={4}
+                            placeholder={t('booking.form.payment.cvvPlaceholder')}
                           />
                         </div>
                       </div>
@@ -374,7 +369,7 @@ const Booking = () => {
                         className="mr-3"
                       />
                       <Label htmlFor="termsAccepted" className="text-sm">
-                        He leído y acepto los <a href="/terms" className="text-travel-terracotta hover:underline">Términos y Condiciones</a> y la <a href="/privacy" className="text-travel-terracotta hover:underline">Política de Privacidad</a>
+                        {t('booking.form.payment.terms')}
                       </Label>
                     </div>
                   </div>
@@ -385,7 +380,7 @@ const Booking = () => {
                       variant="outline" 
                       className="border-travel-teal text-travel-teal hover:bg-travel-teal hover:text-white"
                     >
-                      Volver
+                      {t('booking.form.payment.back')}
                     </Button>
                     
                     <Button 
@@ -393,7 +388,7 @@ const Booking = () => {
                       className="bg-travel-terracotta hover:bg-travel-teal text-white px-8"
                       disabled={isSubmitting || !formData.termsAccepted}
                     >
-                      {isSubmitting ? 'Procesando...' : 'Completar Reserva'}
+                      {isSubmitting ? t('booking.form.payment.processing') : t('booking.form.payment.complete')}
                       {isSubmitting && <span className="animate-spin ml-2">⏳</span>}
                     </Button>
                   </div>
@@ -401,67 +396,26 @@ const Booking = () => {
               </div>
               
               {/* Order Summary */}
-              <div>
-                <div className="bg-travel-cream p-6 rounded-lg sticky top-24">
-                  <h3 className="text-xl font-serif text-travel-dark mb-4">Resumen de Reserva</h3>
+              <div className="lg:col-span-1">
+                <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 sticky top-24">
+                  <h3 className="text-xl font-serif text-travel-dark mb-6">{t('booking.form.summary.title')}</h3>
                   
                   <div className="space-y-4 mb-6">
-                    {formData.destination && (
-                      <div className="flex items-start">
-                        <MapPin size={18} className="text-travel-terracotta mt-1 mr-3 flex-shrink-0" />
-                        <div>
-                          <p className="text-travel-dark font-medium">Destino</p>
-                          <p className="text-travel-sage">
-                            {formData.destination === 'japan' && 'Japón'}
-                            {formData.destination === 'thailand' && 'Tailandia'}
-                            {formData.destination === 'vietnam' && 'Vietnam'}
-                            {formData.destination === 'china' && 'China'}
-                            {formData.destination === 'india' && 'India'}
-                            {formData.destination === 'indonesia' && 'Indonesia'}
-                          </p>
-                        </div>
-                      </div>
-                    )}
-                    
-                    {formData.travelDate && (
-                      <div className="flex items-start">
-                        <Calendar size={18} className="text-travel-terracotta mt-1 mr-3 flex-shrink-0" />
-                        <div>
-                          <p className="text-travel-dark font-medium">Fecha</p>
-                          <p className="text-travel-sage">{formData.travelDate}</p>
-                        </div>
-                      </div>
-                    )}
-                    
-                    <div className="flex items-start">
-                      <Users size={18} className="text-travel-terracotta mt-1 mr-3 flex-shrink-0" />
-                      <div>
-                        <p className="text-travel-dark font-medium">Viajeros</p>
-                        <p className="text-travel-sage">{formData.travelers} personas</p>
-                      </div>
+                    <div className="flex justify-between">
+                      <span className="text-travel-sage">{t('booking.form.summary.subtotal')}</span>
+                      <span className="text-travel-dark">€2,640</span>
                     </div>
                     
-                    <div className="flex items-start">
-                      <Clock size={18} className="text-travel-terracotta mt-1 mr-3 flex-shrink-0" />
-                      <div>
-                        <p className="text-travel-dark font-medium">Duración</p>
-                        <p className="text-travel-sage">{formData.duration}</p>
+                    <div className="flex justify-between">
+                      <span className="text-travel-sage">{t('booking.form.summary.taxes')}</span>
+                      <span className="text-travel-dark">€264</span>
+                    </div>
+                    
+                    <div className="border-t border-gray-200 pt-4">
+                      <div className="flex justify-between font-bold">
+                        <span className="text-travel-dark">{t('booking.form.summary.total')}</span>
+                        <span className="text-travel-terracotta">€2,904</span>
                       </div>
-                    </div>
-                  </div>
-                  
-                  <div className="border-t border-gray-300 pt-4 mb-4">
-                    <div className="flex justify-between mb-2">
-                      <span className="text-travel-sage">Subtotal:</span>
-                      <span className="text-travel-dark">€2,400</span>
-                    </div>
-                    <div className="flex justify-between mb-2">
-                      <span className="text-travel-sage">Impuestos:</span>
-                      <span className="text-travel-dark">€240</span>
-                    </div>
-                    <div className="flex justify-between font-bold text-lg">
-                      <span className="text-travel-dark">Total:</span>
-                      <span className="text-travel-terracotta">€2,640</span>
                     </div>
                   </div>
                   
@@ -469,7 +423,7 @@ const Booking = () => {
                     <div className="flex">
                       <Info size={16} className="text-blue-500 mt-1 mr-2 flex-shrink-0" />
                       <p className="text-blue-800">
-                        Solo se te cobrará un depósito del 20% (€528) ahora. El resto se pagará 30 días antes del viaje.
+                        {t('booking.form.summary.deposit')}
                       </p>
                     </div>
                   </div>
@@ -485,57 +439,44 @@ const Booking = () => {
                 <Check size={40} className="text-green-600" />
               </div>
               
-              <h2 className="text-3xl font-serif text-travel-dark mb-4">¡Reserva Confirmada!</h2>
+              <h2 className="text-3xl font-serif text-travel-dark mb-4">{t('booking.confirmation.title')}</h2>
               
               <p className="text-travel-sage mb-8 max-w-2xl mx-auto">
-                Gracias por reservar con Flow2bali. Hemos enviado un correo electrónico a <span className="font-medium">{formData.email}</span> con los detalles de tu reserva. Uno de nuestros asesores de viaje se pondrá en contacto contigo en las próximas 24 horas.
+                {t('booking.confirmation.description', { email: formData.email })}
               </p>
               
-              <div className="bg-travel-cream p-6 rounded-lg mb-8 max-w-md mx-auto">
-                <h3 className="text-xl font-serif text-travel-dark mb-4">Referencia de Reserva</h3>
+              <div className="bg-gray-50 p-6 rounded-lg inline-block">
+                <h3 className="text-xl font-serif text-travel-dark mb-4">{t('booking.confirmation.reference')}</h3>
                 <p className="text-2xl text-travel-terracotta font-bold mb-4">AV-{Math.floor(100000 + Math.random() * 900000)}</p>
                 
                 <div className="text-left space-y-2 mb-4">
                   <div className="flex justify-between">
-                    <span className="text-travel-sage">Destino:</span>
+                    <span className="text-travel-sage">{t('booking.confirmation.destination')}:</span>
                     <span className="text-travel-dark font-medium">
-                      {formData.destination === 'japan' && 'Japón'}
-                      {formData.destination === 'thailand' && 'Tailandia'}
-                      {formData.destination === 'vietnam' && 'Vietnam'}
-                      {formData.destination === 'china' && 'China'}
-                      {formData.destination === 'india' && 'India'}
-                      {formData.destination === 'indonesia' && 'Indonesia'}
+                      {formData.destination === 'japan' && t('destinations.categories.japan.title')}
+                      {formData.destination === 'thailand' && t('destinations.categories.thailand.title')}
+                      {formData.destination === 'vietnam' && t('destinations.categories.vietnam.title')}
+                      {formData.destination === 'china' && t('destinations.categories.china.title')}
+                      {formData.destination === 'india' && t('destinations.categories.india.title')}
+                      {formData.destination === 'indonesia' && t('destinations.categories.indonesia.title')}
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-travel-sage">Fecha:</span>
+                    <span className="text-travel-sage">{t('booking.confirmation.date')}:</span>
                     <span className="text-travel-dark font-medium">{formData.travelDate}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-travel-sage">Viajeros:</span>
-                    <span className="text-travel-dark font-medium">{formData.travelers} personas</span>
+                    <span className="text-travel-sage">{t('booking.confirmation.travelers')}:</span>
+                    <span className="text-travel-dark font-medium">{formData.travelers} {t('booking.confirmation.people')}</span>
                   </div>
                 </div>
                 
                 <div className="border-t border-gray-300 pt-3">
                   <div className="flex justify-between font-bold">
-                    <span className="text-travel-dark">Depósito pagado:</span>
+                    <span className="text-travel-dark">{t('booking.confirmation.deposit')}:</span>
                     <span className="text-travel-terracotta">€528</span>
                   </div>
                 </div>
-              </div>
-              
-              <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Link to="/">
-                  <Button className="bg-travel-terracotta hover:bg-travel-teal text-white px-8">
-                    Volver a Inicio
-                  </Button>
-                </Link>
-                <Link to="/contact">
-                  <Button variant="outline" className="border-travel-teal text-travel-teal hover:bg-travel-teal hover:text-white px-8">
-                    <Phone size={18} className="mr-2" /> Contactar
-                  </Button>
-                </Link>
               </div>
             </div>
           )}

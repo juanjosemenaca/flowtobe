@@ -1,0 +1,411 @@
+{
+  "nav": {
+    "home": "Home",
+    "destinations": "Destinazioni",
+    "experiences": "Esperienze",
+    "services": "Servizi",
+    "blog": "Blog",
+    "about": "Chi Siamo",
+    "contact": "Contatti",
+    "bookNow": "Prenota Ora"
+  },
+  "common": {
+    "language": "Lingua",
+    "readMore": "Leggi di più",
+    "learnMore": "Scopri di più",
+    "viewAll": "Vedi tutti",
+    "search": "Cerca",
+    "loading": "Caricamento...",
+    "error": "Errore",
+    "success": "Successo",
+    "submit": "Invia",
+    "cancel": "Annulla",
+    "save": "Salva",
+    "delete": "Elimina",
+    "edit": "Modifica",
+    "back": "Indietro",
+    "next": "Avanti",
+    "previous": "Precedente",
+    "email": "Il tuo indirizzo email",
+    "invalidEmail": "Inserisci un indirizzo email valido."
+  },
+  "footer": {
+    "about": "Chi Siamo",
+    "aboutText": "Siamo esperti di viaggi asiatici impegnati a creare esperienze autentiche e memorabili.",
+    "quickLinks": "Link Rapidi",
+    "contact": "Contatti",
+    "address": "Indirizzo",
+    "phone": "Telefono",
+    "email": "Email",
+    "followUs": "Seguici",
+    "newsletter": "Newsletter",
+    "newsletterText": "Iscriviti per ricevere le ultime notizie e offerte",
+    "subscribe": "Iscriviti",
+    "privacy": "Privacy",
+    "terms": "Termini e Condizioni",
+    "copyright": "Tutti i diritti riservati"
+  },
+  "home": {
+    "hero": {
+      "title": "Scopri l'Asia in modo unico",
+      "subtitle": "Esperienze autentiche e memorabili nel continente asiatico",
+      "cta": "Esplora Destinazioni"
+    },
+    "features": {
+      "title": "Perché Sceglierci?",
+      "authentic": {
+        "title": "Esperienze Autentiche",
+        "description": "Vivi la vera essenza dell'Asia con le nostre esperienze curate con cura"
+      },
+      "expert": {
+        "title": "Esperti Locali",
+        "description": "Il nostro team di esperti locali ti guiderà in ogni passo del percorso"
+      },
+      "sustainable": {
+        "title": "Turismo Sostenibile",
+        "description": "Impegnati in pratiche di viaggio responsabili e sostenibili"
+      }
+    }
+  },
+  "destinations": {
+    "title": "Le Nostre Destinazioni",
+    "subtitle": "Esplora le destinazioni più affascinanti dell'Asia",
+    "filter": {
+      "title": "Filtra per",
+      "region": "Regione",
+      "type": "Tipo di viaggio",
+      "duration": "Durata",
+      "price": "Prezzo"
+    },
+    "search": {
+      "placeholder": "Cerca destinazioni...",
+      "noResults": "Nessuna destinazione trovata"
+    },
+    "regions": {
+      "eastAsia": "Asia Orientale",
+      "southeastAsia": "Sud-est Asiatico",
+      "southAsia": "Asia Meridionale",
+      "centralAsia": "Asia Centrale"
+    },
+    "types": {
+      "cultural": "Culturale",
+      "adventure": "Avventura",
+      "beach": "Spiaggia",
+      "mountain": "Montagna",
+      "city": "Città",
+      "rural": "Rurale"
+    },
+    "duration": {
+      "short": "Breve (1-3 giorni)",
+      "medium": "Media (4-7 giorni)",
+      "long": "Lunga (8+ giorni)"
+    },
+    "price": {
+      "budget": "Economico",
+      "moderate": "Moderato",
+      "luxury": "Lusso"
+    },
+    "discover": {
+      "title": "Scopri il Fascino dell'Asia",
+      "description": "Dalle maestose montagne dell'Himalaya alle spiagge paradisiache del sud-est asiatico, le nostre destinazioni offrono esperienze indimenticabili per tutti i tipi di viaggiatori."
+    },
+    "custom": {
+      "description": "Non trovi quello che cerchi? Contattaci per progettare un viaggio personalizzato in qualsiasi destinazione asiatica.",
+      "cta": "Richiesta personalizzata"
+    },
+    "travelTips": {
+      "title": "Consigli per Viaggiare in Asia",
+      "tips": [
+        "Rispetta le usanze locali: Informati sulle norme culturali di ogni paese prima di visitarlo.",
+        "Vaccini e salute: Consulta un medico sulle vaccinazioni raccomandate per ogni destinazione.",
+        "Stagioni: Informati sulle stagioni delle piogge e sui festival importanti che potrebbero influenzare il tuo viaggio.",
+        "Trasporto locale: Il trasporto pubblico varia significativamente tra i paesi; pianifica in anticipo."
+      ],
+      "moreInfo": "Maggiori Informazioni per i Viaggiatori"
+    },
+    "exploreButton": "Esplora",
+    "viewAllButton": "Vedi Tutte le Destinazioni",
+    "categories": {
+      "bali": {
+        "title": "Bali",
+        "description": "Paradiso tropicale con templi e spiagge da sogno"
+      },
+      "thailand": {
+        "title": "Thailandia",
+        "description": "Paradiso tropicale e antichi templi"
+      },
+      "vietnam": {
+        "title": "Vietnam",
+        "description": "Ricca cultura e paesaggi mozzafiato"
+      },
+      "japan": {
+        "title": "Giappone",
+        "description": "Terra di tecnologia e tradizione"
+      }
+    }
+  },
+  "experiences": {
+    "title": "Esperienze Indimenticabili",
+    "subtitle": "Crea ricordi che durano una vita con le nostre esperienze di viaggio selezionate",
+    "exploreButton": "Esplora FLOW2BALY",
+    "viewAllButton": "Tutte le Esperienze",
+    "liveAsia": {
+      "title": "Vivi l'Asia, non solo visitarla",
+      "description": "Le nostre esperienze sono progettate per immergerti profondamente nelle culture, tradizioni e paesaggi dell'Asia. Connettiti con le comunità locali, impara nuove abilità e crea ricordi che dureranno oltre le fotografie."
+    },
+    "categories": {
+      "cultural": {
+        "title": "Immersione Culturale",
+        "description": "Scopri tradizioni locali autentiche"
+      },
+      "spiritual": {
+        "title": "Viaggi Spirituali",
+        "description": "Trova pace in antichi templi"
+      },
+      "culinary": {
+        "title": "Avventure Culinarie",
+        "description": "Assapora autentici sapori asiatici"
+      },
+      "wildlife": {
+        "title": "Incontri con la Fauna Selvatica",
+        "description": "Connettiti con le meraviglie naturali"
+      },
+      "nature": {
+        "title": "Avventure nella Natura",
+        "description": "Esplora montagne, giungle e fiumi"
+      },
+      "arts": {
+        "title": "Arti e Artigianato",
+        "description": "Impara da maestri artigiani locali"
+      },
+      "wellness": {
+        "title": "Ritiri di Benessere",
+        "description": "Riconnettiti con il tuo corpo e la tua mente"
+      },
+      "photography": {
+        "title": "Fotografia e Paesaggi",
+        "description": "Cattura la bellezza scenica dell'Asia"
+      }
+    },
+    "featured": {
+      "title": "Esperienza in Evidenza: Cerimonia del Tè Giapponese",
+      "description": "Immergiti in questa tradizione secolare con maestri del tè a Kyoto. Imparerai i rituali, il simbolismo e la filosofia dietro questa pratica culturale che incarna l'essenza dell'estetica giapponese.",
+      "duration": "Durata: 3 ore",
+      "includes": "Include: Cerimonia completa e degustazione di dolci tradizionali",
+      "location": "Luogo: Tempio storico a Kyoto",
+      "bookButton": "Prenota questa esperienza"
+    },
+    "custom": {
+      "title": "Esperienze Personalizzate",
+      "description": "Non trovi esattamente quello che cerchi? I nostri specialisti possono progettare esperienze personalizzate in base ai tuoi interessi, tempo e budget.",
+      "cta": "Richiedi esperienza personalizzata"
+    }
+  },
+  "services": {
+    "title": "I Nostri Servizi",
+    "subtitle": "Servizi personalizzati per il tuo viaggio perfetto",
+    "hero": {
+      "title": "I Nostri Servizi",
+      "subtitle": "Progettiamo esperienze di viaggio personalizzate che combinano avventura, cultura e relax per creare momenti indimenticabili in Asia."
+    },
+    "features": {
+      "title": "Tutto Quello che Offriamo",
+      "subtitle": "I nostri servizi sono progettati per offrirti un'esperienza completa e senza preoccupazioni"
+    },
+    "cards": {
+      "customized": {
+        "title": "Itinerari Personalizzati",
+        "description": "Creiamo viaggi su misura in base ai tuoi interessi, tempo disponibile e budget. Ogni dettaglio è pensato per te."
+      },
+      "guides": {
+        "title": "Guide Locali Esperte",
+        "description": "Le nostre guide sono native con una vasta conoscenza della cultura, storia e segreti locali di ogni destinazione."
+      },
+      "exclusive": {
+        "title": "Destinazioni Esclusive",
+        "description": "Ti portiamo in luoghi autentici fuori dal circuito turistico tradizionale per vivere esperienze uniche."
+      },
+      "responsible": {
+        "title": "Turismo Responsabile",
+        "description": "Promuoviamo pratiche sostenibili che rispettano le comunità locali e l'ambiente."
+      },
+      "support": {
+        "title": "Assistenza 24/7",
+        "description": "Abbiamo un team disponibile 24 ore su 24 per assisterti in qualsiasi momento del tuo viaggio."
+      },
+      "planning": {
+        "title": "Pianificazione Senza Stress",
+        "description": "Ci occupiamo di tutti i dettagli logistici così che tu debba solo preoccuparti di goderti il viaggio."
+      }
+    },
+    "process": {
+      "title": "Il Nostro Processo",
+      "subtitle": "Rendiamo la pianificazione del tuo viaggio piacevole quanto il viaggio stesso",
+      "steps": {
+        "consultation": {
+          "title": "Consulta Iniziale",
+          "description": "Parliamo delle tue preferenze, interessi e aspettative per il tuo viaggio in Asia."
+        },
+        "proposal": {
+          "title": "Proposta Personalizzata",
+          "description": "Progettiamo un itinerario su misura con opzioni che si adattano ai tuoi desideri."
+        },
+        "adjustment": {
+          "title": "Modifiche e Conferma",
+          "description": "Perfezioniamo i dettagli fino a ottenere il viaggio perfetto e procediamo con la prenotazione."
+        },
+        "support": {
+          "title": "Supporto Durante il Viaggio",
+          "description": "Ti accompagniamo durante tutta l'esperienza con assistenza permanente."
+        }
+      }
+    },
+    "included": {
+      "title": "Cosa Include Ogni Viaggio",
+      "subtitle": "Tutti i nostri pacchetti includono questi servizi di base per garantire un'esperienza completa",
+      "features": [
+        "Sistemazione in hotel selezionati",
+        "Trasporto privato durante tutto il percorso",
+        "Guide locali di lingua italiana",
+        "Ingresso a tutte le attrazioni incluse",
+        "Colazioni e pasti selezionati",
+        "Esperienze esclusive con comunità locali",
+        "Assistenza di viaggio 24/7",
+        "Assicurazione di viaggio base",
+        "Materiale informativo personalizzato",
+        "Consulta pre-viaggio per i preparativi",
+        "Supporto per la gestione dei visti",
+        "Raccomandazioni personalizzate"
+      ]
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Scopri storie, consigli e notizie sui viaggi in Asia",
+    "readMore": "Leggi di più",
+    "categories": "Categorie",
+    "tags": "Tag",
+    "search": "Cerca articoli...",
+    "noResults": "Nessun articolo trovato"
+  },
+  "contact": {
+    "title": "Contatti",
+    "subtitle": "Siamo qui per aiutarti",
+    "form": {
+      "name": "Nome",
+      "email": "Email",
+      "phone": "Telefono",
+      "subject": "Oggetto",
+      "message": "Messaggio",
+      "submit": "Invia messaggio"
+    },
+    "info": {
+      "title": "Informazioni di contatto",
+      "address": "Indirizzo",
+      "phone": "Telefono",
+      "email": "Email",
+      "hours": "Orari di apertura"
+    }
+  },
+  "booking": {
+    "title": "Prenota Ora",
+    "subtitle": "Pianifica il tuo viaggio perfetto",
+    "form": {
+      "destination": "Destinazione",
+      "dates": "Date",
+      "guests": "Numero di viaggiatori",
+      "type": "Tipo di viaggio",
+      "budget": "Budget",
+      "notes": "Note aggiuntive",
+      "submit": "Richiedi prenotazione"
+    }
+  },
+  "faq": {
+    "title": "Domande Frequenti",
+    "subtitle": "Trova risposte alle domande più comuni",
+    "categories": {
+      "general": "Generale",
+      "booking": "Prenotazioni",
+      "payment": "Pagamenti",
+      "travel": "Viaggi"
+    }
+  },
+  "privacy": {
+    "title": "Privacy",
+    "lastUpdated": "Ultimo aggiornamento",
+    "sections": {
+      "data": "Raccolta dati",
+      "usage": "Utilizzo dati",
+      "cookies": "Cookie",
+      "rights": "Diritti utente"
+    }
+  },
+  "terms": {
+    "title": "Termini e Condizioni",
+    "lastUpdated": "Ultimo aggiornamento",
+    "sections": {
+      "general": "Termini generali",
+      "booking": "Condizioni di prenotazione",
+      "cancellation": "Politica di cancellazione",
+      "liability": "Limitazione di responsabilità"
+    }
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "message": "Ci dispiace, la pagina che stai cercando non esiste",
+    "backHome": "Torna alla home"
+  },
+  "about": {
+    "title": "Chi Siamo",
+    "subtitle": "Siamo esperti di viaggi asiatici impegnati a creare esperienze autentiche e memorabili.",
+    "ourStory": {
+      "title": "La Nostra Storia",
+      "paragraph1": "Flow2bali è nata da una semplice passione: condividere l'autentica bellezza dell'Asia con il mondo. Fondata nel 2010 da un gruppo di appassionati viaggiatori ed esperti locali, ci siamo dedicati a creare itinerari che vanno oltre il turismo convenzionale.",
+      "paragraph2": "Dopo più di un decennio di esperienze eccezionali, siamo diventati specialisti nelle destinazioni asiatiche, combinando una profonda conoscenza della cultura locale con un servizio personalizzato di prima classe.",
+      "paragraph3": "Il nostro team multinazionale lavora instancabilmente per garantire che ogni viaggiatore viva l'Asia in modo autentico, sostenibile e trasformativo."
+    },
+    "values": {
+      "title": "I Nostri Valori",
+      "subtitle": "I principi fondamentali che guidano ogni aspetto del nostro servizio e delle nostre operazioni",
+      "passion": {
+        "title": "Passione",
+        "description": "La nostra passione per l'Asia guida tutto ciò che facciamo, dalla pianificazione meticolosa al servizio eccezionale."
+      },
+      "experience": {
+        "title": "Esperienza",
+        "description": "Decenni di esperienza combinata ci permettono di offrire i migliori consigli e soluzioni per ogni viaggiatore."
+      },
+      "sustainability": {
+        "title": "Sostenibilità",
+        "description": "Ci impegniamo a promuovere pratiche di viaggio responsabili che rispettino le comunità locali e l'ambiente."
+      },
+      "community": {
+        "title": "Comunità",
+        "description": "Crediamo nella costruzione di relazioni autentiche con le comunità locali e nell'offrire esperienze che beneficino tutti."
+      }
+    },
+    "team": {
+      "title": "Il Nostro Team",
+      "subtitle": "Conosci gli appassionati esperti dietro ogni viaggio indimenticabile"
+    }
+  },
+  "testimonials": {
+    "title": "Cosa Dicono i Viaggiatori",
+    "subtitle": "Storie vere di viaggiatori che hanno sperimentato la magia dell'Asia con noi",
+    "japan": {
+      "quote": "Il nostro viaggio in Giappone con Flow2bali è stato assolutamente incredibile. Ogni dettaglio è stato perfettamente organizzato e le guide locali hanno reso l'esperienza davvero speciale.",
+      "author": "Sara J.",
+      "location": "Kyoto, Giappone"
+    },
+    "thailand": {
+      "quote": "Il tour delle spiagge della Thailandia ha superato tutte le nostre aspettative. Dalle spiagge incontaminate alla vivace vita notturna, tutto è stato esattamente come promesso e anche di più!",
+      "author": "Michele T.",
+      "location": "Phuket, Thailandia"
+    },
+    "vietnam": {
+      "quote": "La cultura e i paesaggi del Vietnam sono mozzafiato, e Flow2bali ci ha aiutato a esplorarli tutti. I tour gastronomici sono stati qualcosa che non dimenticheremo mai.",
+      "author": "Elena e David",
+      "location": "Hanoi, Vietnam"
+    }
+  }
+} 

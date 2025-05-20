@@ -7,8 +7,11 @@ import { useToast } from "@/components/ui/use-toast";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import emailjs from '@emailjs/browser';
+import { useTranslation } from 'react-i18next';
+import SEO from '@/components/SEO';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
@@ -51,8 +54,8 @@ const Contact = () => {
       );
 
       toast({
-        title: "Mensaje enviado correctamente",
-        description: "Nos pondremos en contacto contigo pronto. ¡Gracias!",
+        title: t('contact.form.success'),
+        description: t('contact.form.successMessage'),
       });
       
       setFormData({
@@ -63,8 +66,8 @@ const Contact = () => {
       });
     } catch (error) {
       toast({
-        title: "Error al enviar el mensaje",
-        description: "Por favor, intenta de nuevo más tarde.",
+        title: t('contact.form.error'),
+        description: t('contact.form.errorMessage'),
         variant: "destructive",
       });
     } finally {
@@ -74,6 +77,12 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title={t('contact.title')}
+        description={t('contact.subtitle')}
+        keywords="contacto, Flow2bali, viajes Asia, consultas viajes"
+        canonical="/contact"
+      />
       <Header />
       
       {/* Hero Section */}
@@ -81,10 +90,10 @@ const Contact = () => {
         <div className="container text-center flex flex-col items-center justify-center">
           <div className="flex items-center justify-center mb-4">
             <img src="/logo.jfif" alt="Flow2Bali Logo" className="h-20 w-20 rounded-full object-cover mr-4" />
-            <h1 className="text-4xl md:text-5xl font-serif">Contacto</h1>
+            <h1 className="text-4xl md:text-5xl font-serif">{t('contact.title')}</h1>
           </div>
           <p className="text-lg max-w-3xl mx-auto opacity-90">
-            Estamos aquí para responder a todas tus preguntas y ayudarte a planificar tu próxima aventura en Asia.
+            {t('contact.subtitle')}
           </p>
         </div>
       </div>
@@ -94,7 +103,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-serif text-travel-dark mb-8">Información de Contacto</h2>
+              <h2 className="text-3xl font-serif text-travel-dark mb-8">{t('contact.info.title')}</h2>
               
               <div className="space-y-8">
                 <div className="flex items-start">
@@ -102,7 +111,7 @@ const Contact = () => {
                     <MapPin size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-serif text-travel-dark mb-2">Dirección</h3>
+                    <h3 className="text-xl font-serif text-travel-dark mb-2">{t('contact.info.address')}</h3>
                     <p className="text-travel-sage">123 Calle Viajera, Singapur 123456</p>
                   </div>
                 </div>
@@ -112,7 +121,7 @@ const Contact = () => {
                     <Phone size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-serif text-travel-dark mb-2">Teléfono</h3>
+                    <h3 className="text-xl font-serif text-travel-dark mb-2">{t('contact.info.phone')}</h3>
                     <p className="text-travel-sage">+65 1234 5678</p>
                   </div>
                 </div>
@@ -122,14 +131,14 @@ const Contact = () => {
                     <Mail size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-serif text-travel-dark mb-2">Email</h3>
+                    <h3 className="text-xl font-serif text-travel-dark mb-2">{t('contact.info.email')}</h3>
                     <p className="text-travel-sage">info@Flow2bali.com</p>
                   </div>
                 </div>
               </div>
               
-              <div className="mt-12">
-                <h3 className="text-xl font-serif text-travel-dark mb-4">Horario de Oficina</h3>
+              <div className="mt-8">
+                <h3 className="text-xl font-serif text-travel-dark mb-4">{t('contact.info.hours')}</h3>
                 <div className="space-y-2 text-travel-sage">
                   <p>Lunes - Viernes: 9:00 AM - 6:00 PM</p>
                   <p>Sábado: 10:00 AM - 2:00 PM</p>
@@ -140,11 +149,11 @@ const Contact = () => {
             
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-serif text-travel-dark mb-8">Envíanos un Mensaje</h2>
+              <h2 className="text-3xl font-serif text-travel-dark mb-8">{t('contact.form.title')}</h2>
               
               <form onSubmit={handleSubmit} className="space-y-6" ref={formRef}>
                 <div>
-                  <Label htmlFor="name">Nombre Completo</Label>
+                  <Label htmlFor="name">{t('contact.form.name')}</Label>
                   <Input 
                     id="name"
                     name="name"
@@ -156,7 +165,7 @@ const Contact = () => {
                 </div>
                 
                 <div>
-                  <Label htmlFor="email">Correo Electrónico</Label>
+                  <Label htmlFor="email">{t('contact.form.email')}</Label>
                   <Input 
                     id="email"
                     name="email"
@@ -169,7 +178,7 @@ const Contact = () => {
                 </div>
                 
                 <div>
-                  <Label htmlFor="subject">Asunto</Label>
+                  <Label htmlFor="subject">{t('contact.form.subject')}</Label>
                   <Input 
                     id="subject"
                     name="subject"
@@ -181,7 +190,7 @@ const Contact = () => {
                 </div>
                 
                 <div>
-                  <Label htmlFor="message">Mensaje</Label>
+                  <Label htmlFor="message">{t('contact.form.message')}</Label>
                   <textarea
                     id="message"
                     name="message"
@@ -198,7 +207,7 @@ const Contact = () => {
                   className="w-full bg-travel-terracotta hover:bg-travel-teal text-white"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? 'Enviando...' : 'Enviar Mensaje'}
+                  {isSubmitting ? t('common.loading') : t('contact.form.submit')}
                   {isSubmitting && <span className="animate-spin ml-2">⏳</span>}
                 </Button>
               </form>

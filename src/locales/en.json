@@ -1,0 +1,476 @@
+{
+  "nav": {
+    "home": "Home",
+    "destinations": "Destinations",
+    "experiences": "Experiences",
+    "services": "Services",
+    "blog": "Blog",
+    "about": "About Us",
+    "contact": "Contact",
+    "bookNow": "Book Now"
+  },
+  "common": {
+    "language": "Language",
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "search": "Search",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "email": "Your email address",
+    "invalidEmail": "Please enter a valid email address."
+  },
+  "footer": {
+    "about": "About Us",
+    "aboutText": "We are Asian travel experts committed to creating authentic and memorable experiences.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "followUs": "Follow Us",
+    "newsletter": "Newsletter",
+    "newsletterText": "Subscribe to receive the latest news and offers",
+    "subscribe": "Subscribe",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "copyright": "All rights reserved"
+  },
+  "home": {
+    "hero": {
+      "title": "Discover Asia in a Unique Way",
+      "subtitle": "Authentic and memorable experiences in the Asian continent",
+      "cta": "Explore Destinations"
+    },
+    "features": {
+      "title": "Why Choose Us?",
+      "authentic": {
+        "title": "Authentic Experiences",
+        "description": "Experience the true essence of Asia with our carefully curated experiences"
+      },
+      "expert": {
+        "title": "Local Experts",
+        "description": "Our team of local experts will guide you every step of the way"
+      },
+      "sustainable": {
+        "title": "Sustainable Tourism",
+        "description": "Committed to responsible and sustainable travel practices"
+      }
+    }
+  },
+  "destinations": {
+    "title": "Our Destinations",
+    "subtitle": "Explore the most fascinating destinations in Asia",
+    "discover": {
+      "title": "Discover the Charm of Asia",
+      "description": "From the majestic Himalayas to the paradise beaches of Southeast Asia, our destinations offer unforgettable experiences for all types of travelers."
+    },
+    "custom": {
+      "description": "Can't find what you're looking for? Contact us to design a customized trip to any Asian destination.",
+      "cta": "Custom Consultation"
+    },
+    "travelTips": {
+      "title": "Travel Tips for Asia",
+      "tips": [
+        "Respect local customs: Research cultural norms of each country before visiting.",
+        "Vaccines and health: Consult with a doctor about recommended vaccines for each destination.",
+        "Seasons: Learn about rainy seasons and important festivals that may affect your trip.",
+        "Local transportation: Public transportation varies significantly between countries; plan ahead."
+      ],
+      "moreInfo": "More Information for Travelers"
+    },
+    "exploreButton": "Explore",
+    "viewAllButton": "View All Destinations",
+    "categories": {
+      "bali": {
+        "title": "Bali",
+        "description": "Tropical paradise with temples and dream beaches"
+      },
+      "thailand": {
+        "title": "Thailand",
+        "description": "Tropical paradise and ancient temples"
+      },
+      "vietnam": {
+        "title": "Vietnam",
+        "description": "Rich culture and stunning landscapes"
+      },
+      "india": {
+        "title": "India",
+        "description": "Vibrant cultures and spiritual journeys"
+      },
+      "indonesia": {
+        "title": "Indonesia",
+        "description": "Stunning islands and diverse wildlife"
+      },
+      "china": {
+        "title": "China",
+        "description": "Ancient history and modern wonders"
+      },
+      "korea": {
+        "title": "South Korea",
+        "description": "Modernity and ancestral traditions"
+      },
+      "myanmar": {
+        "title": "Myanmar",
+        "description": "The land of golden pagodas"
+      },
+      "malaysia": {
+        "title": "Malaysia",
+        "description": "Mix of cultures and tropical rainforests"
+      },
+      "japan": {
+        "title": "Japan",
+        "description": "Land of technology and tradition"
+      }
+    }
+  },
+  "experiences": {
+    "title": "Unforgettable Experiences",
+    "subtitle": "Create memories that last a lifetime with our curated travel experiences",
+    "exploreButton": "Explore FLOW2BALY",
+    "viewAllButton": "All Experiences",
+    "categories": {
+      "cultural": {
+        "title": "Cultural Immersion",
+        "description": "Discover authentic local traditions"
+      },
+      "spiritual": {
+        "title": "Spiritual Journeys",
+        "description": "Find peace in ancient temples"
+      },
+      "culinary": {
+        "title": "Culinary Adventures",
+        "description": "Savor authentic Asian flavors"
+      },
+      "wildlife": {
+        "title": "Wildlife Encounters",
+        "description": "Connect with natural wonders"
+      }
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Personalized services for your perfect trip",
+    "hero": {
+      "title": "Our Services",
+      "subtitle": "We design personalized travel experiences that combine adventure, culture, and relaxation to create unforgettable moments in Asia."
+    },
+    "features": {
+      "title": "Everything We Offer",
+      "subtitle": "Our services are designed to provide you with a complete and worry-free experience"
+    },
+    "cards": {
+      "customized": {
+        "title": "Customized Itineraries",
+        "description": "We create tailor-made trips based on your interests, available time, and budget. Every detail is thought out for you."
+      },
+      "guides": {
+        "title": "Expert Local Guides",
+        "description": "Our guides are natives with extensive knowledge of the culture, history, and local secrets of each destination."
+      },
+      "exclusive": {
+        "title": "Exclusive Destinations",
+        "description": "We take you to authentic places off the traditional tourist circuit to experience unique moments."
+      },
+      "responsible": {
+        "title": "Responsible Tourism",
+        "description": "We promote sustainable practices that respect local communities and the environment."
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "We have a team available 24 hours a day to assist you at any time during your trip."
+      },
+      "planning": {
+        "title": "Stress-Free Planning",
+        "description": "We take care of all logistical details so you only need to worry about enjoying yourself."
+      }
+    },
+    "process": {
+      "title": "Our Process",
+      "subtitle": "We make planning your trip as enjoyable as the trip itself",
+      "steps": {
+        "consultation": {
+          "title": "Initial Consultation",
+          "description": "We discuss your preferences, interests, and expectations for your trip to Asia."
+        },
+        "proposal": {
+          "title": "Customized Proposal",
+          "description": "We design a tailor-made itinerary with options that match your desires."
+        },
+        "adjustment": {
+          "title": "Adjustments and Confirmation",
+          "description": "We refine the details until we achieve the perfect trip and proceed with the booking."
+        },
+        "support": {
+          "title": "Travel Support",
+          "description": "We accompany you throughout the experience with permanent assistance."
+        }
+      }
+    },
+    "included": {
+      "title": "What's Included in Every Trip",
+      "subtitle": "All our packages include these basic services to ensure a complete experience",
+      "features": [
+        "Accommodation in selected hotels",
+        "Private transportation throughout the journey",
+        "Spanish-speaking local guides",
+        "Entrance to all included attractions",
+        "Breakfasts and selected meals",
+        "Exclusive experiences with local communities",
+        "24/7 travel assistance",
+        "Basic travel insurance",
+        "Personalized information material",
+        "Pre-trip consultation for preparations",
+        "Visa management support",
+        "Personalized recommendations"
+      ]
+    }
+  },
+  "blog": {
+    "title": "Travel Blog",
+    "subtitle": "Stories, tips and guides to inspire your next Asian adventure",
+    "categories": {
+      "all": "All",
+      "beaches": "Beaches",
+      "culture": "Culture",
+      "gastronomy": "Gastronomy",
+      "adventure": "Adventure",
+      "tips": "Tips",
+      "accommodation": "Accommodation"
+    },
+    "posts": {
+      "readMore": "Read more",
+      "author": "Author",
+      "date": "Date",
+      "comments": "Comments"
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We're here to help",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send message"
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Business hours"
+    }
+  },
+  "booking": {
+    "title": "Book Your Adventure",
+    "subtitle": "Just a few steps away from an unforgettable experience in Asia",
+    "steps": {
+      "details": "Details",
+      "payment": "Payment",
+      "confirmation": "Confirmation"
+    },
+    "form": {
+      "details": {
+        "title": "Travel Details",
+        "subTitle": "Trip Information"
+      },
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "destination": "Destination",
+      "destination": {
+        "placeholder": "Select a destination"
+      },
+      "dates": "Travel Date",
+      "duration": {
+        "label": "Duration",
+        "default": "7-10",
+        "short": "3-6 days",
+        "medium": "7-10 days",
+        "long": "11-14 days",
+        "veryLong": "15+ days"
+      },
+      "guests": "Number of Travelers",
+      "guests": {
+        "single": "1 person",
+        "couple": "2 people",
+        "three": "3 people",
+        "four": "4 people",
+        "five": "5 people",
+        "more": "6+ people"
+      },
+      "notes": "Special Requirements",
+      "notes": {
+        "placeholder": "Please share any dietary requirements, accessibility needs, or special preferences"
+      },
+      "continue": "Continue to Payment",
+      "payment": {
+        "title": "Payment Information",
+        "cardDetails": "Card Details",
+        "cardName": "Name on Card",
+        "cardNamePlaceholder": "As it appears on the card",
+        "cardNumber": "Card Number",
+        "cardNumberPlaceholder": "XXXX XXXX XXXX XXXX",
+        "expiryDate": "Expiry Date",
+        "expiryDatePlaceholder": "MM/YY",
+        "cvv": "Security Code (CVV)",
+        "cvvPlaceholder": "XXX",
+        "terms": "I have read and agree to the Terms and Conditions and Privacy Policy",
+        "back": "Back",
+        "processing": "Processing...",
+        "complete": "Complete Booking"
+      },
+      "summary": {
+        "title": "Booking Summary",
+        "subtotal": "Subtotal",
+        "taxes": "Taxes",
+        "total": "Total",
+        "deposit": "You will only be charged a 20% deposit (€528) now. The remainder will be due 30 days before your trip."
+      },
+      "whyChooseUs": {
+        "title": "Why Book with Us?",
+        "item1": "Local experts in Asian destinations",
+        "item2": "Customized itineraries at your pace",
+        "item3": "24/7 assistance throughout your journey",
+        "item4": "Authentic experiences away from mass tourism",
+        "note": "When you submit your request, a travel advisor will contact you within 24 hours.",
+        "customizedAttention": "Personalized Attention",
+        "customizedAttentionDescription": "We're not a mass travel agency. We create unique experiences tailored to your interests and needs."
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "item1": {
+          "question": "How long does it take to confirm my booking?",
+          "answer": "We typically contact you within 24 hours to discuss your trip details and begin planning."
+        },
+        "item2": {
+          "question": "Do I need to pay anything upfront?",
+          "answer": "No, the initial consultation is free. A deposit will only be required after you've approved your personalized itinerary to secure the booking."
+        },
+        "item3": {
+          "question": "Can I modify my itinerary later?",
+          "answer": "Yes, we understand that plans can change. We'll work with you to adapt the itinerary according to your needs, whenever possible."
+        }
+      }
+    },
+    "success": {
+      "title": "Booking Sent Successfully!",
+      "description": "You will receive a confirmation email shortly."
+    },
+    "confirmation": {
+      "title": "Booking Confirmed!",
+      "description": "Thank you for booking with Flow2bali. We have sent an email to {{email}} with your booking details. One of our travel advisors will contact you within the next 24 hours.",
+      "reference": "Booking Reference",
+      "destination": "Destination",
+      "date": "Date",
+      "travelers": "Travelers",
+      "people": "people",
+      "deposit": "Deposit paid"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to the most common questions",
+    "categories": {
+      "general": "General",
+      "booking": "Booking",
+      "payment": "Payment",
+      "travel": "Travel"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated",
+    "sections": {
+      "data": "Data collection",
+      "usage": "Data usage",
+      "cookies": "Cookies",
+      "rights": "User rights"
+    }
+  },
+  "terms": {
+    "title": "Terms & Conditions",
+    "lastUpdated": "Last updated",
+    "sections": {
+      "general": "General terms",
+      "booking": "Booking conditions",
+      "cancellation": "Cancellation policy",
+      "liability": "Liability limitation"
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "message": "Sorry, the page you're looking for doesn't exist",
+    "backHome": "Back to home"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "We are Asian travel experts committed to creating authentic and memorable experiences.",
+    "ourStory": {
+      "title": "Our Story",
+      "paragraph1": "Flow2bali started with a simple passion: sharing the authentic beauty of Asia with the world. Founded in 2010 by a group of travel enthusiasts and local experts, we have dedicated ourselves to creating itineraries that go beyond conventional tourism.",
+      "paragraph2": "After more than a decade of offering exceptional experiences, we have become specialists in Asian destinations, combining deep knowledge of local culture with first-class personalized service.",
+      "paragraph3": "Our multinational team works tirelessly to ensure that every traveler experiences Asia in an authentic, sustainable, and transformative way."
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "The fundamental principles that guide every aspect of our service and operations",
+      "passion": {
+        "title": "Passion",
+        "description": "Our passion for Asia drives everything we do, from meticulous planning to exceptional service."
+      },
+      "experience": {
+        "title": "Experience",
+        "description": "Decades of combined experience allow us to offer the best advice and solutions for each traveler."
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "We are committed to promoting responsible travel practices that respect local communities and the environment."
+      },
+      "community": {
+        "title": "Community",
+        "description": "We believe in building authentic relationships with local communities and offering experiences that benefit everyone."
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "Meet the passionate experts behind each unforgettable journey"
+    }
+  },
+  "testimonials": {
+    "title": "What Our Travelers Say",
+    "subtitle": "Real stories from travelers who experienced the magic of Asia with us",
+    "japan": {
+      "quote": "Our trip to Japan with Flow2bali was absolutely incredible. Every detail was perfectly organized, and the local guides truly made the experience special.",
+      "author": "Sarah J.",
+      "location": "Kyoto, Japan"
+    },
+    "thailand": {
+      "quote": "The tour of Thailand's beaches exceeded all our expectations. From pristine beaches to vibrant nightlife, everything was just as promised and more!",
+      "author": "Michael T.",
+      "location": "Phuket, Thailand"
+    },
+    "vietnam": {
+      "quote": "The culture and landscapes of Vietnam are breathtaking, and Flow2bali helped us explore it all. The food tours were something we'll never forget.",
+      "author": "Elena & David",
+      "location": "Hanoi, Vietnam"
+    }
+  }
+} 

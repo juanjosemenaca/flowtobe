@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const heroImages = [
   { url: "/rotating/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai.jpg" },
@@ -12,6 +13,8 @@ const heroImages = [
 ];
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     // Preload the first image
     const img = new Image();
@@ -41,20 +44,20 @@ const Hero = () => {
         <div className="container mx-auto px-4 text-center sm:text-left">
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-serif font-bold mb-4 animate-fade-up" style={{animationDelay: '0.2s'}}>
-              Descubre las Maravillas de Asia
+              {t('home.hero.title')}
             </h1>
             <p className="text-xl md:text-2xl text-white mb-8 opacity-90 animate-fade-up" style={{animationDelay: '0.4s'}}>
-              Explora templos antiguos, ciudades bulliciosas y playas vírgenes en los diversos paisajes de Asia
+              {t('home.hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-center sm:justify-start animate-fade-up" style={{animationDelay: '0.6s'}}>
               <Link to="/destinations">
                 <Button className="bg-travel-terracotta hover:bg-travel-teal text-white text-lg px-8 py-6">
-                  Explorar Destinos
+                  {t('home.hero.cta')}
                 </Button>
               </Link>
               <Link to="/experiences">
                 <Button variant="white" className="w-56 text-lg px-6 py-6 mx-auto sm:mx-0">
-                  Planifica Tu Viaje <ArrowRight className="ml-2" />
+                  {t('nav.experiences')} <ArrowRight className="ml-2" />
                 </Button>
               </Link>
             </div>

@@ -1,22 +1,23 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Users, Compass, Globe, HeartHandshake, Shield, Clock } from 'lucide-react';
 import Newsletter from '@/components/Newsletter';
+import { useTranslation } from 'react-i18next';
 
 const ServicesHero = () => {
+  const { t } = useTranslation();
   return (
     <section className="relative pt-24 pb-20 bg-travel-teal">
       <div className="absolute inset-0 bg-travel-teal opacity-90"></div>
       <div className="container relative z-10">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6">
-            Nuestros Servicios
+            {t('services.hero.title')}
           </h1>
           <p className="text-white/90 text-lg md:text-xl">
-            Diseñamos experiencias de viaje personalizadas que combinan aventura, cultura y relax para crear momentos inolvidables en Asia.
+            {t('services.hero.subtitle')}
           </p>
         </div>
       </div>
@@ -46,49 +47,50 @@ const ServiceCard = ({
   );
 };
 
-const services = [
-  {
-    icon: Compass,
-    title: "Itinerarios Personalizados",
-    description: "Creamos viajes a medida según tus intereses, tiempo disponible y presupuesto. Cada detalle está pensado para ti."
-  },
-  {
-    icon: Users,
-    title: "Guías Locales Expertos",
-    description: "Nuestros guías son nativos con amplio conocimiento de la cultura, historia y secretos locales de cada destino."
-  },
-  {
-    icon: Globe,
-    title: "Destinos Exclusivos",
-    description: "Te llevamos a lugares auténticos fuera del circuito turístico tradicional para vivir experiencias únicas."
-  },
-  {
-    icon: HeartHandshake,
-    title: "Turismo Responsable",
-    description: "Promovemos prácticas sostenibles que respetan las comunidades locales y el medio ambiente."
-  },
-  {
-    icon: Shield,
-    title: "Asistencia 24/7",
-    description: "Contamos con un equipo disponible las 24 horas para asistirte en cualquier momento de tu viaje."
-  },
-  {
-    icon: Clock,
-    title: "Planificación Sin Estrés",
-    description: "Nos encargamos de todos los detalles logísticos para que solo te preocupes por disfrutar."
-  }
-];
-
 const ServiceFeatures = () => {
+  const { t } = useTranslation();
+  const services = [
+    {
+      icon: Compass,
+      title: t('services.cards.customized.title'),
+      description: t('services.cards.customized.description')
+    },
+    {
+      icon: Users,
+      title: t('services.cards.guides.title'),
+      description: t('services.cards.guides.description')
+    },
+    {
+      icon: Globe,
+      title: t('services.cards.exclusive.title'),
+      description: t('services.cards.exclusive.description')
+    },
+    {
+      icon: HeartHandshake,
+      title: t('services.cards.responsible.title'),
+      description: t('services.cards.responsible.description')
+    },
+    {
+      icon: Shield,
+      title: t('services.cards.support.title'),
+      description: t('services.cards.support.description')
+    },
+    {
+      icon: Clock,
+      title: t('services.cards.planning.title'),
+      description: t('services.cards.planning.description')
+    }
+  ];
+
   return (
     <section className="py-16">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif text-travel-dark mb-4">
-            Todo lo que Ofrecemos
+            {t('services.features.title')}
           </h2>
           <p className="text-travel-sage text-lg max-w-2xl mx-auto">
-            Nuestros servicios están diseñados para brindarte una experiencia completa y sin preocupaciones
+            {t('services.features.subtitle')}
           </p>
         </div>
         
@@ -108,26 +110,27 @@ const ServiceFeatures = () => {
 };
 
 const ServiceProcess = () => {
+  const { t } = useTranslation();
   const steps = [
     {
       number: 1,
-      title: "Consulta Inicial",
-      description: "Conversamos sobre tus preferencias, intereses y expectativas para tu viaje a Asia."
+      title: t('services.process.steps.consultation.title'),
+      description: t('services.process.steps.consultation.description')
     },
     {
       number: 2,
-      title: "Propuesta Personalizada",
-      description: "Diseñamos un itinerario a medida con opciones que se ajusten a tus deseos."
+      title: t('services.process.steps.proposal.title'),
+      description: t('services.process.steps.proposal.description')
     },
     {
       number: 3,
-      title: "Ajustes y Confirmación",
-      description: "Refinamos los detalles hasta obtener el viaje perfecto y procedemos con la reserva."
+      title: t('services.process.steps.adjustment.title'),
+      description: t('services.process.steps.adjustment.description')
     },
     {
       number: 4,
-      title: "Soporte Durante el Viaje",
-      description: "Te acompañamos durante toda la experiencia con asistencia permanente."
+      title: t('services.process.steps.support.title'),
+      description: t('services.process.steps.support.description')
     }
   ];
   
@@ -136,10 +139,10 @@ const ServiceProcess = () => {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif text-travel-dark mb-4">
-            Nuestro Proceso
+            {t('services.process.title')}
           </h2>
           <p className="text-travel-sage text-lg max-w-2xl mx-auto">
-            Hacemos que planificar tu viaje sea tan placentero como el viaje mismo
+            {t('services.process.subtitle')}
           </p>
         </div>
         
@@ -160,35 +163,22 @@ const ServiceProcess = () => {
 };
 
 const IncludedFeatures = () => {
-  const features = [
-    "Alojamiento en hoteles seleccionados",
-    "Transporte privado durante todo el recorrido",
-    "Guías locales de habla hispana",
-    "Entradas a todas las atracciones incluidas",
-    "Desayunos y comidas seleccionadas",
-    "Experiencias exclusivas con comunidades locales",
-    "Asistencia de viaje 24/7",
-    "Seguro de viaje básico",
-    "Material informativo personalizado",
-    "Consulta pre-viaje para preparativos",
-    "Soporte para gestión de visados",
-    "Recomendaciones personalizadas"
-  ];
+  const { t } = useTranslation();
   
   return (
     <section className="py-16">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif text-travel-dark mb-4">
-            Lo Que Incluye Cada Viaje
+            {t('services.included.title')}
           </h2>
           <p className="text-travel-sage text-lg max-w-2xl mx-auto">
-            Todos nuestros paquetes incluyen estos servicios básicos para garantizar una experiencia completa
+            {t('services.included.subtitle')}
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          {features.map((feature, index) => (
+          {t('services.included.features', { returnObjects: true }).map((feature: string, index: number) => (
             <div key={index} className="flex items-start">
               <Check className="text-travel-terracotta mr-3 mt-1 flex-shrink-0" />
               <span className="text-travel-dark">{feature}</span>

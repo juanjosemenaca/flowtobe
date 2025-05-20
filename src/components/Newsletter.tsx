@@ -1,13 +1,14 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/hooks/use-toast';
+import { useTranslation } from 'react-i18next';
 
 const Newsletter = () => {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+  const { t } = useTranslation();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -15,8 +16,8 @@ const Newsletter = () => {
     // Simple validation
     if (!email || !email.includes('@')) {
       toast({
-        title: "Email inválido",
-        description: "Por favor ingrese una dirección de correo electrónico válida.",
+        title: t('common.error'),
+        description: t('common.invalidEmail'),
         variant: "destructive",
       });
       return;
@@ -27,8 +28,8 @@ const Newsletter = () => {
     // Simulate API call
     setTimeout(() => {
       toast({
-        title: "¡Éxito!",
-        description: "Te has suscrito correctamente a nuestro boletín.",
+        title: t('common.success'),
+        description: t('newsletter.successMessage'),
       });
       setEmail('');
       setIsSubmitting(false);
@@ -39,15 +40,15 @@ const Newsletter = () => {
     <section className="bg-travel-teal py-16 text-white">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-serif mb-4">Inspírate Para Tu Próximo Viaje</h2>
+          <h2 className="text-3xl md:text-4xl font-serif mb-4">{t('footer.newsletter')}</h2>
           <p className="text-lg opacity-90 mb-8">
-            Suscríbete a nuestro boletín para recibir consejos de viaje, ofertas exclusivas e inspiración de destinos
+            {t('footer.newsletterText')}
           </p>
           
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
             <Input
               type="email"
-              placeholder="Tu dirección de correo electrónico"
+              placeholder={t('common.email')}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="bg-white text-travel-dark placeholder:text-travel-sage"
@@ -58,12 +59,12 @@ const Newsletter = () => {
               disabled={isSubmitting}
               className="bg-travel-terracotta hover:bg-travel-gold text-white"
             >
-              {isSubmitting ? "Suscribiendo..." : "Suscribirse"}
+              {isSubmitting ? t('common.loading') : t('footer.subscribe')}
             </Button>
           </form>
           
           <p className="text-sm opacity-80 mt-6">
-            Al suscribirte, aceptas nuestra Política de Privacidad y consientes recibir correos relacionados con viajes.
+            {t('newsletter.privacyNotice')}
           </p>
         </div>
       </div>

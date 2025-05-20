@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, User, MessageSquare } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import SEO from '@/components/SEO';
 import { 
   Pagination, 
   PaginationContent, 
@@ -24,7 +26,7 @@ const blogPosts = [
     author: "María González",
     date: "15 mayo 2025",
     comments: 24,
-    category: "playas",
+    category: "beaches",
     slug: "las-10-playas-mas-impresionantes-de-bali"
   },
   {
@@ -35,7 +37,7 @@ const blogPosts = [
     author: "Carlos Martínez",
     date: "3 mayo 2025",
     comments: 18,
-    category: "cultura",
+    category: "culture",
     slug: "guia-completa-templos-angkor-wat"
   },
   {
@@ -46,7 +48,7 @@ const blogPosts = [
     author: "Laura Sánchez",
     date: "28 abril 2025",
     comments: 32,
-    category: "gastronomía",
+    category: "gastronomy",
     slug: "comida-callejera-bangkok"
   },
   {
@@ -57,7 +59,7 @@ const blogPosts = [
     author: "Javier López",
     date: "15 abril 2025",
     comments: 15,
-    category: "aventura",
+    category: "adventure",
     slug: "trekkings-norte-vietnam"
   },
   {
@@ -68,7 +70,7 @@ const blogPosts = [
     author: "Ana Rodríguez",
     date: "2 abril 2025",
     comments: 41,
-    category: "consejos",
+    category: "tips",
     slug: "guia-viajar-japon-floracion-cerezos"
   },
   {
@@ -79,17 +81,19 @@ const blogPosts = [
     author: "Elena Torres",
     date: "25 marzo 2025",
     comments: 29,
-    category: "alojamiento",
+    category: "accommodation",
     slug: "hoteles-piscina-infinita-asia"
   }
 ];
 
 // Categories for filtering
 const categories = [
-  "Todos", "Playas", "Cultura", "Gastronomía", "Aventura", "Consejos", "Alojamiento"
+  "all", "beaches", "culture", "gastronomy", "adventure", "tips", "accommodation"
 ];
 
 const BlogPostCard = ({ post }: { post: typeof blogPosts[0] }) => {
+  const { t } = useTranslation();
+  
   return (
     <Card className="overflow-hidden transition-all hover:shadow-lg">
       <Link to={`/blog/${post.slug}`}>
@@ -103,7 +107,7 @@ const BlogPostCard = ({ post }: { post: typeof blogPosts[0] }) => {
         <CardContent className="pt-6">
           <div className="mb-3">
             <span className="inline-block px-3 py-1 text-xs text-white bg-travel-terracotta rounded-full capitalize">
-              {post.category}
+              {t(`blog.categories.${post.category}`)}
             </span>
           </div>
           <h3 className="text-xl font-serif mb-3 text-travel-dark hover:text-travel-terracotta transition-colors">
@@ -116,14 +120,14 @@ const BlogPostCard = ({ post }: { post: typeof blogPosts[0] }) => {
         <CardFooter className="flex items-center justify-between pt-0 text-sm text-travel-sage">
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1">
-              <User size={14} /> {post.author}
+              <User size={14} /> {t('blog.posts.author')}: {post.author}
             </span>
             <span className="flex items-center gap-1">
-              <Calendar size={14} /> {post.date}
+              <Calendar size={14} /> {t('blog.posts.date')}: {post.date}
             </span>
           </div>
           <span className="flex items-center gap-1">
-            <MessageSquare size={14} /> {post.comments}
+            <MessageSquare size={14} /> {post.comments} {t('blog.posts.comments')}
           </span>
         </CardFooter>
       </Link>
@@ -132,11 +136,12 @@ const BlogPostCard = ({ post }: { post: typeof blogPosts[0] }) => {
 };
 
 const Blog = () => {
-  const [activeCategory, setActiveCategory] = useState("Todos");
+  const { t } = useTranslation();
+  const [activeCategory, setActiveCategory] = useState("all");
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 6;
 
-  const filteredPosts = activeCategory === "Todos" 
+  const filteredPosts = activeCategory === "all" 
     ? blogPosts 
     : blogPosts.filter(post => post.category.toLowerCase() === activeCategory.toLowerCase());
 
@@ -155,6 +160,12 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title={t('blog.title')}
+        description={t('blog.subtitle')}
+        keywords="blog viajes Asia, consejos viajes, guías turísticas, experiencias Asia"
+        canonical="/blog"
+      />
       <Header />
       
       {/* Hero Section */}
@@ -167,9 +178,9 @@ const Blog = () => {
         </div>
         <div className="absolute inset-0 flex items-center">
           <div className="container text-white">
-            <h1 className="text-4xl md:text-6xl font-serif mb-3">Blog de Viajes</h1>
+            <h1 className="text-4xl md:text-6xl font-serif mb-3">{t('blog.title')}</h1>
             <p className="text-lg md:text-xl max-w-2xl opacity-90">
-              Historias, consejos y guías para inspirar tu próxima aventura por Asia
+              {t('blog.subtitle')}
             </p>
           </div>
         </div>
@@ -189,7 +200,7 @@ const Blog = () => {
                   setCurrentPage(1); // Reset to first page when category changes
                 }}
               >
-                {category}
+                {t(`blog.categories.${category}`)}
               </Button>
             ))}
           </div>
@@ -197,7 +208,7 @@ const Blog = () => {
       </div>
       
       {/* Blog Posts */}
-      <section className="py-16 bg-travel-cream">
+      <section className="py-16">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {currentPosts.map((post) => (
@@ -213,7 +224,9 @@ const Blog = () => {
                   <PaginationPrevious 
                     onClick={() => currentPage > 1 && handlePageChange(currentPage - 1)}
                     className={`${currentPage === 1 ? 'pointer-events-none opacity-50' : 'cursor-pointer'}`} 
-                  />
+                  >
+                    {t('blog.pagination.previous')}
+                  </PaginationPrevious>
                 </PaginationItem>
                 
                 {Array.from({ length: totalPages }, (_, i) => i + 1).map(number => (
@@ -232,7 +245,9 @@ const Blog = () => {
                   <PaginationNext 
                     onClick={() => currentPage < totalPages && handlePageChange(currentPage + 1)}
                     className={`${currentPage === totalPages ? 'pointer-events-none opacity-50' : 'cursor-pointer'}`} 
-                  />
+                  >
+                    {t('blog.pagination.next')}
+                  </PaginationNext>
                 </PaginationItem>
               </PaginationContent>
             </Pagination>

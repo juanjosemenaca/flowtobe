@@ -5,105 +5,139 @@ import { Button } from "@/components/ui/button";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
-
-const destinationCards = [
-  {
-    id: 1,
-    name: "Japón",
-    description: "Tierra de tecnología y tradición",
-    image: "https://images.unsplash.com/photo-1492321936769-b49830bc1d1e",
-    link: "/destinations/japan"
-  },
-  {
-    id: 2,
-    name: "Tailandia",
-    description: "Paraíso tropical y templos antiguos",
-    image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
-    link: "/destinations/thailand"
-  },
-  {
-    id: 3,
-    name: "Vietnam",
-    description: "Rica cultura y paisajes impresionantes",
-    image: "https://images.unsplash.com/photo-1466442929976-97f336a657be",
-    link: "/destinations/vietnam"
-  },
-  {
-    id: 4,
-    name: "India",
-    description: "Culturas vibrantes y viajes espirituales",
-    image: "https://images.unsplash.com/photo-1469041797191-50ace28483c3",
-    link: "/destinations/india"
-  },
-  {
-    id: 5,
-    name: "Indonesia",
-    description: "Islas impresionantes y fauna diversa",
-    image: "https://images.unsplash.com/photo-1476158085676-e67f57ed9ed7",
-    link: "/destinations/indonesia"
-  },
-  {
-    id: 6,
-    name: "China",
-    description: "Historia antigua y maravillas modernas",
-    image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb",
-    link: "/destinations/china"
-  },
-  {
-    id: 7,
-    name: "Corea del Sur",
-    description: "Modernidad y tradiciones ancestrales",
-    image: "https://images.unsplash.com/photo-1517154421773-0529f29ea451",
-    link: "/destinations/korea"
-  },
-  {
-    id: 8,
-    name: "Myanmar",
-    description: "La tierra de pagodas doradas",
-    image: "https://images.unsplash.com/photo-1504681869696-d977211a5f4c",
-    link: "/destinations/myanmar"
-  },
-  {
-    id: 9,
-    name: "Malasia",
-    description: "Mezcla de culturas y selvas tropicales",
-    image: "https://images.unsplash.com/photo-1518439179742-a38769570499",
-    link: "/destinations/malaysia"
-  }
-];
-
-const DestinationCard = ({ name, description, image, link }: { 
-  name: string;
-  description: string;
-  image: string;
-  link: string;
-}) => {
-  return (
-    <div className="group relative h-[400px] overflow-hidden rounded-lg cursor-pointer">
-      <div 
-        className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-        style={{ backgroundImage: `url(${image})` }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70" />
-      <div className="absolute bottom-0 left-0 w-full p-6 text-white">
-        <h3 className="text-2xl font-serif mb-1">{name}</h3>
-        <p className="text-sm opacity-90 mb-3">{description}</p>
-        <Link to={link}>
-          <Button variant="white" size="sm" className="">
-            Explorar <ArrowRight className="ml-1 h-4 w-4" />
-          </Button>
-        </Link>
-      </div>
-    </div>
-  );
-};
+import { useTranslation } from 'react-i18next';
 
 const Destinos = () => {
+  const { t } = useTranslation();
+
+  const destinationCards = [
+    {
+      id: 1,
+      image: "https://images.unsplash.com/photo-1492321936769-b49830bc1d1e",
+      link: "/destinations/japan"
+    },
+    {
+      id: 2,
+      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
+      link: "/destinations/thailand"
+    },
+    {
+      id: 3,
+      image: "https://images.unsplash.com/photo-1466442929976-97f336a657be",
+      link: "/destinations/vietnam"
+    },
+    {
+      id: 4,
+      image: "https://images.unsplash.com/photo-1469041797191-50ace28483c3",
+      link: "/destinations/india"
+    },
+    {
+      id: 5,
+      image: "https://images.unsplash.com/photo-1476158085676-e67f57ed9ed7",
+      link: "/destinations/indonesia"
+    },
+    {
+      id: 6,
+      image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb",
+      link: "/destinations/china"
+    },
+    {
+      id: 7,
+      image: "https://images.unsplash.com/photo-1517154421773-0529f29ea451",
+      link: "/destinations/korea"
+    },
+    {
+      id: 8,
+      image: "https://images.unsplash.com/photo-1504681869696-d977211a5f4c",
+      link: "/destinations/myanmar"
+    },
+    {
+      id: 9,
+      image: "https://images.unsplash.com/photo-1518439179742-a38769570499",
+      link: "/destinations/malaysia"
+    }
+  ];
+
+  const getDestinationTitle = (id: number) => {
+    switch (id) {
+      case 1:
+        return t('destinations.categories.japan.title');
+      case 2:
+        return t('destinations.categories.thailand.title');
+      case 3:
+        return t('destinations.categories.vietnam.title');
+      case 4:
+        return t('destinations.categories.india.title');
+      case 5:
+        return t('destinations.categories.indonesia.title');
+      case 6:
+        return t('destinations.categories.china.title');
+      case 7:
+        return t('destinations.categories.korea.title');
+      case 8:
+        return t('destinations.categories.myanmar.title');
+      case 9:
+        return t('destinations.categories.malaysia.title');
+      default:
+        return '';
+    }
+  };
+
+  const getDestinationDescription = (id: number) => {
+    switch (id) {
+      case 1:
+        return t('destinations.categories.japan.description');
+      case 2:
+        return t('destinations.categories.thailand.description');
+      case 3:
+        return t('destinations.categories.vietnam.description');
+      case 4:
+        return t('destinations.categories.india.description');
+      case 5:
+        return t('destinations.categories.indonesia.description');
+      case 6:
+        return t('destinations.categories.china.description');
+      case 7:
+        return t('destinations.categories.korea.description');
+      case 8:
+        return t('destinations.categories.myanmar.description');
+      case 9:
+        return t('destinations.categories.malaysia.description');
+      default:
+        return '';
+    }
+  };
+
+  const DestinationCard = ({ id, image, link }: { 
+    id: number;
+    image: string;
+    link: string;
+  }) => {
+    return (
+      <div className="group relative h-[400px] overflow-hidden rounded-lg cursor-pointer">
+        <div 
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+          style={{ backgroundImage: `url(${image})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70" />
+        <div className="absolute bottom-0 left-0 w-full p-6 text-white">
+          <h3 className="text-2xl font-serif mb-1">{getDestinationTitle(id)}</h3>
+          <p className="text-sm opacity-90 mb-3">{getDestinationDescription(id)}</p>
+          <Link to={link}>
+            <Button variant="white" size="sm" className="">
+              {t('destinations.exploreButton')} <ArrowRight className="ml-1 h-4 w-4" />
+            </Button>
+          </Link>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <SEO 
-        title="Destinos Asiáticos | FLOW2BALY - Explora Asia"
-        description="Descubre los destinos más fascinantes de Asia: Japón, Tailandia, Vietnam, India, Indonesia, China, Corea del Sur, Myanmar y Malasia. Planifica tu viaje perfecto con FLOW2BALY."
+        title={t('destinations.title')}
+        description={t('destinations.subtitle')}
         keywords="destinos Asia, viajes Japón, turismo Tailandia, Vietnam viajes, India turismo, Indonesia viajes, China turismo, Corea del Sur viajes, Myanmar turismo, Malasia viajes"
         canonical="/destinations"
       />
@@ -119,24 +153,23 @@ const Destinos = () => {
         </div>
         <div className="absolute inset-0 flex items-center">
           <div className="container text-white">
-            <h1 className="text-5xl md:text-7xl font-serif mb-4">Destinos Asiáticos</h1>
+            <h1 className="text-5xl md:text-7xl font-serif mb-4">{t('destinations.title')}</h1>
             <p className="text-xl md:text-2xl mb-6 max-w-3xl">
-              Explora la diversidad de culturas, paisajes y experiencias que Asia tiene que ofrecer
+              {t('destinations.subtitle')}
             </p>
           </div>
         </div>
       </div>
       
       {/* Main Content */}
-      <section className="py-16 bg-travel-cream">
+      <section className="py-16">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif text-travel-dark mb-4">
-              Descubre el encanto de Asia
+              {t('destinations.discover.title')}
             </h2>
             <p className="text-travel-sage text-lg">
-              Desde las majestuosas montañas del Himalaya hasta las playas paradisíacas del sudeste 
-              asiático, nuestros destinos ofrecen experiencias inolvidables para todo tipo de viajeros.
+              {t('destinations.discover.description')}
             </p>
           </div>
           
@@ -144,8 +177,7 @@ const Destinos = () => {
             {destinationCards.map((destination) => (
               <DestinationCard
                 key={destination.id}
-                name={destination.name}
-                description={destination.description}
+                id={destination.id}
                 image={destination.image}
                 link={destination.link}
               />
@@ -154,11 +186,11 @@ const Destinos = () => {
           
           <div className="text-center">
             <p className="text-travel-sage text-lg mb-6 max-w-3xl mx-auto">
-              ¿No encuentras lo que buscas? Contáctanos para diseñar un viaje personalizado a cualquier destino en Asia.
+              {t('destinations.custom.description')}
             </p>
             <Link to="/contact">
               <Button className="bg-travel-teal hover:bg-travel-terracotta text-white px-8">
-                Consulta personalizada <ArrowRight className="ml-2" />
+                {t('destinations.custom.cta')} <ArrowRight className="ml-2" />
               </Button>
             </Link>
           </div>
@@ -166,51 +198,31 @@ const Destinos = () => {
       </section>
       
       {/* Travel Tips Section */}
-      <section className="py-16">
+      <section className="py-16 bg-travel-cream">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-serif text-travel-dark mb-6">
-                Consejos para viajar por Asia
+                {t('destinations.travelTips.title')}
               </h2>
               <ul className="space-y-4">
-                <li className="flex items-start">
-                  <span className="text-travel-terracotta font-bold text-lg mr-2">•</span>
-                  <p className="text-travel-sage">
-                    <span className="font-medium text-travel-dark">Respeta las costumbres locales:</span> Investiga sobre las normas culturales de cada país antes de visitarlo.
-                  </p>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-travel-terracotta font-bold text-lg mr-2">•</span>
-                  <p className="text-travel-sage">
-                    <span className="font-medium text-travel-dark">Vacunas y salud:</span> Consulta con un médico sobre las vacunas recomendadas para cada destino.
-                  </p>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-travel-terracotta font-bold text-lg mr-2">•</span>
-                  <p className="text-travel-sage">
-                    <span className="font-medium text-travel-dark">Temporadas:</span> Infórmate sobre las temporadas de lluvia y festivales importantes que puedan afectar tu viaje.
-                  </p>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-travel-terracotta font-bold text-lg mr-2">•</span>
-                  <p className="text-travel-sage">
-                    <span className="font-medium text-travel-dark">Transporte local:</span> El transporte público varía significativamente entre países; planifica con antelación.
-                  </p>
-                </li>
+                {(t('destinations.travelTips.tips', { returnObjects: true }) as string[]).map((tip: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <span className="text-travel-terracotta font-bold text-lg mr-2">•</span>
+                    <p className="text-travel-sage">{tip}</p>
+                  </li>
+                ))}
               </ul>
-              <div className="mt-8">
-                <Link to="/faq">
-                  <Button variant="outline" className="border-travel-teal text-travel-teal hover:bg-travel-teal hover:text-white">
-                    Más información para viajeros
-                  </Button>
+              <div className="mt-6">
+                <Link to="/blog" className="text-travel-teal hover:text-travel-terracotta font-medium">
+                  {t('destinations.travelTips.moreInfo')} <ArrowRight className="inline ml-2" size={16} />
                 </Link>
               </div>
             </div>
-            <div className="relative h-96 rounded-lg overflow-hidden">
+            <div className="relative h-[400px] rounded-lg overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4" 
-                alt="Viajero en Asia" 
+                src="/general/travel-tips.jpg" 
+                alt="Travel Tips" 
                 className="w-full h-full object-cover"
               />
             </div>

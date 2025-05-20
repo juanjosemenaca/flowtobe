@@ -7,6 +7,7 @@ import { useToast } from "@/hooks/use-toast";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import emailjs from '@emailjs/browser';
+import { useTranslation } from 'react-i18next';
 
 interface BookingFormData {
   firstName: string;
@@ -21,6 +22,7 @@ interface BookingFormData {
 }
 
 const ReservarAhora = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState<BookingFormData>({
@@ -30,7 +32,7 @@ const ReservarAhora = () => {
     phone: '',
     destination: '',
     travelDate: '',
-    duration: '7-10 días',
+    duration: t('booking.form.duration.default'),
     travelers: '2',
     specialRequests: ''
   });
@@ -68,8 +70,8 @@ const ReservarAhora = () => {
       );
 
       toast({
-        title: "¡Solicitud recibida!",
-        description: "Te contactaremos pronto para confirmar tu reserva.",
+        title: t('booking.success.title'),
+        description: t('booking.success.description'),
       });
       
       // Reset form
@@ -80,7 +82,7 @@ const ReservarAhora = () => {
         phone: '',
         destination: '',
         travelDate: '',
-        duration: '7-10 días',
+        duration: t('booking.form.duration.default'),
         travelers: '2',
         specialRequests: ''
       });
@@ -100,11 +102,11 @@ const ReservarAhora = () => {
       <Header />
       
       {/* Hero Section */}
-      <div className="bg-travel-terracotta text-white pt-32 pb-16">
+      <div className="bg-travel-teal text-white pt-32 pb-16">
         <div className="container text-center">
-          <h1 className="text-4xl md:text-5xl font-serif mb-4">Reservar Ahora</h1>
+          <h1 className="text-4xl md:text-5xl font-serif mb-4">{t('booking.title')}</h1>
           <p className="text-lg max-w-3xl mx-auto opacity-90">
-            Estás a pocos pasos de iniciar una aventura inolvidable por Asia
+            {t('booking.subtitle')}
           </p>
         </div>
       </div>
@@ -115,12 +117,12 @@ const ReservarAhora = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
               <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
-                <h2 className="text-3xl font-serif text-travel-dark mb-6">Información de Reserva</h2>
+                <h2 className="text-3xl font-serif text-travel-dark mb-6">{t('booking.form.details.title')}</h2>
                 
                 <form onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                     <div>
-                      <Label htmlFor="firstName">Nombre</Label>
+                      <Label htmlFor="firstName">{t('booking.form.firstName')}</Label>
                       <Input
                         id="firstName"
                         name="firstName"
@@ -132,7 +134,7 @@ const ReservarAhora = () => {
                     </div>
                     
                     <div>
-                      <Label htmlFor="lastName">Apellidos</Label>
+                      <Label htmlFor="lastName">{t('booking.form.lastName')}</Label>
                       <Input
                         id="lastName"
                         name="lastName"
@@ -144,7 +146,7 @@ const ReservarAhora = () => {
                     </div>
                     
                     <div>
-                      <Label htmlFor="email">Email</Label>
+                      <Label htmlFor="email">{t('booking.form.email')}</Label>
                       <Input
                         id="email"
                         name="email"
@@ -157,7 +159,7 @@ const ReservarAhora = () => {
                     </div>
                     
                     <div>
-                      <Label htmlFor="phone">Teléfono</Label>
+                      <Label htmlFor="phone">{t('booking.form.phone')}</Label>
                       <Input
                         id="phone"
                         name="phone"
@@ -169,11 +171,11 @@ const ReservarAhora = () => {
                     </div>
                   </div>
                   
-                  <h3 className="text-xl font-serif text-travel-dark mb-4">Detalles del Viaje</h3>
+                  <h3 className="text-xl font-serif text-travel-dark mb-4">{t('booking.form.details.subTitle')}</h3>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                     <div>
-                      <Label htmlFor="destination">Destino</Label>
+                      <Label htmlFor="destination">{t('booking.form.destination')}</Label>
                       <select
                         id="destination"
                         name="destination"
@@ -182,18 +184,18 @@ const ReservarAhora = () => {
                         required
                         className="w-full mt-1 border border-input rounded-md h-10 px-3 py-2"
                       >
-                        <option value="">Selecciona un destino</option>
-                        <option value="japan">Japón</option>
-                        <option value="thailand">Tailandia</option>
-                        <option value="vietnam">Vietnam</option>
-                        <option value="china">China</option>
-                        <option value="india">India</option>
-                        <option value="indonesia">Indonesia</option>
+                        <option value="">{t('booking.form.destination.placeholder')}</option>
+                        <option value="japan">{t('destinations.categories.japan.title')}</option>
+                        <option value="thailand">{t('destinations.categories.thailand.title')}</option>
+                        <option value="vietnam">{t('destinations.categories.vietnam.title')}</option>
+                        <option value="china">{t('destinations.categories.china.title')}</option>
+                        <option value="india">{t('destinations.categories.india.title')}</option>
+                        <option value="indonesia">{t('destinations.categories.indonesia.title')}</option>
                       </select>
                     </div>
                     
                     <div>
-                      <Label htmlFor="travelDate">Fecha Aproximada</Label>
+                      <Label htmlFor="travelDate">{t('booking.form.dates')}</Label>
                       <Input
                         id="travelDate"
                         name="travelDate"
@@ -206,7 +208,7 @@ const ReservarAhora = () => {
                     </div>
                     
                     <div>
-                      <Label htmlFor="duration">Duración</Label>
+                      <Label htmlFor="duration">{t('booking.form.duration.label')}</Label>
                       <select
                         id="duration"
                         name="duration"
@@ -214,15 +216,15 @@ const ReservarAhora = () => {
                         onChange={handleInputChange}
                         className="w-full mt-1 border border-input rounded-md h-10 px-3 py-2"
                       >
-                        <option value="3-6 días">3-6 días</option>
-                        <option value="7-10 días">7-10 días</option>
-                        <option value="11-14 días">11-14 días</option>
-                        <option value="15+ días">15+ días</option>
+                        <option value="3-6">{t('booking.form.duration.short')}</option>
+                        <option value="7-10">{t('booking.form.duration.medium')}</option>
+                        <option value="11-14">{t('booking.form.duration.long')}</option>
+                        <option value="15+">{t('booking.form.duration.veryLong')}</option>
                       </select>
                     </div>
                     
                     <div>
-                      <Label htmlFor="travelers">Número de Viajeros</Label>
+                      <Label htmlFor="travelers">{t('booking.form.guests')}</Label>
                       <select
                         id="travelers"
                         name="travelers"
@@ -230,18 +232,18 @@ const ReservarAhora = () => {
                         onChange={handleInputChange}
                         className="w-full mt-1 border border-input rounded-md h-10 px-3 py-2"
                       >
-                        <option value="1">1 persona</option>
-                        <option value="2">2 personas</option>
-                        <option value="3">3 personas</option>
-                        <option value="4">4 personas</option>
-                        <option value="5">5 personas</option>
-                        <option value="6+">6 o más personas</option>
+                        <option value="1">{t('booking.form.guests.single')}</option>
+                        <option value="2">{t('booking.form.guests.couple')}</option>
+                        <option value="3">{t('booking.form.guests.three')}</option>
+                        <option value="4">{t('booking.form.guests.four')}</option>
+                        <option value="5">{t('booking.form.guests.five')}</option>
+                        <option value="6+">{t('booking.form.guests.more')}</option>
                       </select>
                     </div>
                   </div>
                   
                   <div className="mb-8">
-                    <Label htmlFor="specialRequests">Requisitos Especiales</Label>
+                    <Label htmlFor="specialRequests">{t('booking.form.notes')}</Label>
                     <textarea
                       id="specialRequests"
                       name="specialRequests"
@@ -249,7 +251,7 @@ const ReservarAhora = () => {
                       onChange={handleInputChange}
                       rows={4}
                       className="w-full mt-1 border border-input rounded-md px-3 py-2"
-                      placeholder="Por favor, compártenos cualquier requisito dietético, necesidad de accesibilidad o preferencia especial"
+                      placeholder={t('booking.form.notes.placeholder')}
                     />
                   </div>
                   
@@ -259,7 +261,7 @@ const ReservarAhora = () => {
                       className="bg-travel-terracotta hover:bg-travel-teal text-white px-8"
                       disabled={isSubmitting}
                     >
-                      {isSubmitting ? 'Enviando...' : 'Enviar Solicitud'} 
+                      {isSubmitting ? t('booking.form.payment.processing') : t('booking.form.continue')}
                       {!isSubmitting && <ArrowRight className="ml-2" size={18} />}
                     </Button>
                   </div>
@@ -270,24 +272,24 @@ const ReservarAhora = () => {
             {/* Sidebar */}
             <div>
               <div className="bg-travel-cream p-6 rounded-lg sticky top-24">
-                <h3 className="text-xl font-serif text-travel-dark mb-4">¿Por Qué Reservar con Nosotros?</h3>
+                <h3 className="text-xl font-serif text-travel-dark mb-4">{t('booking.form.whyChooseUs.title')}</h3>
                 
                 <ul className="space-y-4 mb-6">
                   <li className="flex items-start">
                     <span className="text-travel-terracotta mr-3 flex-shrink-0">✓</span>
-                    <p className="text-travel-sage">Expertos locales en destinos asiáticos</p>
+                    <p className="text-travel-sage">{t('booking.form.whyChooseUs.item1')}</p>
                   </li>
                   <li className="flex items-start">
                     <span className="text-travel-terracotta mr-3 flex-shrink-0">✓</span>
-                    <p className="text-travel-sage">Itinerarios personalizados a tu ritmo</p>
+                    <p className="text-travel-sage">{t('booking.form.whyChooseUs.item2')}</p>
                   </li>
                   <li className="flex items-start">
                     <span className="text-travel-terracotta mr-3 flex-shrink-0">✓</span>
-                    <p className="text-travel-sage">Asistencia 24/7 durante todo el viaje</p>
+                    <p className="text-travel-sage">{t('booking.form.whyChooseUs.item3')}</p>
                   </li>
                   <li className="flex items-start">
                     <span className="text-travel-terracotta mr-3 flex-shrink-0">✓</span>
-                    <p className="text-travel-sage">Experiencias auténticas fuera del turismo masivo</p>
+                    <p className="text-travel-sage">{t('booking.form.whyChooseUs.item4')}</p>
                   </li>
                 </ul>
                 
@@ -295,7 +297,7 @@ const ReservarAhora = () => {
                   <div className="flex">
                     <Info size={16} className="text-blue-500 mt-1 mr-2 flex-shrink-0" />
                     <p className="text-blue-800">
-                      Al enviar tu solicitud, un asesor de viajes se pondrá en contacto contigo en un plazo de 24 horas.
+                      {t('booking.form.whyChooseUs.note')}
                     </p>
                   </div>
                 </div>
@@ -303,10 +305,10 @@ const ReservarAhora = () => {
                 <div className="bg-travel-terracotta/10 p-4 rounded-lg">
                   <div className="flex items-center mb-2">
                     <Users size={18} className="text-travel-terracotta mr-2" />
-                    <h4 className="font-medium">Atención Personalizada</h4>
+                    <h4 className="font-medium">{t('booking.form.whyChooseUs.customizedAttention')}</h4>
                   </div>
                   <p className="text-sm text-travel-sage">
-                    No somos una agencia de viajes masiva. Creamos experiencias únicas adaptadas a tus intereses y necesidades.
+                    {t('booking.form.whyChooseUs.customizedAttentionDescription')}
                   </p>
                 </div>
               </div>
@@ -318,22 +320,22 @@ const ReservarAhora = () => {
       {/* FAQ Section */}
       <section className="py-16 bg-travel-cream/50">
         <div className="container max-w-4xl">
-          <h2 className="text-3xl font-serif text-travel-dark text-center mb-8">Preguntas Frecuentes</h2>
+          <h2 className="text-3xl font-serif text-travel-dark text-center mb-8">{t('booking.form.faq.title')}</h2>
           
           <div className="space-y-4">
             <div className="bg-white p-5 rounded-lg shadow-sm">
-              <h3 className="text-xl font-serif text-travel-dark mb-2">¿Cuánto tiempo tarda en confirmarse mi reserva?</h3>
-              <p className="text-travel-sage">Normalmente nos ponemos en contacto contigo en un plazo de 24 horas para discutir los detalles de tu viaje y comenzar la planificación.</p>
+              <h3 className="text-xl font-serif text-travel-dark mb-2">{t('booking.form.faq.item1.question')}</h3>
+              <p className="text-travel-sage">{t('booking.form.faq.item1.answer')}</p>
             </div>
             
             <div className="bg-white p-5 rounded-lg shadow-sm">
-              <h3 className="text-xl font-serif text-travel-dark mb-2">¿Necesito pagar algo por adelantado?</h3>
-              <p className="text-travel-sage">No, la consulta inicial es gratuita. Solo después de que hayas aprobado tu itinerario personalizado se requerirá un depósito para asegurar la reserva.</p>
+              <h3 className="text-xl font-serif text-travel-dark mb-2">{t('booking.form.faq.item2.question')}</h3>
+              <p className="text-travel-sage">{t('booking.form.faq.item2.answer')}</p>
             </div>
             
             <div className="bg-white p-5 rounded-lg shadow-sm">
-              <h3 className="text-xl font-serif text-travel-dark mb-2">¿Puedo modificar mi itinerario después?</h3>
-              <p className="text-travel-sage">Sí, entendemos que los planes pueden cambiar. Trabajaremos contigo para adaptar el itinerario según tus necesidades, siempre que sea posible.</p>
+              <h3 className="text-xl font-serif text-travel-dark mb-2">{t('booking.form.faq.item3.question')}</h3>
+              <p className="text-travel-sage">{t('booking.form.faq.item3.answer')}</p>
             </div>
           </div>
         </div>

@@ -1,26 +1,26 @@
-
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const testimonials = [
   {
     id: 1,
-    quote: "Nuestro viaje por Japón con Flow2bali fue absolutamente increíble. Cada detalle fue perfectamente organizado y los guías locales realmente hicieron que la experiencia fuera especial.",
-    author: "Sara J.",
-    location: "Kioto, Japón",
+    quote: "testimonials.japan.quote",
+    author: "testimonials.japan.author",
+    location: "testimonials.japan.location",
     rating: 5
   },
   {
     id: 2,
-    quote: "El tour por las playas de Tailandia superó todas nuestras expectativas. Desde las playas vírgenes hasta la vibrante vida nocturna, ¡todo fue tal como lo prometieron y más!",
-    author: "Miguel T.",
-    location: "Phuket, Tailandia",
+    quote: "testimonials.thailand.quote",
+    author: "testimonials.thailand.author",
+    location: "testimonials.thailand.location",
     rating: 5
   },
   {
     id: 3,
-    quote: "La cultura y los paisajes de Vietnam son impresionantes, y Flow2bali nos ayudó a explorarlo todo. Los tours gastronómicos fueron algo que nunca olvidaremos.",
-    author: "Elena y David",
-    location: "Hanoi, Vietnam",
+    quote: "testimonials.vietnam.quote",
+    author: "testimonials.vietnam.author",
+    location: "testimonials.vietnam.location",
     rating: 5
   }
 ];
@@ -51,26 +51,30 @@ const TestimonialCard = ({ quote, author, location, rating }: {
   location: string;
   rating: number;
 }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-white rounded-lg p-8 shadow-lg">
       <StarRating rating={rating} />
-      <p className="text-travel-dark text-lg mt-4 italic">"{quote}"</p>
+      <p className="text-travel-dark text-lg mt-4 italic">"{t(quote)}"</p>
       <div className="mt-6">
-        <p className="font-semibold text-travel-teal">{author}</p>
-        <p className="text-travel-sage text-sm">{location}</p>
+        <p className="font-semibold text-travel-teal">{t(author)}</p>
+        <p className="text-travel-sage text-sm">{t(location)}</p>
       </div>
     </div>
   );
 };
 
 const Testimonials = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="py-20 bg-travel-cream">
       <div className="container">
         <div className="text-center mb-14">
-          <h2 className="text-4xl md:text-5xl font-serif text-travel-dark mb-4">Lo Que Dicen Los Viajeros</h2>
+          <h2 className="text-4xl md:text-5xl font-serif text-travel-dark mb-4">{t('testimonials.title')}</h2>
           <p className="text-travel-sage text-xl max-w-2xl mx-auto">
-            Historias reales de viajeros que experimentaron la magia de Asia con nosotros
+            {t('testimonials.subtitle')}
           </p>
         </div>
 

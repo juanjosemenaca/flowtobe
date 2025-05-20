@@ -1,0 +1,544 @@
+{
+  "nav": {
+    "home": "Inici",
+    "destinations": "Destinacions",
+    "experiences": "Experiències",
+    "services": "Serveis",
+    "blog": "Blog",
+    "about": "Sobre Nosaltres",
+    "contact": "Contacte",
+    "bookNow": "Reserva Ara"
+  },
+  "common": {
+    "language": "Idioma",
+    "readMore": "Llegir més",
+    "learnMore": "Saber més",
+    "viewAll": "Veure tot",
+    "search": "Cercar",
+    "loading": "Carregant...",
+    "error": "Error",
+    "success": "Èxit",
+    "submit": "Enviar",
+    "cancel": "Cancel·lar",
+    "save": "Desar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "back": "Tornar",
+    "next": "Següent",
+    "previous": "Anterior",
+    "email": "La teva adreça de correu electrònic",
+    "invalidEmail": "Si us plau, introdueix una adreça de correu electrònic vàlida."
+  },
+  "footer": {
+    "about": "Sobre Nosaltres",
+    "aboutText": "Som experts en viatges asiàtics compromesos a crear experiències autèntiques i memorables.",
+    "quickLinks": "Enllaços Ràpids",
+    "contact": "Contacte",
+    "address": "Adreça",
+    "phone": "Telèfon",
+    "email": "Correu electrònic",
+    "followUs": "Segueix-nos",
+    "newsletter": "Newsletter",
+    "newsletterText": "Subscriu-te per rebre les últimes notícies i ofertes",
+    "subscribe": "Subscriure's",
+    "privacy": "Política de Privacitat",
+    "terms": "Termes i Condicions",
+    "copyright": "Tots els drets reservats"
+  },
+  "home": {
+    "hero": {
+      "title": "Descobreix Àsia d'una manera única",
+      "subtitle": "Experiències autèntiques i memorables al continent asiàtic",
+      "cta": "Explorar Destinacions"
+    },
+    "features": {
+      "title": "Per què triar-nos?",
+      "authentic": {
+        "title": "Experiències Autèntiques",
+        "description": "Viu la veritable essència d'Àsia amb les nostres experiències curadures amb cura"
+      },
+      "expert": {
+        "title": "Experts Locals",
+        "description": "El nostre equip d'experts locals t'orientarà en cada pas del camí"
+      },
+      "sustainable": {
+        "title": "Turisme Sostenible",
+        "description": "Compromesos amb pràctiques de viatge responsables i sostenibles"
+      }
+    }
+  },
+  "destinations": {
+    "title": "Les Nostres Destinacions",
+    "subtitle": "Explora les destinacions més fascinants d'Àsia",
+    "exploreButton": "Explorar",
+    "viewAllButton": "Veure Totes les Destinacions",
+    "filter": {
+      "title": "Filtrar per",
+      "region": "Regió",
+      "type": "Tipus de viatge",
+      "duration": "Durada",
+      "price": "Preu"
+    },
+    "search": {
+      "placeholder": "Cercar destinacions...",
+      "noResults": "No s'han trobat destinacions"
+    },
+    "regions": {
+      "eastAsia": "Àsia Oriental",
+      "southeastAsia": "Sud-est Asiàtic",
+      "southAsia": "Àsia del Sud",
+      "centralAsia": "Àsia Central"
+    },
+    "types": {
+      "cultural": "Cultural",
+      "adventure": "Aventura",
+      "beach": "Platja",
+      "mountain": "Muntanya",
+      "city": "Ciutat",
+      "rural": "Rural"
+    },
+    "duration": {
+      "short": "Curta (1-3 dies)",
+      "medium": "Mitjana (4-7 dies)",
+      "long": "Llarga (8+ dies)"
+    },
+    "price": {
+      "budget": "Econòmic",
+      "moderate": "Moderat",
+      "luxury": "Luxe"
+    },
+    "discover": {
+      "title": "Descobreix l'encant d'Àsia",
+      "description": "Des de les majestuoses muntanyes de l'Himàlaia fins a les platges paradisíaques del sud-est asiàtic, les nostres destinacions ofereixen experiències inoblidables per a tots els tipus de viatgers."
+    },
+    "custom": {
+      "description": "No trobes el que busques? Contacta'ns per dissenyar un viatge personalitzat a qualsevol destinació d'Àsia.",
+      "cta": "Consulta personalitzada"
+    },
+    "categories": {
+      "bali": {
+        "title": "Bali",
+        "description": "Paradís tropical amb temples i platges de somni"
+      },
+      "thailand": {
+        "title": "Tailàndia",
+        "description": "Paradís tropical i temples antics"
+      },
+      "vietnam": {
+        "title": "Vietnam",
+        "description": "Rica cultura i paisatges impressionants"
+      },
+      "japan": {
+        "title": "Japó",
+        "description": "Terra de tecnologia i tradició"
+      },
+      "india": {
+        "title": "Índia",
+        "description": "Cultures vibrants i viatges espirituals"
+      },
+      "indonesia": {
+        "title": "Indonèsia",
+        "description": "Illes impressionants i fauna diversa"
+      },
+      "china": {
+        "title": "Xina",
+        "description": "Història antiga i meravelles modernes"
+      },
+      "korea": {
+        "title": "Corea del Sud",
+        "description": "Modernitat i tradicions ancestrals"
+      },
+      "myanmar": {
+        "title": "Myanmar",
+        "description": "La terra de les pagodes daurades"
+      },
+      "malaysia": {
+        "title": "Malàisia",
+        "description": "Barreja de cultures i selves tropicals"
+      }
+    },
+    "travelTips": {
+      "title": "Consells per viatjar per Àsia",
+      "tips": [
+        "Respecta les costums locals: Investiga sobre les normes culturals de cada país abans de visitar-lo.",
+        "Vacunes i salut: Consulta amb un metge sobre les vacunes recomanades per a cada destinació.",
+        "Temporades: Informa't sobre les temporades de pluja i festivals importants que puguin afectar el teu viatge.",
+        "Transport local: El transport públic varia significativament entre països; planifica amb antelació."
+      ],
+      "moreInfo": "Més informació per a viatgers"
+    }
+  },
+  "experiences": {
+    "title": "Experiències Inoblidables",
+    "subtitle": "Crea records que duren tota la vida amb les nostres experiències de viatge seleccionades",
+    "exploreButton": "Explorar FLOW2BALY",
+    "viewAllButton": "Totes les Experiències",
+    "liveAsia": {
+      "title": "Viu Àsia, no només la visites",
+      "description": "Les nostres experiències estan dissenyades per submergir-te profundament en les cultures, tradicions i paisatges d'Àsia. Connecta amb les comunitats locals, aprèn noves habilitats i crea memòries que perduraren més enllà de les fotografies."
+    },
+    "categories": {
+      "cultural": {
+        "title": "Immersió Cultural",
+        "description": "Descobreix tradicions locals autèntiques"
+      },
+      "spiritual": {
+        "title": "Viatges Espirituals",
+        "description": "Troba pau en temples antics"
+      },
+      "culinary": {
+        "title": "Aventures Culinàries",
+        "description": "Sabora sabors asiàtics autèntics"
+      },
+      "wildlife": {
+        "title": "Trobades amb la Vida Salvatge",
+        "description": "Connecta amb les meravelles naturals"
+      },
+      "nature": {
+        "title": "Aventures a la Natura",
+        "description": "Explora muntanyes, selves i rius"
+      },
+      "arts": {
+        "title": "Arts i Artesania",
+        "description": "Aprèn de mestres artesans locals"
+      },
+      "wellness": {
+        "title": "Retirs de Benestar",
+        "description": "Reconnecta amb el teu cos i ment"
+      },
+      "photography": {
+        "title": "Fotografia i Paisatges",
+        "description": "Captura la bellesa escènica d'Àsia"
+      }
+    },
+    "featured": {
+      "title": "Experiència Destacada: Cerimònia del Te Japonesa",
+      "description": "Submergeix-te en aquesta tradició centenària de la mà de mestres del te a Kyoto. Aprendràs els rituals, simbolismes i la filosofia darrere d'aquesta pràctica cultural que encapsula l'essència de l'estètica japonesa.",
+      "duration": "Durada: 3 hores",
+      "includes": "Inclou: Cerimònia completa i degustació de dolços tradicionals",
+      "location": "Ubicació: Temple històric a Kyoto",
+      "bookButton": "Reserva aquesta experiència"
+    },
+    "custom": {
+      "title": "Experiències a Mida",
+      "description": "No trobes exactament el que busques? Els nostres especialistes poden dissenyar experiències personalitzades segons els teus interessos, temps i pressupost.",
+      "cta": "Sol·licitar experiència personalitzada"
+    }
+  },
+  "services": {
+    "title": "Els Nostres Serveis",
+    "subtitle": "Serveis personalitzats per al teu viatge perfecte",
+    "hero": {
+      "title": "Els Nostres Serveis",
+      "subtitle": "Dissenyem experiències de viatge personalitzades que combinen aventura, cultura i relax per crear moments inoblidables a l'Àsia."
+    },
+    "features": {
+      "title": "Tot el que Oferim",
+      "subtitle": "Els nostres serveis estan dissenyats per oferir-te una experiència completa i sense preocupacions"
+    },
+    "cards": {
+      "customized": {
+        "title": "Itineraris Personalitzats",
+        "description": "Creem viatges a mida segons els teus interessos, temps disponible i pressupost. Cada detall està pensat per a tu."
+      },
+      "guides": {
+        "title": "Guies Locals Experts",
+        "description": "Els nostres guies són nadius amb ampli coneixement de la cultura, història i secrets locals de cada destinació."
+      },
+      "exclusive": {
+        "title": "Destinacions Exclusives",
+        "description": "Et portem a llocs autèntics fora del circuit turístic tradicional per viure experiències úniques."
+      },
+      "responsible": {
+        "title": "Turisme Responsable",
+        "description": "Promovem pràctiques sostenibles que respecten les comunitats locals i el medi ambient."
+      },
+      "support": {
+        "title": "Assistència 24/7",
+        "description": "Comptem amb un equip disponible les 24 hores perAssistant-te en qualsevol moment del teu viatge."
+      },
+      "planning": {
+        "title": "Planificació Sense Estrès",
+        "description": "Ens encarreguem de tots els detalls logístics perquè només t'haigues de preocupar per gaudir."
+      }
+    },
+    "process": {
+      "title": "El Nostre Procés",
+      "subtitle": "Fem que planificar el teu viatge sigui tan plaent com el viatge mateix",
+      "steps": {
+        "consultation": {
+          "title": "Consulta Inicial",
+          "description": "Conversem sobre les teves preferències, interessos i expectatives per al teu viatge a l'Àsia."
+        },
+        "proposal": {
+          "title": "Proposta Personalitzada",
+          "description": "Dissenyem un itinerari a mida amb opcions que s'ajustin als teus desitjos."
+        },
+        "adjustment": {
+          "title": "Ajustos i Confirmació",
+          "description": "Refinem els detalls fins a obtenir el viatge perfecte i procedim amb la reserva."
+        },
+        "support": {
+          "title": "Suport Durant el Viatge",
+          "description": "T'acompanyem durant tota l'experiència amb assistència permanent."
+        }
+      }
+    },
+    "included": {
+      "title": "El Que Inclou Cada Viatge",
+      "subtitle": "Tots els nostres paquets inclouen aquests serveis bàsics per garantir una experiència completa",
+      "features": [
+        "Allotjament en hotels seleccionats",
+        "Transport privat durant tot el recorregut",
+        "Guies locals de parla catalana",
+        "Entrades a totes les atraccions incloses",
+        "Esmorzar i menjars seleccionats",
+        "Experiències exclusives amb comunitats locals",
+        "Assistència de viatge 24/7",
+        "Assegurança de viatge bàsica",
+        "Material informatiu personalitzat",
+        "Consulta pre-viatge per preparatius",
+        "Suport per a gestió de visats",
+        "Recomanacions personalitzades"
+      ]
+    }
+  },
+  "blog": {
+    "title": "Blog de Viatges",
+    "subtitle": "Històries, consells i guies per inspirar la teva propera aventura per Àsia",
+    "categories": {
+      "all": "Tots",
+      "beaches": "Platges",
+      "culture": "Cultura",
+      "gastronomy": "Gastronomia",
+      "adventure": "Aventura",
+      "tips": "Consells",
+      "accommodation": "Allotjament"
+    },
+    "posts": {
+      "readMore": "Llegir més",
+      "author": "Autor",
+      "date": "Data",
+      "comments": "Comentaris"
+    },
+    "pagination": {
+      "previous": "Anterior",
+      "next": "Següent"
+    }
+  },
+  "contact": {
+    "title": "Contacte",
+    "subtitle": "Estem aquí per ajudar-te",
+    "form": {
+      "name": "Nom",
+      "email": "Correu electrònic",
+      "phone": "Telèfon",
+      "subject": "Assumpte",
+      "message": "Missatge",
+      "submit": "Enviar missatge"
+    },
+    "info": {
+      "title": "Informació de contacte",
+      "address": "Adreça",
+      "phone": "Telèfon",
+      "email": "Correu electrònic",
+      "hours": "Horari d'atenció"
+    }
+  },
+  "booking": {
+    "title": "Reserva la teva Aventura",
+    "subtitle": "A pocs passos de viure una experiència inoblidable a l'Àsia",
+    "steps": {
+      "details": "Detalls",
+      "payment": "Pagament",
+      "confirmation": "Confirmació"
+    },
+    "form": {
+      "details": {
+        "title": "Detalls del Viatge",
+        "subTitle": "Informació del Viatge"
+      },
+      "firstName": "Nom",
+      "lastName": "Cognoms",
+      "email": "Email",
+      "phone": "Telèfon",
+      "destination": "Destinació",
+      "destination": {
+        "placeholder": "Selecciona una destinació"
+      },
+      "dates": "Data del Viatge",
+      "duration": {
+        "label": "Durada",
+        "default": "7-10",
+        "short": "3-6 dies",
+        "medium": "7-10 dies",
+        "long": "11-14 dies",
+        "veryLong": "15+ dies"
+      },
+      "guests": "Nombre de Viatgers",
+      "guests": {
+        "single": "1 persona",
+        "couple": "2 persones",
+        "three": "3 persones",
+        "four": "4 persones",
+        "five": "5 persones",
+        "more": "6 o més persones"
+      },
+      "notes": "Requisits Especials",
+      "notes": {
+        "placeholder": "Si us plau, comparteix amb nosaltres qualsevol requisit dietètic, necessitat d'accessibilitat o preferència especial"
+      },
+      "continue": "Continuar al Pagament",
+      "payment": {
+        "title": "Informació de Pagament",
+        "cardDetails": "Detalls de la Targeta",
+        "cardName": "Nom a la Targeta",
+        "cardNamePlaceholder": "Com apareix a la targeta",
+        "cardNumber": "Número de Targeta",
+        "cardNumberPlaceholder": "XXXX XXXX XXXX XXXX",
+        "expiryDate": "Data de Caducitat",
+        "expiryDatePlaceholder": "MM/AA",
+        "cvv": "Codi de Seguretat (CVV)",
+        "cvvPlaceholder": "XXX",
+        "terms": "He llegit i accepto els Termes i Condicions i la Política de Privacitat",
+        "back": "Tornar",
+        "processing": "Processant...",
+        "complete": "Completar Reserva"
+      },
+      "summary": {
+        "title": "Resum de la Reserva",
+        "subtotal": "Subtotal",
+        "taxes": "Impostos",
+        "total": "Total",
+        "deposit": "Només se't cobrarà un dipòsit del 20% (€528) ara. La resta es pagarà 30 dies abans del viatge."
+      },
+      "whyChooseUs": {
+        "title": "Per què Reservar amb Nosaltres?",
+        "item1": "Experts locals en destinacions asiàtiques",
+        "item2": "Itineraris personalitzats al teu ritme",
+        "item3": "Assistència 24/7 durant tot el viatge",
+        "item4": "Experiències autèntiques fora del turisme massiu",
+        "note": "En enviar la teva sol·licitud, un assessor de viatges es posarà en contacte amb tu en un termini de 24 hores.",
+        "customizedAttention": "Atenció Personalitzada",
+        "customizedAttentionDescription": "No som una agència de viatges massiva. Creem experiències úniques adaptades als teus interessos i necessitats."
+      },
+      "faq": {
+        "title": "Preguntes Freqüents",
+        "item1": {
+          "question": "Quant temps triga a confirmar-se la meva reserva?",
+          "answer": "Normalment ens posem en contacte amb tu en un termini de 24 hores per discutir els detalls del teu viatge i començar la planificació."
+        },
+        "item2": {
+          "question": "Necessito pagar alguna cosa per endavant?",
+          "answer": "No, la consulta inicial és gratuïta. Només després d'haver aprovat el teu itinerari personalitzat es requerirà un dipòsit per assegurar la reserva."
+        },
+        "item3": {
+          "question": "Puc modificar el meu itinerari després?",
+          "answer": "Sí, entenem que els plans poden canviar. Treballarem amb tu per adaptar l'itinerari segons les teves necessitats, sempre que sigui possible."
+        }
+      }
+    },
+    "success": {
+      "title": "¡Reserva enviada amb èxit!",
+      "description": "Rebràs una confirmació per email en breu."
+    },
+    "confirmation": {
+      "title": "¡Reserva Confirmada!",
+      "description": "Gràcies per reservar amb Flow2bali. Hem enviat un correu electrònic a {{email}} amb els detalls de la teva reserva. Un dels nostres assessors de viatge es posarà en contacte amb tu en les properes 24 hores.",
+      "reference": "Referència de Reserva",
+      "destination": "Destinació",
+      "date": "Data",
+      "travelers": "Viatgers",
+      "people": "persones",
+      "deposit": "Dipòsit pagat"
+    }
+  },
+  "faq": {
+    "title": "Preguntes Freqüents",
+    "subtitle": "Troba respostes a les preguntes més comunes",
+    "categories": {
+      "general": "General",
+      "booking": "Reserves",
+      "payment": "Pagaments",
+      "travel": "Viatges"
+    }
+  },
+  "privacy": {
+    "title": "Política de Privacitat",
+    "lastUpdated": "Última actualització",
+    "sections": {
+      "data": "Recopilació de dades",
+      "usage": "Ús de dades",
+      "cookies": "Cookies",
+      "rights": "Drets de l'usuari"
+    }
+  },
+  "terms": {
+    "title": "Termes i Condicions",
+    "lastUpdated": "Última actualització",
+    "sections": {
+      "general": "Termes generals",
+      "booking": "Condicions de reserva",
+      "cancellation": "Política de cancel·lació",
+      "liability": "Limitació de responsabilitat"
+    }
+  },
+  "notFound": {
+    "title": "Pàgina no trobada",
+    "message": "Ho sentim, la pàgina que busques no existeix",
+    "backHome": "Tornar a l'inici"
+  },
+  "about": {
+    "title": "Sobre Nosaltres",
+    "subtitle": "Som experts en viatges asiàtics compromesos a crear experiències autèntiques i memorables.",
+    "ourStory": {
+      "title": "La Nostra Història",
+      "paragraph1": "Flow2bali va començar amb una simple passió: compartir la bellesa autèntica d'Àsia amb el món. Fundada el 2010 per un grup d'entusiastes viatgers i experts locals, ens hem dedicat a crear itineraris que van més enllà del turisme convencional.",
+      "paragraph2": "Després de més d'una dècada oferint experiències excepcionals, ens hem convertit en especialistes en destinacions asiàtiques, combinant el coneixement profund de la cultura local amb un servei personalitzat de primera classe.",
+      "paragraph3": "El nostre equip multinacional treballa incansablement per garantir que cada viatger visqui Àsia de manera autèntica, sostenible i transformadora."
+    },
+    "values": {
+      "title": "Els Nostres Valors",
+      "subtitle": "Els principis fonamentals que guien cada aspecte del nostre servei i operacions",
+      "passion": {
+        "title": "Passió",
+        "description": "La nostra passió per Àsia impulsa tot el que fem, des de la planificació meticulosa fins al servei excepcional."
+      },
+      "experience": {
+        "title": "Experiència",
+        "description": "Dècades d'experiència combinada ens permeten oferir els millors consells i solucions per a cada viatger."
+      },
+      "sustainability": {
+        "title": "Sostenibilitat",
+        "description": "Ens comprometem a promoure pràctiques de viatge responsables que respectin les comunitats locals i el medi ambient."
+      },
+      "community": {
+        "title": "Comunitat",
+        "description": "Creiem en construir relacions autèntiques amb les comunitats locals i oferir experiències que beneficiïn a tothom."
+      }
+    },
+    "team": {
+      "title": "El Nostre Equip",
+      "subtitle": "Coneix els apassionats experts darrere de cada viatge inoblidable"
+    }
+  },
+  "testimonials": {
+    "title": "El Que Diuen Els Viatgers",
+    "subtitle": "Històries reals de viatgers que van experimentar la màgia d'Àsia amb nosaltres",
+    "japan": {
+      "quote": "El nostre viatge al Japó amb Flow2bali va ser absolutament increïble. Cada detall estava perfectament organitzat i els guies locals van fer que l'experiència fos especial.",
+      "author": "Sara J.",
+      "location": "Kioto, Japó"
+    },
+    "thailand": {
+      "quote": "El tour per les platges de Tailàndia va superar totes les nostres expectatives. Des de les platges verges fins a la vibrant vida nocturna, tot va ser tal com ho van prometre i més!",
+      "author": "Miquel T.",
+      "location": "Phuket, Tailàndia"
+    },
+    "vietnam": {
+      "quote": "La cultura i els paisatges del Vietnam són impressionants, i Flow2bali ens va ajudar a explorar-ho tot. Els tours gastronòmics van ser quelcom que mai oblidarem.",
+      "author": "Elena i David",
+      "location": "Hanoi, Vietnam"
+    }
+  }
+} 

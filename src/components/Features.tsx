@@ -1,33 +1,38 @@
-
 import React from 'react';
-
-const features = [
-  {
-    id: 1,
-    title: "Guías Locales Expertos",
-    description: "Nuestros conocedores guías proporcionan auténticas perspectivas culturales"
-  },
-  {
-    id: 2,
-    title: "Alojamientos Seleccionados",
-    description: "Hospédese cómodamente en nuestros hoteles y resorts cuidadosamente seleccionados"
-  },
-  {
-    id: 3,
-    title: "Viajes Sostenibles",
-    description: "Experiencias éticas que respetan las comunidades locales y el medio ambiente"
-  },
-  {
-    id: 4,
-    title: "Soporte 24/7",
-    description: "Viaje con tranquilidad sabiendo que nuestro equipo está siempre disponible"
-  }
-];
+import { useTranslation } from 'react-i18next';
 
 const Features = () => {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      id: 1,
+      title: t('home.features.authentic.title'),
+      description: t('home.features.authentic.description')
+    },
+    {
+      id: 2,
+      title: t('home.features.expert.title'),
+      description: t('home.features.expert.description')
+    },
+    {
+      id: 3,
+      title: t('home.features.sustainable.title'),
+      description: t('home.features.sustainable.description')
+    },
+    {
+      id: 4,
+      title: t('services.customized.title'),
+      description: t('services.customized.description')
+    }
+  ];
+
   return (
     <section className="py-16">
       <div className="container">
+        <h2 className="text-3xl font-serif font-bold text-center mb-12 text-travel-dark">
+          {t('home.features.title')}
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature) => (
             <div key={feature.id} className="flex flex-col items-center text-center">

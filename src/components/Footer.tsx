@@ -1,9 +1,11 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Facebook, Instagram, Twitter } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-travel-dark text-white pt-16 pb-8">
       <div className="container">
@@ -16,7 +18,7 @@ const Footer = () => {
               </h2>
             </Link>
             <p className="text-gray-300 mb-6">
-              Descubre las maravillas de Asia con nuestras experiencias de viaje seleccionadas e itinerarios personalizados.
+              {t('footer.aboutText')}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-travel-terracotta">
@@ -33,31 +35,31 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-serif mb-6">Enlaces Rápidos</h3>
+            <h3 className="text-lg font-serif mb-6">{t('footer.quickLinks')}</h3>
             <ul className="space-y-3">
               <li>
                 <Link to="/about" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  Sobre Nosotros
+                  {t('footer.about')}
                 </Link>
               </li>
               <li>
-                <Link to="/servicios" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  Nuestros Servicios
+                <Link to="/services" className="text-gray-300 hover:text-travel-terracotta transition-colors">
+                  {t('nav.services')}
                 </Link>
               </li>
               <li>
                 <Link to="/destinations" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  Destinos
+                  {t('nav.destinations')}
                 </Link>
               </li>
               <li>
                 <Link to="/blog" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  Blog de Viajes
+                  {t('nav.blog')}
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  Contáctanos
+                  {t('nav.contact')}
                 </Link>
               </li>
             </ul>
@@ -65,7 +67,7 @@ const Footer = () => {
 
           {/* Top Destinations */}
           <div>
-            <h3 className="text-lg font-serif mb-6">Destinos Principales</h3>
+            <h3 className="text-lg font-serif mb-6">{t('destinations.title')}</h3>
             <ul className="space-y-3">
               <li>
                 <Link to="/destinations/japan" className="text-gray-300 hover:text-travel-terracotta transition-colors">
@@ -97,7 +99,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-serif mb-6">Información de Contacto</h3>
+            <h3 className="text-lg font-serif mb-6">{t('contact.info.title')}</h3>
             <div className="space-y-4">
               <div className="flex items-start">
                 <MapPin size={20} className="text-travel-terracotta mr-3 mt-1" />
@@ -119,17 +121,17 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} FLOW2BALI. Todos los derechos reservados.
+            &copy; {new Date().getFullYear()} FLOW2BALI. {t('footer.copyright')}
           </p>
           <div className="flex space-x-6">
             <Link to="/privacy" className="text-gray-400 hover:text-travel-terracotta text-sm">
-              Política de Privacidad
+              {t('footer.privacy')}
             </Link>
             <Link to="/terms" className="text-gray-400 hover:text-travel-terracotta text-sm">
-              Términos de Servicio
+              {t('footer.terms')}
             </Link>
             <Link to="/faq" className="text-gray-400 hover:text-travel-terracotta text-sm">
-              Preguntas Frecuentes
+              {t('faq.title')}
             </Link>
           </div>
         </div>

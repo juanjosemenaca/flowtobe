@@ -2,10 +2,13 @@ import React, { useState, useEffect } from "react";
 import { MapPin, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import LanguageSelector from "./LanguageSelector";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,7 +28,7 @@ const Header = () => {
           : "bg-transparent py-4"
       }`}
     >
-      <div className="container flex items-center justify-between">
+      <div className="container mx-auto px-4 flex items-center justify-between">
         <Link to="/" className="flex items-center">
           <img src="/logo.jfif" alt="Flow2Bali Logo" className="h-10 w-10 mr-3 rounded-full object-cover" />
           <h1 className={`text-2xl sm:text-3xl font-serif font-bold ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
@@ -36,35 +39,38 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
           <Link to="/" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            Inicio
+            {t('nav.home')}
           </Link>
           <Link to="/destinations" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            Destinos
+            {t('nav.destinations')}
           </Link>
           <Link to="/experiences" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            Experiencias
+            {t('nav.experiences')}
           </Link>
           <Link to="/servicios" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            Servicios
+            {t('nav.services')}
           </Link>
           <Link to="/blog" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            Blog
+            {t('nav.blog')}
           </Link>
           <Link to="/about" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            Sobre Nosotros
+            {t('nav.about')}
           </Link>
           <Link to="/contact" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            Contacto
+            {t('nav.contact')}
           </Link>
+          <LanguageSelector isScrolled={isScrolled} />
         </nav>
 
-        <Link to="/reservar">
-          <Button
-            className={`hidden md:flex bg-travel-terracotta hover:bg-travel-teal text-white items-center gap-2`}
-          >
-            <MapPin size={18} /> Reservar Ahora
-          </Button>
-        </Link>
+        <div className="hidden md:flex items-center space-x-4">
+          <Link to="/booking">
+            <Button
+              className={`bg-travel-terracotta hover:bg-travel-teal text-white items-center gap-2`}
+            >
+              <MapPin size={18} /> {t('nav.bookNow')}
+            </Button>
+          </Link>
+        </div>
 
         {/* Mobile menu button */}
         <button 
@@ -84,58 +90,61 @@ const Header = () => {
               className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Inicio
+              {t('nav.home')}
             </Link>
             <Link 
               to="/destinations" 
               className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Destinos
+              {t('nav.destinations')}
             </Link>
             <Link 
               to="/experiences" 
               className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Experiencias
+              {t('nav.experiences')}
             </Link>
             <Link 
               to="/servicios" 
               className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Servicios
+              {t('nav.services')}
             </Link>
             <Link 
               to="/blog" 
               className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Blog
+              {t('nav.blog')}
             </Link>
             <Link 
               to="/about" 
               className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Sobre Nosotros
+              {t('nav.about')}
             </Link>
             <Link 
               to="/contact" 
               className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Contacto
+              {t('nav.contact')}
             </Link>
+            <div className="px-2 py-2">
+              <LanguageSelector isScrolled={true} />
+            </div>
             <Link 
-              to="/reservar" 
+              to="/booking" 
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <Button 
                 className="bg-travel-terracotta hover:bg-travel-teal text-white w-full mt-2 flex items-center justify-center gap-2"
               >
-                <MapPin size={18} /> Reservar Ahora
+                <MapPin size={18} /> {t('nav.bookNow')}
               </Button>
             </Link>
           </div>

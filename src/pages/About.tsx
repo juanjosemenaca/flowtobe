@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react';
 import { Briefcase, Users, Heart, Globe } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 const About = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -17,10 +20,10 @@ const About = () => {
         <div className="container text-center flex flex-col items-center justify-center">
           <div className="flex items-center justify-center mb-4">
             <img src="/logo.jfif" alt="Flow2Bali Logo" className="h-20 w-20 rounded-full object-cover mr-4" />
-            <h1 className="text-4xl md:text-5xl font-serif">Sobre Nosotros</h1>
+            <h1 className="text-4xl md:text-5xl font-serif">{t('about.title')}</h1>
           </div>
           <p className="text-lg max-w-3xl mx-auto opacity-90">
-            Somos expertos en viajes asiáticos comprometidos a crear experiencias auténticas y memorables.
+            {t('about.subtitle')}
           </p>
         </div>
       </div>
@@ -30,20 +33,15 @@ const About = () => {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-serif text-travel-dark mb-6">Nuestra Historia</h2>
+              <h2 className="text-3xl font-serif text-travel-dark mb-6">{t('about.ourStory.title')}</h2>
               <p className="text-travel-sage mb-4">
-                Flow2bali comenzó con una simple pasión: compartir la belleza auténtica de Asia con el mundo.
-                Fundada en 2010 por un grupo de entusiastas viajeros y expertos locales, nos hemos dedicado 
-                a crear itinerarios que van más allá del turismo convencional.
+                {t('about.ourStory.paragraph1')}
               </p>
               <p className="text-travel-sage mb-4">
-                Después de más de una década ofreciendo experiencias excepcionales, nos hemos convertido en 
-                especialistas en destinos asiáticos, combinando el conocimiento profundo de la cultura local
-                con un servicio personalizado de primera clase.
+                {t('about.ourStory.paragraph2')}
               </p>
               <p className="text-travel-sage">
-                Nuestro equipo multinacional trabaja incansablemente para garantizar que cada viajero viva 
-                Asia de manera auténtica, sostenible y transformadora.
+                {t('about.ourStory.paragraph3')}
               </p>
             </div>
             <div>
@@ -61,9 +59,9 @@ const About = () => {
       <section className="py-16 bg-travel-cream">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-serif text-travel-dark mb-4">Nuestros Valores</h2>
+            <h2 className="text-3xl font-serif text-travel-dark mb-4">{t('about.values.title')}</h2>
             <p className="text-travel-sage max-w-2xl mx-auto">
-              Los principios fundamentales que guían cada aspecto de nuestro servicio y operaciones
+              {t('about.values.subtitle')}
             </p>
           </div>
           
@@ -72,9 +70,9 @@ const About = () => {
               <div className="w-16 h-16 bg-travel-terracotta rounded-full flex items-center justify-center mx-auto mb-6">
                 <Heart className="text-white" size={28} />
               </div>
-              <h3 className="text-xl font-serif mb-3 text-travel-dark">Pasión</h3>
+              <h3 className="text-xl font-serif mb-3 text-travel-dark">{t('about.values.passion.title')}</h3>
               <p className="text-travel-sage">
-                Nuestra pasión por Asia impulsa todo lo que hacemos, desde la planificación meticulosa hasta el servicio excepcional.
+                {t('about.values.passion.description')}
               </p>
             </div>
             
@@ -82,9 +80,9 @@ const About = () => {
               <div className="w-16 h-16 bg-travel-teal rounded-full flex items-center justify-center mx-auto mb-6">
                 <Briefcase className="text-white" size={28} />
               </div>
-              <h3 className="text-xl font-serif mb-3 text-travel-dark">Experiencia</h3>
+              <h3 className="text-xl font-serif mb-3 text-travel-dark">{t('about.values.experience.title')}</h3>
               <p className="text-travel-sage">
-                Décadas de experiencia combinada nos permiten ofrecer los mejores consejos y soluciones para cada viajero.
+                {t('about.values.experience.description')}
               </p>
             </div>
             
@@ -92,9 +90,9 @@ const About = () => {
               <div className="w-16 h-16 bg-travel-sage rounded-full flex items-center justify-center mx-auto mb-6">
                 <Globe className="text-white" size={28} />
               </div>
-              <h3 className="text-xl font-serif mb-3 text-travel-dark">Sostenibilidad</h3>
+              <h3 className="text-xl font-serif mb-3 text-travel-dark">{t('about.values.sustainability.title')}</h3>
               <p className="text-travel-sage">
-                Nos comprometemos a promover prácticas de viaje responsables que respeten las comunidades locales y el medio ambiente.
+                {t('about.values.sustainability.description')}
               </p>
             </div>
             
@@ -102,9 +100,9 @@ const About = () => {
               <div className="w-16 h-16 bg-travel-gold rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="text-white" size={28} />
               </div>
-              <h3 className="text-xl font-serif mb-3 text-travel-dark">Comunidad</h3>
+              <h3 className="text-xl font-serif mb-3 text-travel-dark">{t('about.values.community.title')}</h3>
               <p className="text-travel-sage">
-                Creemos en construir relaciones auténticas con las comunidades locales y ofrecer experiencias que beneficien a todos.
+                {t('about.values.community.description')}
               </p>
             </div>
           </div>
@@ -115,9 +113,9 @@ const About = () => {
       <section className="py-16">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-serif text-travel-dark mb-4">Nuestro Equipo</h2>
+            <h2 className="text-3xl font-serif text-travel-dark mb-4">{t('about.team.title')}</h2>
             <p className="text-travel-sage max-w-2xl mx-auto">
-              Conozca a los apasionados expertos detrás de cada viaje inolvidable
+              {t('about.team.subtitle')}
             </p>
           </div>
           

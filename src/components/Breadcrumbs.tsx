@@ -1,23 +1,24 @@
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronRight, Home } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Breadcrumbs = () => {
   const location = useLocation();
   const pathnames = location.pathname.split('/').filter((x) => x);
+  const { t } = useTranslation();
 
   const getBreadcrumbName = (path: string) => {
     const pathMap: { [key: string]: string } = {
-      destinations: 'Destinos',
-      experiences: 'Experiencias',
-      blog: 'Blog',
-      about: 'Sobre Nosotros',
-      contact: 'Contacto',
-      privacy: 'Privacidad',
-      terms: 'Términos y Condiciones',
-      faq: 'Preguntas Frecuentes',
-      booking: 'Reservas',
-      reservar: 'Reservar Ahora',
-      servicios: 'Servicios'
+      destinations: t('nav.destinations'),
+      experiences: t('nav.experiences'),
+      blog: t('nav.blog'),
+      about: t('nav.about'),
+      contact: t('nav.contact'),
+      privacy: t('footer.privacy'),
+      terms: t('footer.terms'),
+      faq: t('faq.title'),
+      booking: t('nav.bookNow'),
+      services: t('nav.services')
     };
 
     return pathMap[path] || path.charAt(0).toUpperCase() + path.slice(1);
