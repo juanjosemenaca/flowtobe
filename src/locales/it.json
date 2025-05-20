@@ -111,13 +111,13 @@
     },
     "custom": {
       "description": "Non trovi quello che cerchi? Contattaci per progettare un viaggio personalizzato in qualsiasi destinazione asiatica.",
-      "cta": "Richiesta personalizzata"
+      "cta": "Consulenza Personalizzata"
     },
     "travelTips": {
       "title": "Consigli per Viaggiare in Asia",
       "tips": [
         "Rispetta le usanze locali: Informati sulle norme culturali di ogni paese prima di visitarlo.",
-        "Vaccini e salute: Consulta un medico sulle vaccinazioni raccomandate per ogni destinazione.",
+        "Vaccini e salute: Consulta un medico sui vaccini raccomandati per ogni destinazione.",
         "Stagioni: Informati sulle stagioni delle piogge e sui festival importanti che potrebbero influenzare il tuo viaggio.",
         "Trasporto locale: Il trasporto pubblico varia significativamente tra i paesi; pianifica in anticipo."
       ],
@@ -128,19 +128,223 @@
     "categories": {
       "bali": {
         "title": "Bali",
-        "description": "Paradiso tropicale con templi e spiagge da sogno"
+        "description": "Paradiso tropicale con templi e spiagge da sogno",
+        "highlights": {
+          "title": "Attrazioni",
+          "items": [
+            "Templi sacri e cerimonie spirituali",
+            "Terrazze di riso e paesaggi vulcanici",
+            "Spot di surf di livello mondiale",
+            "Vivace scena artistica e artigianale"
+          ]
+        },
+        "experiences": {
+          "title": "Esperienze Uniche",
+          "items": [
+            "Corsi di cucina balinese tradizionale",
+            "Trekking all'alba sul Monte Batur",
+            "Visita alla foresta sacra delle scimmie",
+            "Spettacoli di danza tradizionale"
+          ]
+        }
       },
       "thailand": {
         "title": "Thailandia",
-        "description": "Paradiso tropicale e antichi templi"
+        "description": "Paradiso tropicale e antichi templi",
+        "highlights": {
+          "title": "Attrazioni",
+          "items": [
+            "Antichi templi e palazzi reali",
+            "Spiagge e isole incontaminate",
+            "Vivace cultura del cibo di strada",
+            "Ricco patrimonio buddista"
+          ]
+        },
+        "experiences": {
+          "title": "Esperienze Uniche",
+          "items": [
+            "Laboratori di cucina thailandese",
+            "Visite ai santuari degli elefanti",
+            "Tour dei mercati galleggianti",
+            "Massaggio thailandese tradizionale"
+          ]
+        }
       },
       "vietnam": {
         "title": "Vietnam",
-        "description": "Ricca cultura e paesaggi mozzafiato"
+        "description": "Ricca cultura e paesaggi mozzafiato",
+        "highlights": {
+          "title": "Attrazioni",
+          "items": [
+            "Isole calcaree della Baia di Ha Long",
+            "Antica città di Hoi An",
+            "Vita nel Delta del Mekong",
+            "Architettura coloniale francese"
+          ]
+        },
+        "experiences": {
+          "title": "Esperienze Uniche",
+          "items": [
+            "Tour del cibo di strada",
+            "Ciclismo nelle risaie",
+            "Creazione di lanterne tradizionali",
+            "Gite in barca nel Delta del Mekong"
+          ]
+        }
       },
       "japan": {
         "title": "Giappone",
-        "description": "Terra di tecnologia e tradizione"
+        "description": "Terra di tecnologia e tradizione",
+        "highlights": {
+          "title": "Attrazioni",
+          "items": [
+            "Antichi templi e santuari",
+            "Stagione della fioritura dei ciliegi",
+            "Città ad alta tecnologia",
+            "Giardini tradizionali"
+          ]
+        },
+        "experiences": {
+          "title": "Esperienze Uniche",
+          "items": [
+            "Partecipazione alla cerimonia del tè",
+            "Corsi di preparazione del sushi",
+            "Bagni termali onsen",
+            "Soggiorni in ryokan tradizionali"
+          ]
+        }
+      },
+      "india": {
+        "title": "India",
+        "description": "Culture vibranti e viaggi spirituali",
+        "highlights": {
+          "title": "Attrazioni",
+          "items": [
+            "Taj Mahal e antichi forti",
+            "Spirituale Varanasi",
+            "Festival colorati",
+            "Cucina diversificata"
+          ]
+        },
+        "experiences": {
+          "title": "Esperienze Uniche",
+          "items": [
+            "Ritiri di yoga e meditazione",
+            "Corsi di cucina tradizionale",
+            "Safari nella natura selvaggia",
+            "Cerimonie spirituali"
+          ]
+        }
+      },
+      "indonesia": {
+        "title": "Indonesia",
+        "description": "Isole mozzafiato e fauna diversificata",
+        "highlights": {
+          "title": "Attrazioni",
+          "items": [
+            "Incontri con i draghi di Komodo",
+            "Paesaggi vulcanici",
+            "Diversa vita marina",
+            "Villaggi tradizionali"
+          ]
+        },
+        "experiences": {
+          "title": "Esperienze Uniche",
+          "items": [
+            "Immersione con le mante",
+            "Trekking vulcanico",
+            "Creazione di batik tradizionale",
+            "Tour da isola a isola"
+          ]
+        }
+      },
+      "china": {
+        "title": "Cina",
+        "description": "Storia antica e meraviglie moderne",
+        "highlights": {
+          "title": "Attrazioni",
+          "items": [
+            "Grande Muraglia Cinese",
+            "Città Proibita",
+            "Guerrieri di Terracotta",
+            "Shanghai moderna"
+          ]
+        },
+        "experiences": {
+          "title": "Esperienze Uniche",
+          "items": [
+            "Cerimonie tradizionali del tè",
+            "Laboratori di calligrafia",
+            "Lezioni di Kung Fu",
+            "Tour dei mercati locali"
+          ]
+        }
+      },
+      "korea": {
+        "title": "Corea del Sud",
+        "description": "Modernità e tradizioni ancestrali",
+        "highlights": {
+          "title": "Attrazioni",
+          "items": [
+            "Antichi palazzi",
+            "Cultura K-pop",
+            "Mercati tradizionali",
+            "Architettura moderna"
+          ]
+        },
+        "experiences": {
+          "title": "Esperienze Uniche",
+          "items": [
+            "Lezioni di danza K-pop",
+            "Indossare l'hanbok tradizionale",
+            "Corsi di cucina coreana",
+            "Soggiorni nei templi"
+          ]
+        }
+      },
+      "myanmar": {
+        "title": "Myanmar",
+        "description": "La terra delle pagode dorate",
+        "highlights": {
+          "title": "Attrazioni",
+          "items": [
+            "Antichi templi di Bagan",
+            "Villaggi galleggianti del Lago Inle",
+            "Pagode dorate",
+            "Mercati tradizionali"
+          ]
+        },
+        "experiences": {
+          "title": "Esperienze Uniche",
+          "items": [
+            "Voli in mongolfiera",
+            "Tour in barca tradizionale",
+            "Corsi di cucina locale",
+            "Visite ai monasteri"
+          ]
+        }
+      },
+      "malaysia": {
+        "title": "Malesia",
+        "description": "Miscela di culture e foreste pluviali tropicali",
+        "highlights": {
+          "title": "Attrazioni",
+          "items": [
+            "Torri Gemelle Petronas",
+            "Foresta pluviale del Borneo",
+            "Diversità culturale",
+            "Paradisi insulari"
+          ]
+        },
+        "experiences": {
+          "title": "Esperienze Uniche",
+          "items": [
+            "Trekking nella foresta pluviale",
+            "Tour del cibo locale",
+            "Laboratori di artigianato tradizionale",
+            "Tour da isola a isola"
+          ]
+        }
       }
     }
   },
@@ -286,12 +490,19 @@
     "categories": "Categorie",
     "tags": "Tag",
     "search": "Cerca articoli...",
-    "noResults": "Nessun articolo trovato"
+    "noResults": "Nessun articolo trovato",
+    "newsletter": {
+      "title": "Iscriviti alla Nostra Newsletter",
+      "description": "Ricevi gli ultimi aggiornamenti, consigli di viaggio e offerte speciali direttamente nella tua casella di posta",
+      "emailPlaceholder": "La tua email",
+      "subscribeButton": "Iscriviti"
+    }
   },
   "contact": {
     "title": "Contatti",
     "subtitle": "Siamo qui per aiutarti",
     "form": {
+      "title": "Inviaci un messaggio",
       "name": "Nome",
       "email": "Email",
       "phone": "Telefono",

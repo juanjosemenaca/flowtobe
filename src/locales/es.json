@@ -265,14 +265,21 @@
     "pagination": {
       "previous": "Anterior",
       "next": "Siguiente"
+    },
+    "newsletter": {
+      "title": "Suscríbete a Nuestro Newsletter",
+      "description": "Recibe las últimas actualizaciones, consejos de viaje y ofertas especiales directamente en tu bandeja de entrada",
+      "emailPlaceholder": "Tu correo electrónico",
+      "subscribeButton": "Suscribirme"
     }
   },
   "contact": {
     "title": "Contacto",
     "subtitle": "Estamos aquí para ayudarte",
     "form": {
+      "title": "Envíanos un mensaje",
       "name": "Nombre",
-      "email": "Correo electrónico",
+      "email": "Email",
       "phone": "Teléfono",
       "subject": "Asunto",
       "message": "Mensaje",

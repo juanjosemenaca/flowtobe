@@ -93,51 +93,235 @@
     "categories": {
       "bali": {
         "title": "Bali",
-        "description": "Tropical paradise with temples and dream beaches"
+        "description": "Tropical paradise with temples and dream beaches",
+        "highlights": {
+          "title": "Highlights",
+          "items": [
+            "Sacred temples and spiritual ceremonies",
+            "Lush rice terraces and volcanic landscapes",
+            "World-class surfing spots",
+            "Vibrant arts and crafts scene"
+          ]
+        },
+        "experiences": {
+          "title": "Unique Experiences",
+          "items": [
+            "Traditional Balinese cooking classes",
+            "Sunrise trek to Mount Batur",
+            "Sacred monkey forest visit",
+            "Traditional dance performances"
+          ]
+        }
       },
       "thailand": {
         "title": "Thailand",
-        "description": "Tropical paradise and ancient temples"
+        "description": "Tropical paradise and ancient temples",
+        "highlights": {
+          "title": "Highlights",
+          "items": [
+            "Ancient temples and royal palaces",
+            "Pristine beaches and islands",
+            "Vibrant street food culture",
+            "Rich Buddhist heritage"
+          ]
+        },
+        "experiences": {
+          "title": "Unique Experiences",
+          "items": [
+            "Thai cooking workshops",
+            "Elephant sanctuary visits",
+            "Floating market tours",
+            "Traditional Thai massage"
+          ]
+        }
       },
       "vietnam": {
         "title": "Vietnam",
-        "description": "Rich culture and stunning landscapes"
-      },
-      "india": {
-        "title": "India",
-        "description": "Vibrant cultures and spiritual journeys"
-      },
-      "indonesia": {
-        "title": "Indonesia",
-        "description": "Stunning islands and diverse wildlife"
-      },
-      "china": {
-        "title": "China",
-        "description": "Ancient history and modern wonders"
-      },
-      "korea": {
-        "title": "South Korea",
-        "description": "Modernity and ancestral traditions"
-      },
-      "myanmar": {
-        "title": "Myanmar",
-        "description": "The land of golden pagodas"
-      },
-      "malaysia": {
-        "title": "Malaysia",
-        "description": "Mix of cultures and tropical rainforests"
+        "description": "Rich culture and stunning landscapes",
+        "highlights": {
+          "title": "Highlights",
+          "items": [
+            "Ha Long Bay's limestone islands",
+            "Ancient Hoi An town",
+            "Mekong Delta life",
+            "French colonial architecture"
+          ]
+        },
+        "experiences": {
+          "title": "Unique Experiences",
+          "items": [
+            "Street food tours",
+            "Rice field cycling",
+            "Traditional lantern making",
+            "Mekong Delta boat trips"
+          ]
+        }
       },
       "japan": {
         "title": "Japan",
-        "description": "Land of technology and tradition"
+        "description": "Land of technology and tradition",
+        "highlights": {
+          "title": "Highlights",
+          "items": [
+            "Ancient temples and shrines",
+            "Cherry blossom season",
+            "High-tech cities",
+            "Traditional gardens"
+          ]
+        },
+        "experiences": {
+          "title": "Unique Experiences",
+          "items": [
+            "Tea ceremony participation",
+            "Sushi making classes",
+            "Onsen hot spring baths",
+            "Traditional ryokan stays"
+          ]
+        }
+      },
+      "india": {
+        "title": "India",
+        "description": "Vibrant cultures and spiritual journeys",
+        "highlights": {
+          "title": "Highlights",
+          "items": [
+            "Taj Mahal and ancient forts",
+            "Spiritual Varanasi",
+            "Colorful festivals",
+            "Diverse cuisine"
+          ]
+        },
+        "experiences": {
+          "title": "Unique Experiences",
+          "items": [
+            "Yoga and meditation retreats",
+            "Traditional cooking classes",
+            "Wildlife safaris",
+            "Spiritual ceremonies"
+          ]
+        }
+      },
+      "indonesia": {
+        "title": "Indonesia",
+        "description": "Stunning islands and diverse wildlife",
+        "highlights": {
+          "title": "Highlights",
+          "items": [
+            "Komodo dragon encounters",
+            "Volcanic landscapes",
+            "Diverse marine life",
+            "Traditional villages"
+          ]
+        },
+        "experiences": {
+          "title": "Unique Experiences",
+          "items": [
+            "Diving with manta rays",
+            "Volcano trekking",
+            "Traditional batik making",
+            "Island hopping tours"
+          ]
+        }
+      },
+      "china": {
+        "title": "China",
+        "description": "Ancient history and modern wonders",
+        "highlights": {
+          "title": "Highlights",
+          "items": [
+            "Great Wall of China",
+            "Forbidden City",
+            "Terracotta Warriors",
+            "Modern Shanghai"
+          ]
+        },
+        "experiences": {
+          "title": "Unique Experiences",
+          "items": [
+            "Traditional tea ceremonies",
+            "Calligraphy workshops",
+            "Kung Fu classes",
+            "Local market tours"
+          ]
+        }
+      },
+      "korea": {
+        "title": "South Korea",
+        "description": "Modernity and ancestral traditions",
+        "highlights": {
+          "title": "Highlights",
+          "items": [
+            "Ancient palaces",
+            "K-pop culture",
+            "Traditional markets",
+            "Modern architecture"
+          ]
+        },
+        "experiences": {
+          "title": "Unique Experiences",
+          "items": [
+            "K-pop dance classes",
+            "Traditional hanbok wearing",
+            "Korean cooking classes",
+            "Temple stays"
+          ]
+        }
+      },
+      "myanmar": {
+        "title": "Myanmar",
+        "description": "The land of golden pagodas",
+        "highlights": {
+          "title": "Highlights",
+          "items": [
+            "Ancient Bagan temples",
+            "Inle Lake floating villages",
+            "Golden pagodas",
+            "Traditional markets"
+          ]
+        },
+        "experiences": {
+          "title": "Unique Experiences",
+          "items": [
+            "Hot air balloon rides",
+            "Traditional boat tours",
+            "Local cooking classes",
+            "Monastery visits"
+          ]
+        }
+      },
+      "malaysia": {
+        "title": "Malaysia",
+        "description": "Mix of cultures and tropical rainforests",
+        "highlights": {
+          "title": "Highlights",
+          "items": [
+            "Petronas Twin Towers",
+            "Borneo rainforest",
+            "Cultural diversity",
+            "Island paradises"
+          ]
+        },
+        "experiences": {
+          "title": "Unique Experiences",
+          "items": [
+            "Rainforest trekking",
+            "Local food tours",
+            "Traditional craft workshops",
+            "Island hopping"
+          ]
+        }
       }
     }
   },
   "experiences": {
     "title": "Unforgettable Experiences",
-    "subtitle": "Create memories that last a lifetime with our curated travel experiences",
+    "subtitle": "Create memories that last a lifetime with our carefully selected travel experiences",
     "exploreButton": "Explore FLOW2BALY",
     "viewAllButton": "All Experiences",
+    "liveAsia": {
+      "title": "Live Asia, Don't Just Visit It",
+      "description": "Our experiences are designed to immerse you deeply in the cultures, traditions, and landscapes of Asia. Connect with local communities, learn new skills, and create memories that will last beyond photographs."
+    },
     "categories": {
       "cultural": {
         "title": "Cultural Immersion",
@@ -260,8 +444,9 @@
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "We're here to help",
+    "subtitle": "We're here to help you",
     "form": {
+      "title": "Send us a message",
       "name": "Name",
       "email": "Email",
       "phone": "Phone",

@@ -115,48 +115,6 @@
       "description": "No trobes el que busques? Contacta'ns per dissenyar un viatge personalitzat a qualsevol destinació d'Àsia.",
       "cta": "Consulta personalitzada"
     },
-    "categories": {
-      "bali": {
-        "title": "Bali",
-        "description": "Paradís tropical amb temples i platges de somni"
-      },
-      "thailand": {
-        "title": "Tailàndia",
-        "description": "Paradís tropical i temples antics"
-      },
-      "vietnam": {
-        "title": "Vietnam",
-        "description": "Rica cultura i paisatges impressionants"
-      },
-      "japan": {
-        "title": "Japó",
-        "description": "Terra de tecnologia i tradició"
-      },
-      "india": {
-        "title": "Índia",
-        "description": "Cultures vibrants i viatges espirituals"
-      },
-      "indonesia": {
-        "title": "Indonèsia",
-        "description": "Illes impressionants i fauna diversa"
-      },
-      "china": {
-        "title": "Xina",
-        "description": "Història antiga i meravelles modernes"
-      },
-      "korea": {
-        "title": "Corea del Sud",
-        "description": "Modernitat i tradicions ancestrals"
-      },
-      "myanmar": {
-        "title": "Myanmar",
-        "description": "La terra de les pagodes daurades"
-      },
-      "malaysia": {
-        "title": "Malàisia",
-        "description": "Barreja de cultures i selves tropicals"
-      }
-    },
     "travelTips": {
       "title": "Consells per viatjar per Àsia",
       "tips": [
@@ -166,6 +124,228 @@
         "Transport local: El transport públic varia significativament entre països; planifica amb antelació."
       ],
       "moreInfo": "Més informació per a viatgers"
+    },
+    "categories": {
+      "bali": {
+        "title": "Bali",
+        "description": "Paradís tropical amb temples i platges de somni",
+        "highlights": {
+          "title": "Llocs d'Interès",
+          "items": [
+            "Temples sagrats i cerimònies espirituals",
+            "Terrasses d'arròs i paisatges volcànics",
+            "Punts de surf de classe mundial",
+            "Escena vibrant d'art i artesania"
+          ]
+        },
+        "experiences": {
+          "title": "Experiències Úniques",
+          "items": [
+            "Classes de cuina balinesa tradicional",
+            "Trekking a l'alba al Mont Batur",
+            "Visita al bosc sagrat dels micos",
+            "Representacions de dansa tradicional"
+          ]
+        }
+      },
+      "thailand": {
+        "title": "Tailàndia",
+        "description": "Paradís tropical i temples antics",
+        "highlights": {
+          "title": "Llocs d'Interès",
+          "items": [
+            "Temples antics i palaus reials",
+            "Platges i illes verges",
+            "Cultura vibrant de menjar al carrer",
+            "Rica herència budista"
+          ]
+        },
+        "experiences": {
+          "title": "Experiències Úniques",
+          "items": [
+            "Tallers de cuina tailandesa",
+            "Visites a santuaris d'elefants",
+            "Tours pels mercats flotants",
+            "Massatge tailandès tradicional"
+          ]
+        }
+      },
+      "vietnam": {
+        "title": "Vietnam",
+        "description": "Rica cultura i paisatges impressionants",
+        "highlights": {
+          "title": "Llocs d'Interès",
+          "items": [
+            "Illes de pedra calcària de la Badia d'Ha Long",
+            "Antiga ciutat de Hoi An",
+            "Vida al Delta del Mekong",
+            "Arquitectura colonial francesa"
+          ]
+        },
+        "experiences": {
+          "title": "Experiències Úniques",
+          "items": [
+            "Tours de menjar al carrer",
+            "Ciclisme pels camps d'arròs",
+            "Fabricació de llanternes tradicionals",
+            "Viatges en barca pel Delta del Mekong"
+          ]
+        }
+      },
+      "japan": {
+        "title": "Japó",
+        "description": "Terra de tecnologia i tradició",
+        "highlights": {
+          "title": "Llocs d'Interès",
+          "items": [
+            "Temples i santuaris antics",
+            "Temporada de floració dels cirerers",
+            "Ciutats d'alta tecnologia",
+            "Jardins tradicionals"
+          ]
+        },
+        "experiences": {
+          "title": "Experiències Úniques",
+          "items": [
+            "Participació en cerimònies del te",
+            "Classes de preparació de sushi",
+            "Banys termals onsen",
+            "Estades en ryokan tradicionals"
+          ]
+        }
+      },
+      "india": {
+        "title": "Índia",
+        "description": "Cultures vibrants i viatges espirituals",
+        "highlights": {
+          "title": "Llocs d'Interès",
+          "items": [
+            "Taj Mahal i fortsantics",
+            "Varanasi espiritual",
+            "Festivals colorits",
+            "Cuisina diversa"
+          ]
+        },
+        "experiences": {
+          "title": "Experiències Úniques",
+          "items": [
+            "Retirs de ioga i meditació",
+            "Classes de cuina tradicional",
+            "Safaris de vida salvatge",
+            "Cerimònies espirituals"
+          ]
+        }
+      },
+      "indonesia": {
+        "title": "Indonèsia",
+        "description": "Illes impressionants i fauna diversa",
+        "highlights": {
+          "title": "Llocs d'Interès",
+          "items": [
+            "Trobades amb dragons de Komodo",
+            "Paisatges volcànics",
+            "Diversa vida marina",
+            "Pobles tradicionals"
+          ]
+        },
+        "experiences": {
+          "title": "Experiències Úniques",
+          "items": [
+            "Submarinisme amb mantes",
+            "Trekking volcànic",
+            "Fabricació de batik tradicional",
+            "Tours d'illa en illa"
+          ]
+        }
+      },
+      "china": {
+        "title": "Xina",
+        "description": "Història antiga i meravelles modernes",
+        "highlights": {
+          "title": "Llocs d'Interès",
+          "items": [
+            "Gran Muralla Xinesa",
+            "Ciutat Prohibida",
+            "Guerrers de Terracota",
+            "Shanghai moderna"
+          ]
+        },
+        "experiences": {
+          "title": "Experiències Úniques",
+          "items": [
+            "Cerimònies tradicionals del te",
+            "Tallers de cal·ligrafia",
+            "Classes de Kung Fu",
+            "Tours pels mercats locals"
+          ]
+        }
+      },
+      "korea": {
+        "title": "Corea del Sud",
+        "description": "Modernitat i tradicions ancestrals",
+        "highlights": {
+          "title": "Llocs d'Interès",
+          "items": [
+            "Palaus antics",
+            "Cultura K-pop",
+            "Mercats tradicionals",
+            "Arquitectura moderna"
+          ]
+        },
+        "experiences": {
+          "title": "Experiències Úniques",
+          "items": [
+            "Classes de dansa K-pop",
+            "Vestimenta tradicional hanbok",
+            "Classes de cuina coreana",
+            "Estades en temples"
+          ]
+        }
+      },
+      "myanmar": {
+        "title": "Myanmar",
+        "description": "La terra de les pagodes daurades",
+        "highlights": {
+          "title": "Llocs d'Interès",
+          "items": [
+            "Temples antics de Bagan",
+            "Pobles flotants del Llac Inle",
+            "Pagodes daurades",
+            "Mercats tradicionals"
+          ]
+        },
+        "experiences": {
+          "title": "Experiències Úniques",
+          "items": [
+            "Vols en globus aerostàtic",
+            "Tours en barca tradicional",
+            "Classes de cuina local",
+            "Visites a monestirs"
+          ]
+        }
+      },
+      "malaysia": {
+        "title": "Malàisia",
+        "description": "Barreja de cultures i selves tropicals",
+        "highlights": {
+          "title": "Llocs d'Interès",
+          "items": [
+            "Torres Bessones Petronas",
+            "Selva de Borneo",
+            "Diversitat cultural",
+            "Paradisos insulars"
+          ]
+        },
+        "experiences": {
+          "title": "Experiències Úniques",
+          "items": [
+            "Trekking per la selva",
+            "Tours de menjar local",
+            "Tallers d'artesania tradicional",
+            "Tours d'illa en illa"
+          ]
+        }
+      }
     }
   },
   "experiences": {
@@ -324,12 +504,19 @@
     "pagination": {
       "previous": "Anterior",
       "next": "Següent"
+    },
+    "newsletter": {
+      "title": "Subscriu-te al Nostre Newsletter",
+      "description": "Rep les últimes actualitzacions, consells de viatge i ofertes especials directament a la teva safata d'entrada",
+      "emailPlaceholder": "El teu correu electrònic",
+      "subscribeButton": "Subscriure'm"
     }
   },
   "contact": {
     "title": "Contacte",
     "subtitle": "Estem aquí per ajudar-te",
     "form": {
+      "title": "Envia'ns un missatge",
       "name": "Nom",
       "email": "Correu electrònic",
       "phone": "Telèfon",
