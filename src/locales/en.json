@@ -47,8 +47,8 @@
   },
   "home": {
     "hero": {
-      "title": "Discover Asia in a Unique Way",
-      "subtitle": "Authentic and memorable experiences in the Asian continent",
+      "title": "Discover Asia Through Muay Thai",
+      "subtitle": "Authentic training experiences in the most beautiful destinations",
       "cta": "Explore Destinations"
     },
     "features": {
@@ -65,97 +65,30 @@
         "title": "Sustainable Tourism",
         "description": "Committed to responsible and sustainable travel practices"
       }
+    },
+    "destinations": {
+      "title": "Our Destinations",
+      "subtitle": "Discover our exclusive Muay Thai training destinations",
+      "viewAll": "View All Destinations"
     }
   },
   "destinations": {
-    "title": "Our Destinations",
-    "subtitle": "Explore the most fascinating destinations in Asia",
-    "discover": {
-      "title": "Discover the Charm of Asia",
-      "description": "From the majestic Himalayas to the paradise beaches of Southeast Asia, our destinations offer unforgettable experiences for all types of travelers."
-    },
-    "custom": {
-      "description": "Can't find what you're looking for? Contact us to design a customized trip to any Asian destination.",
-      "cta": "Custom Consultation"
-    },
-    "travelTips": {
-      "title": "Travel Tips for Asia",
-      "tips": [
-        "Respect local customs: Research cultural norms of each country before visiting.",
-        "Vaccines and health: Consult with a doctor about recommended vaccines for each destination.",
-        "Seasons: Learn about rainy seasons and important festivals that may affect your trip.",
-        "Local transportation: Public transportation varies significantly between countries; plan ahead."
-      ],
-      "moreInfo": "More Information for Travelers"
-    },
+    "title": "Destinations",
+    "subtitle": "Explore our exclusive Muay Thai training destinations",
     "exploreButton": "Explore",
     "viewAllButton": "View All Destinations",
     "categories": {
       "bali": {
-        "title": "Bali",
-        "description": "Tropical paradise with temples and dream beaches",
-        "highlights": {
-          "title": "Highlights",
-          "items": [
-            "Sacred temples and spiritual ceremonies",
-            "Lush rice terraces and volcanic landscapes",
-            "World-class surfing spots",
-            "Vibrant arts and crafts scene"
-          ]
-        },
-        "experiences": {
-          "title": "Unique Experiences",
-          "items": [
-            "Traditional Balinese cooking classes",
-            "Sunrise trek to Mount Batur",
-            "Sacred monkey forest visit",
-            "Traditional dance performances"
-          ]
-        }
+        "title": "Bali - 100% Muay Thai",
+        "description": "Muay Thai and only Muay Thai"
       },
       "thailand": {
-        "title": "Thailand",
-        "description": "Tropical paradise and ancient temples",
-        "highlights": {
-          "title": "Highlights",
-          "items": [
-            "Ancient temples and royal palaces",
-            "Pristine beaches and islands",
-            "Vibrant street food culture",
-            "Rich Buddhist heritage"
-          ]
-        },
-        "experiences": {
-          "title": "Unique Experiences",
-          "items": [
-            "Thai cooking workshops",
-            "Elephant sanctuary visits",
-            "Floating market tours",
-            "Traditional Thai massage"
-          ]
-        }
+        "title": "Bali - Muay Thai & more",
+        "description": "Tropical paradise and ancient temples"
       },
       "vietnam": {
-        "title": "Vietnam",
-        "description": "Rich culture and stunning landscapes",
-        "highlights": {
-          "title": "Highlights",
-          "items": [
-            "Ha Long Bay's limestone islands",
-            "Ancient Hoi An town",
-            "Mekong Delta life",
-            "French colonial architecture"
-          ]
-        },
-        "experiences": {
-          "title": "Unique Experiences",
-          "items": [
-            "Street food tours",
-            "Rice field cycling",
-            "Traditional lantern making",
-            "Mekong Delta boat trips"
-          ]
-        }
+        "title": "Thailand 100% Muay Thai",
+        "description": "Tropical paradise with temples and dream beaches"
       },
       "japan": {
         "title": "Japan",
@@ -343,7 +276,7 @@
   },
   "services": {
     "title": "Our Services",
-    "subtitle": "Personalized services for your perfect trip",
+    "subtitle": "Personalized Muay Thai training experiences",
     "hero": {
       "title": "Our Services",
       "subtitle": "We design personalized travel experiences that combine adventure, culture, and relaxation to create unforgettable moments in Asia."
@@ -353,6 +286,18 @@
       "subtitle": "Our services are designed to provide you with a complete and worry-free experience"
     },
     "cards": {
+      "training": {
+        "title": "Professional Training",
+        "description": "Learn from certified Muay Thai instructors"
+      },
+      "accommodation": {
+        "title": "Premium Accommodation",
+        "description": "Comfortable stays near training facilities"
+      },
+      "experience": {
+        "title": "Cultural Experience",
+        "description": "Immerse yourself in local traditions"
+      },
       "customized": {
         "title": "Customized Itineraries",
         "description": "We create tailor-made trips based on your interests, available time, and budget. Every detail is thought out for you."
@@ -443,16 +388,13 @@
     }
   },
   "contact": {
-    "title": "Contact",
-    "subtitle": "We're here to help you",
+    "title": "Contact Us",
+    "subtitle": "Start your Muay Thai journey today",
     "form": {
-      "title": "Send us a message",
       "name": "Name",
       "email": "Email",
-      "phone": "Phone",
-      "subject": "Subject",
       "message": "Message",
-      "submit": "Send message"
+      "submit": "Send Message"
     },
     "info": {
       "title": "Contact Information",
@@ -477,7 +419,6 @@
       },
       "firstName": "First Name",
       "lastName": "Last Name",
-      "email": "Email",
       "phone": "Phone",
       "destination": "Destination",
       "destination": {
@@ -607,12 +548,10 @@
   },
   "about": {
     "title": "About Us",
-    "subtitle": "We are Asian travel experts committed to creating authentic and memorable experiences.",
-    "ourStory": {
+    "subtitle": "Your journey to Muay Thai excellence starts here",
+    "story": {
       "title": "Our Story",
-      "paragraph1": "Flow2bali started with a simple passion: sharing the authentic beauty of Asia with the world. Founded in 2010 by a group of travel enthusiasts and local experts, we have dedicated ourselves to creating itineraries that go beyond conventional tourism.",
-      "paragraph2": "After more than a decade of offering exceptional experiences, we have become specialists in Asian destinations, combining deep knowledge of local culture with first-class personalized service.",
-      "paragraph3": "Our multinational team works tirelessly to ensure that every traveler experiences Asia in an authentic, sustainable, and transformative way."
+      "description": "Dedicated to providing authentic Muay Thai training experiences"
     },
     "values": {
       "title": "Our Values",

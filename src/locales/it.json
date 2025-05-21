@@ -47,8 +47,8 @@
   },
   "home": {
     "hero": {
-      "title": "Scopri l'Asia in modo unico",
-      "subtitle": "Esperienze autentiche e memorabili nel continente asiatico",
+      "title": "Scopri l'Asia Attraverso il Muay Thai",
+      "subtitle": "Esperienze autentiche di allenamento nelle destinazioni più belle",
       "cta": "Esplora Destinazioni"
     },
     "features": {
@@ -65,11 +65,16 @@
         "title": "Turismo Sostenibile",
         "description": "Impegnati in pratiche di viaggio responsabili e sostenibili"
       }
+    },
+    "destinations": {
+      "title": "Le Nostre Destinazioni",
+      "subtitle": "Scopri le nostre esclusive destinazioni di allenamento Muay Thai",
+      "viewAll": "Vedi Tutte le Destinazioni"
     }
   },
   "destinations": {
-    "title": "Le Nostre Destinazioni",
-    "subtitle": "Esplora le destinazioni più affascinanti dell'Asia",
+    "title": "Destinazioni",
+    "subtitle": "Esplora le nostre esclusive destinazioni di allenamento Muay Thai",
     "filter": {
       "title": "Filtra per",
       "region": "Regione",
@@ -127,70 +132,16 @@
     "viewAllButton": "Vedi Tutte le Destinazioni",
     "categories": {
       "bali": {
-        "title": "Bali",
-        "description": "Paradiso tropicale con templi e spiagge da sogno",
-        "highlights": {
-          "title": "Attrazioni",
-          "items": [
-            "Templi sacri e cerimonie spirituali",
-            "Terrazze di riso e paesaggi vulcanici",
-            "Spot di surf di livello mondiale",
-            "Vivace scena artistica e artigianale"
-          ]
-        },
-        "experiences": {
-          "title": "Esperienze Uniche",
-          "items": [
-            "Corsi di cucina balinese tradizionale",
-            "Trekking all'alba sul Monte Batur",
-            "Visita alla foresta sacra delle scimmie",
-            "Spettacoli di danza tradizionale"
-          ]
-        }
+        "title": "Bali - 100% Muay Thai",
+        "description": "Solo Muay Thai"
       },
       "thailand": {
-        "title": "Thailandia",
-        "description": "Paradiso tropicale e antichi templi",
-        "highlights": {
-          "title": "Attrazioni",
-          "items": [
-            "Antichi templi e palazzi reali",
-            "Spiagge e isole incontaminate",
-            "Vivace cultura del cibo di strada",
-            "Ricco patrimonio buddista"
-          ]
-        },
-        "experiences": {
-          "title": "Esperienze Uniche",
-          "items": [
-            "Laboratori di cucina thailandese",
-            "Visite ai santuari degli elefanti",
-            "Tour dei mercati galleggianti",
-            "Massaggio thailandese tradizionale"
-          ]
-        }
+        "title": "Bali - Muay Thai & altro",
+        "description": "Paradiso tropicale e templi antichi"
       },
       "vietnam": {
-        "title": "Vietnam",
-        "description": "Ricca cultura e paesaggi mozzafiato",
-        "highlights": {
-          "title": "Attrazioni",
-          "items": [
-            "Isole calcaree della Baia di Ha Long",
-            "Antica città di Hoi An",
-            "Vita nel Delta del Mekong",
-            "Architettura coloniale francese"
-          ]
-        },
-        "experiences": {
-          "title": "Esperienze Uniche",
-          "items": [
-            "Tour del cibo di strada",
-            "Ciclismo nelle risaie",
-            "Creazione di lanterne tradizionali",
-            "Gite in barca nel Delta del Mekong"
-          ]
-        }
+        "title": "Thailandia 100% Muay Thai",
+        "description": "Paradiso tropicale con templi e spiagge da sogno"
       },
       "japan": {
         "title": "Giappone",
@@ -407,7 +358,7 @@
   },
   "services": {
     "title": "I Nostri Servizi",
-    "subtitle": "Servizi personalizzati per il tuo viaggio perfetto",
+    "subtitle": "Esperienze personalizzate di allenamento Muay Thai",
     "hero": {
       "title": "I Nostri Servizi",
       "subtitle": "Progettiamo esperienze di viaggio personalizzate che combinano avventura, cultura e relax per creare momenti indimenticabili in Asia."
@@ -417,29 +368,17 @@
       "subtitle": "I nostri servizi sono progettati per offrirti un'esperienza completa e senza preoccupazioni"
     },
     "cards": {
-      "customized": {
-        "title": "Itinerari Personalizzati",
-        "description": "Creiamo viaggi su misura in base ai tuoi interessi, tempo disponibile e budget. Ogni dettaglio è pensato per te."
+      "training": {
+        "title": "Allenamento Professionale",
+        "description": "Impara da istruttori certificati di Muay Thai"
       },
-      "guides": {
-        "title": "Guide Locali Esperte",
-        "description": "Le nostre guide sono native con una vasta conoscenza della cultura, storia e segreti locali di ogni destinazione."
+      "accommodation": {
+        "title": "Alloggio Premium",
+        "description": "Soggiorni confortevoli vicino alle strutture di allenamento"
       },
-      "exclusive": {
-        "title": "Destinazioni Esclusive",
-        "description": "Ti portiamo in luoghi autentici fuori dal circuito turistico tradizionale per vivere esperienze uniche."
-      },
-      "responsible": {
-        "title": "Turismo Responsabile",
-        "description": "Promuoviamo pratiche sostenibili che rispettano le comunità locali e l'ambiente."
-      },
-      "support": {
-        "title": "Assistenza 24/7",
-        "description": "Abbiamo un team disponibile 24 ore su 24 per assisterti in qualsiasi momento del tuo viaggio."
-      },
-      "planning": {
-        "title": "Pianificazione Senza Stress",
-        "description": "Ci occupiamo di tutti i dettagli logistici così che tu debba solo preoccuparti di goderti il viaggio."
+      "experience": {
+        "title": "Esperienza Culturale",
+        "description": "Immergiti nelle tradizioni locali"
       }
     },
     "process": {
@@ -499,16 +438,13 @@
     }
   },
   "contact": {
-    "title": "Contatti",
-    "subtitle": "Siamo qui per aiutarti",
+    "title": "Contattaci",
+    "subtitle": "Inizia oggi il tuo percorso nel Muay Thai",
     "form": {
-      "title": "Inviaci un messaggio",
       "name": "Nome",
       "email": "Email",
-      "phone": "Telefono",
-      "subject": "Oggetto",
       "message": "Messaggio",
-      "submit": "Invia messaggio"
+      "submit": "Invia Messaggio"
     },
     "info": {
       "title": "Informazioni di contatto",
@@ -663,12 +599,10 @@
   },
   "about": {
     "title": "Chi Siamo",
-    "subtitle": "Siamo esperti di viaggi asiatici impegnati a creare esperienze autentiche e memorabili.",
-    "ourStory": {
+    "subtitle": "Il tuo percorso verso l'eccellenza nel Muay Thai inizia qui",
+    "story": {
       "title": "La Nostra Storia",
-      "paragraph1": "Flow2bali è nata da una semplice passione: condividere l'autentica bellezza dell'Asia con il mondo. Fondata nel 2010 da un gruppo di appassionati viaggiatori ed esperti locali, ci siamo dedicati a creare itinerari che vanno oltre il turismo convenzionale.",
-      "paragraph2": "Dopo più di un decennio di esperienze eccezionali, siamo diventati specialisti nelle destinazioni asiatiche, combinando una profonda conoscenza della cultura locale con un servizio personalizzato di prima classe.",
-      "paragraph3": "Il nostro team multinazionale lavora instancabilmente per garantire che ogni viaggiatore viva l'Asia in modo autentico, sostenibile e trasformativo."
+      "description": "Dedicati a fornire esperienze autentiche di allenamento Muay Thai"
     },
     "values": {
       "title": "I Nostri Valori",

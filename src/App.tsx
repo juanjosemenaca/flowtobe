@@ -24,6 +24,7 @@ import ReservarAhora from "./pages/ReservarAhora";
 import Servicios from "./pages/Servicios";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import BaliMuayThai from "./pages/BaliMuayThai";
 
 const queryClient = new QueryClient();
 
@@ -66,6 +67,7 @@ const AppRoutes = () => {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/bali-muay-thai" element={<BaliMuayThai />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>

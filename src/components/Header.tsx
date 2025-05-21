@@ -44,9 +44,6 @@ const Header = () => {
           <Link to="/destinations" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
             {t('nav.destinations')}
           </Link>
-          <Link to="/experiences" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            {t('nav.experiences')}
-          </Link>
           <Link to="/contact" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
             {t('nav.contact')}
           </Link>
@@ -89,13 +86,6 @@ const Header = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {t('nav.destinations')}
-            </Link>
-            <Link 
-              to="/experiences" 
-              className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              {t('nav.experiences')}
             </Link>
             <Link 
               to="/contact" 

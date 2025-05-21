@@ -12,24 +12,19 @@ const Destinos = () => {
 
   const destinationCards = [
     {
-      id: 1,
-      image: "https://images.unsplash.com/photo-1492321936769-b49830bc1d1e",
-      link: "/destinations/japan"
-    },
-    {
       id: 2,
       image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
       link: "/destinations/thailand"
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1466442929976-97f336a657be",
-      link: "/destinations/vietnam"
+      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
+      link: "/destinations/thailand"
     },
     {
       id: 4,
       image: "https://images.unsplash.com/photo-1469041797191-50ace28483c3",
-      link: "/destinations/india"
+      link: "/bali-muay-thai"
     },
     {
       id: 5,
@@ -60,14 +55,12 @@ const Destinos = () => {
 
   const getDestinationTitle = (id: number) => {
     switch (id) {
-      case 1:
-        return t('destinations.categories.japan.title');
       case 2:
         return t('destinations.categories.thailand.title');
       case 3:
         return t('destinations.categories.vietnam.title');
       case 4:
-        return t('destinations.categories.india.title');
+        return t('destinations.categories.bali.title');
       case 5:
         return t('destinations.categories.indonesia.title');
       case 6:
@@ -85,14 +78,12 @@ const Destinos = () => {
 
   const getDestinationDescription = (id: number) => {
     switch (id) {
-      case 1:
-        return t('destinations.categories.japan.description');
       case 2:
         return t('destinations.categories.thailand.description');
       case 3:
         return t('destinations.categories.vietnam.description');
       case 4:
-        return t('destinations.categories.india.description');
+        return t('destinations.categories.bali.description');
       case 5:
         return t('destinations.categories.indonesia.description');
       case 6:

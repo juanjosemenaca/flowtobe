@@ -47,9 +47,9 @@
   },
   "home": {
     "hero": {
-      "title": "Descobreix Àsia d'una manera única",
-      "subtitle": "Experiències autèntiques i memorables al continent asiàtic",
-      "cta": "Explorar Destinacions"
+      "title": "Descobreix Àsia a través del Muay Thai",
+      "subtitle": "Experiències autèntiques d'entrenament a les destinacions més boniques",
+      "cta": "Explora Destinacions"
     },
     "features": {
       "title": "Per què triar-nos?",
@@ -65,12 +65,17 @@
         "title": "Turisme Sostenible",
         "description": "Compromesos amb pràctiques de viatge responsables i sostenibles"
       }
+    },
+    "destinations": {
+      "title": "Les Nostres Destinacions",
+      "subtitle": "Descobreix les nostres exclusives destinacions d'entrenament Muay Thai",
+      "viewAll": "Veure Totes les Destinacions"
     }
   },
   "destinations": {
-    "title": "Les Nostres Destinacions",
-    "subtitle": "Explora les destinacions més fascinants d'Àsia",
-    "exploreButton": "Explorar",
+    "title": "Destinacions",
+    "subtitle": "Explora les nostres exclusives destinacions d'entrenament Muay Thai",
+    "exploreButton": "Explora",
     "viewAllButton": "Veure Totes les Destinacions",
     "filter": {
       "title": "Filtrar per",
@@ -127,70 +132,16 @@
     },
     "categories": {
       "bali": {
-        "title": "Bali",
-        "description": "Paradís tropical amb temples i platges de somni",
-        "highlights": {
-          "title": "Llocs d'Interès",
-          "items": [
-            "Temples sagrats i cerimònies espirituals",
-            "Terrasses d'arròs i paisatges volcànics",
-            "Punts de surf de classe mundial",
-            "Escena vibrant d'art i artesania"
-          ]
-        },
-        "experiences": {
-          "title": "Experiències Úniques",
-          "items": [
-            "Classes de cuina balinesa tradicional",
-            "Trekking a l'alba al Mont Batur",
-            "Visita al bosc sagrat dels micos",
-            "Representacions de dansa tradicional"
-          ]
-        }
+        "title": "Bali - 100% Muay Thai",
+        "description": "Només Muay Thai"
       },
       "thailand": {
-        "title": "Tailàndia",
-        "description": "Paradís tropical i temples antics",
-        "highlights": {
-          "title": "Llocs d'Interès",
-          "items": [
-            "Temples antics i palaus reials",
-            "Platges i illes verges",
-            "Cultura vibrant de menjar al carrer",
-            "Rica herència budista"
-          ]
-        },
-        "experiences": {
-          "title": "Experiències Úniques",
-          "items": [
-            "Tallers de cuina tailandesa",
-            "Visites a santuaris d'elefants",
-            "Tours pels mercats flotants",
-            "Massatge tailandès tradicional"
-          ]
-        }
+        "title": "Bali - Muay Thai & més",
+        "description": "Paradís tropical i temples antics"
       },
       "vietnam": {
-        "title": "Vietnam",
-        "description": "Rica cultura i paisatges impressionants",
-        "highlights": {
-          "title": "Llocs d'Interès",
-          "items": [
-            "Illes de pedra calcària de la Badia d'Ha Long",
-            "Antiga ciutat de Hoi An",
-            "Vida al Delta del Mekong",
-            "Arquitectura colonial francesa"
-          ]
-        },
-        "experiences": {
-          "title": "Experiències Úniques",
-          "items": [
-            "Tours de menjar al carrer",
-            "Ciclisme pels camps d'arròs",
-            "Fabricació de llanternes tradicionals",
-            "Viatges en barca pel Delta del Mekong"
-          ]
-        }
+        "title": "Tailàndia 100% Muay Thai",
+        "description": "Paradís tropical amb temples i platges de somni"
       },
       "japan": {
         "title": "Japó",
@@ -407,7 +358,7 @@
   },
   "services": {
     "title": "Els Nostres Serveis",
-    "subtitle": "Serveis personalitzats per al teu viatge perfecte",
+    "subtitle": "Experiències personalitzades d'entrenament Muay Thai",
     "hero": {
       "title": "Els Nostres Serveis",
       "subtitle": "Dissenyem experiències de viatge personalitzades que combinen aventura, cultura i relax per crear moments inoblidables a l'Àsia."
@@ -417,6 +368,18 @@
       "subtitle": "Els nostres serveis estan dissenyats per oferir-te una experiència completa i sense preocupacions"
     },
     "cards": {
+      "training": {
+        "title": "Entrenament Professional",
+        "description": "Aprèn d'instructors certificats de Muay Thai"
+      },
+      "accommodation": {
+        "title": "Allotjament Premium",
+        "description": "Estades còmodes a prop de les instal·lacions d'entrenament"
+      },
+      "experience": {
+        "title": "Experiència Cultural",
+        "description": "Submergeix-te en les tradicions locals"
+      },
       "customized": {
         "title": "Itineraris Personalitzats",
         "description": "Creem viatges a mida segons els teus interessos, temps disponible i pressupost. Cada detall està pensat per a tu."
@@ -513,16 +476,13 @@
     }
   },
   "contact": {
-    "title": "Contacte",
-    "subtitle": "Estem aquí per ajudar-te",
+    "title": "Contacta'ns",
+    "subtitle": "Comença avui el teu camí en Muay Thai",
     "form": {
-      "title": "Envia'ns un missatge",
       "name": "Nom",
       "email": "Correu electrònic",
-      "phone": "Telèfon",
-      "subject": "Assumpte",
       "message": "Missatge",
-      "submit": "Enviar missatge"
+      "submit": "Enviar Missatge"
     },
     "info": {
       "title": "Informació de contacte",
@@ -677,12 +637,10 @@
   },
   "about": {
     "title": "Sobre Nosaltres",
-    "subtitle": "Som experts en viatges asiàtics compromesos a crear experiències autèntiques i memorables.",
-    "ourStory": {
+    "subtitle": "El teu camí cap a l'excel·lència en Muay Thai comença aquí",
+    "story": {
       "title": "La Nostra Història",
-      "paragraph1": "Flow2bali va començar amb una simple passió: compartir la bellesa autèntica d'Àsia amb el món. Fundada el 2010 per un grup d'entusiastes viatgers i experts locals, ens hem dedicat a crear itineraris que van més enllà del turisme convencional.",
-      "paragraph2": "Després de més d'una dècada oferint experiències excepcionals, ens hem convertit en especialistes en destinacions asiàtiques, combinant el coneixement profund de la cultura local amb un servei personalitzat de primera classe.",
-      "paragraph3": "El nostre equip multinacional treballa incansablement per garantir que cada viatger visqui Àsia de manera autèntica, sostenible i transformadora."
+      "description": "Dedicats a proporcionar experiències autèntiques d'entrenament Muay Thai"
     },
     "values": {
       "title": "Els Nostres Valors",

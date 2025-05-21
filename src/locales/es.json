@@ -47,7 +47,7 @@
   },
   "home": {
     "hero": {
-      "title": "Descubre Asia de una manera única",
+      "title": "Muay Thai en el Paraíso",
       "subtitle": "Experiencias auténticas y memorables en el continente asiático",
       "cta": "Explorar Destinos"
     },
@@ -69,7 +69,7 @@
   },
   "destinations": {
     "title": "Nuestros Destinos",
-    "subtitle": "Explora los destinos más fascinantes de Asia",
+    "subtitle": "Explora nuestras experiencias",
     "discover": {
       "title": "Descubre el Encanto de Asia",
       "description": "Desde los majestuosos Himalayas hasta las playas paradisíacas del sudeste asiático, nuestros destinos ofrecen experiencias inolvidables para todo tipo de viajeros."
@@ -78,16 +78,16 @@
     "viewAllButton": "Ver Todos los Destinos",
     "categories": {
       "bali": {
-        "title": "Bali",
-        "description": "Paraíso tropical con templos y playas de ensueño"
+        "title": "Bali - 100% Muay Thai",
+        "description": "Muay Thai y sólo Muay Thai"
       },
       "thailand": {
-        "title": "Tailandia",
+        "title": "Bali - Muay Thai & más",
         "description": "Paraíso tropical y templos antiguos"
       },
       "vietnam": {
-        "title": "Vietnam",
-        "description": "Rica cultura y paisajes impresionantes"
+        "title": "Tailandia 100% Muay Thai",
+        "description": "Paraíso tropical con templos y playas de ensueño"
       },
       "india": {
         "title": "India",
@@ -115,7 +115,7 @@
       },
       "japan": {
         "title": "Japón",
-        "description": "Tierra de tecnología y tradición"
+        "description": "Tierra del sol naciente y la cultura samurái"
       }
     },
     "travelTips": {

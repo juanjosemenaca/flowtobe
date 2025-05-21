@@ -1,70 +1,105 @@
-import React, { useEffect } from 'react';
-import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
-const heroImages = [
-  { url: "/rotating/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai.jpg" },
-  { url: "/rotating/karangasem-agua-templo-palacio-en-bali.jpg" },
-  { url: "/rotating/belleza-mujer-posando-en-la-subida-naturaleza-bali.jpg" },
-  { url: "/rotating/templo-de-besakih-en-bali-indonesia.jpg" },
-  { url: "/rotating/playa.jpg" },
-];
-
-const Hero = () => {
+const Hero: React.FC = () => {
   const { t } = useTranslation();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  const images = [
+    '/rotating/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai.jpg',
+    '/rotating/playa.jpg',
+    '/rotating/templo-de-besakih-en-bali-indonesia.jpg',
+    '/rotating/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai-1.jpg'
+  ];
 
   useEffect(() => {
-    // Preload the first image
-    const img = new Image();
-    img.src = heroImages[0].url;
+    // Precargar imágenes
+    const preloadImages = async () => {
+      try {
+        const imagePromises = images.map((src) => {
+          return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.src = src;
+            img.onload = resolve;
+            img.onerror = () => {
+              console.error(`Error loading image: ${src}`);
+              reject(new Error(`Failed to load image: ${src}`));
+            };
+          });
+        });
+
+        await Promise.all(imagePromises);
+        setImagesLoaded(true);
+      } catch (error) {
+        console.error('Error preloading images:', error);
+        setImagesLoaded(true); // Continuar incluso si hay errores
+      }
+    };
+
+    preloadImages();
   }, []);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
-    <section className="relative h-screen min-h-[600px] w-full overflow-hidden">
-      {/* Rotating background images */}
-      <div className="absolute inset-0">
-        {heroImages.map((image, idx) => (
-          <div
-            key={idx}
-            className="hero-slide absolute inset-0 bg-cover bg-center"
-            style={{ 
-              backgroundImage: `url(${image.url})`,
-              opacity: idx === 0 ? 1 : 0,
-              transition: 'opacity 1s ease-in-out'
+    <div className="relative h-screen w-full overflow-hidden">
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={currentImageIndex}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1 }}
+          className="absolute inset-0"
+        >
+          <img
+            src={images[currentImageIndex]}
+            alt={`Slide ${currentImageIndex + 1}`}
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              console.error(`Error loading image: ${images[currentImageIndex]}`);
+              e.currentTarget.src = '/placeholder.jpg'; // Fallback image
             }}
-          >
-            <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-          </div>
-        ))}
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-40" />
+        </motion.div>
+      </AnimatePresence>
+
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="text-4xl md:text-6xl font-bold mb-4"
+        >
+          {t('home.hero.title')}
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="text-xl md:text-2xl mb-8"
+        >
+          {t('home.hero.subtitle')}
+        </motion.p>
+        <motion.button
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6 }}
+          className="bg-travel-primary hover:bg-travel-primary-dark text-white font-bold py-3 px-8 rounded-full transition-colors duration-300"
+        >
+          {t('home.hero.cta')}
+        </motion.button>
       </div>
-      
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="container mx-auto px-4 text-center sm:text-left">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-serif font-bold mb-4 animate-fade-up" style={{animationDelay: '0.2s'}}>
-              {t('home.hero.title')}
-            </h1>
-            <p className="text-xl md:text-2xl text-white mb-8 opacity-90 animate-fade-up" style={{animationDelay: '0.4s'}}>
-              {t('home.hero.subtitle')}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center sm:justify-start animate-fade-up" style={{animationDelay: '0.6s'}}>
-              <Link to="/destinations">
-                <Button className="bg-travel-terracotta hover:bg-travel-teal text-white text-lg px-8 py-6">
-                  {t('home.hero.cta')}
-                </Button>
-              </Link>
-              <Link to="/experiences">
-                <Button variant="white" className="w-56 text-lg px-6 py-6 mx-auto sm:mx-0">
-                  {t('nav.experiences')} <ArrowRight className="ml-2" />
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
   );
 };
 
