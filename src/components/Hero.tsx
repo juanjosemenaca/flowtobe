@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { ChevronDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const { t } = useTranslation();
@@ -86,19 +87,28 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="text-xl md:text-2xl mb-8"
+          className="text-xl md:text-2xl"
         >
           {t('home.hero.subtitle')}
         </motion.p>
-        <motion.button
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
-          className="bg-travel-primary hover:bg-travel-primary-dark text-white font-bold py-3 px-8 rounded-full transition-colors duration-300"
-        >
-          {t('home.hero.cta')}
-        </motion.button>
       </div>
+
+      {/* Scroll Indicator */}
+      <motion.div 
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ 
+          opacity: [0.5, 1, 0.5],
+          y: [0, 10, 0]
+        }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      >
+        <ChevronDown size={32} />
+      </motion.div>
     </div>
   );
 };
