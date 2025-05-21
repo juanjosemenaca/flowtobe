@@ -5,7 +5,7 @@
     "experiences": "Experiencias",
     "services": "Servicios",
     "blog": "Blog",
-    "about": "Sobre Nosotros",
+    "about": "Nosotros",
     "contact": "Contacto",
     "bookNow": "Reservar Ahora"
   },
@@ -47,8 +47,8 @@
   },
   "home": {
     "hero": {
-      "title": "Muay Thai en el Paraíso",
-      "subtitle": "Experiencias auténticas y memorables en el continente asiático",
+      "title": "Descubre Asia a través del Muay Thai",
+      "subtitle": "Experiencias auténticas de entrenamiento en los destinos más bellos",
       "cta": "Explorar Destinos"
     },
     "features": {
@@ -65,11 +65,17 @@
         "title": "Turismo Sostenible",
         "description": "Comprometidos con prácticas de viaje responsables y sostenibles"
       }
+    },
+    "destinations": {
+      "title": "Nuestros Destinos",
+      "subtitle": "Entrenamiento de Muay Thai en los lugares más increíbles de Asia",
+      "cta": "Ver Todos los Destinos",
+      "viewAll": "Ver Todos los Destinos"
     }
   },
   "destinations": {
     "title": "Nuestros Destinos",
-    "subtitle": "Explora nuestras experiencias",
+    "subtitle": "Entrenamiento de Muay Thai en los lugares más increíbles de Asia",
     "discover": {
       "title": "Descubre el Encanto de Asia",
       "description": "Desde los majestuosos Himalayas hasta las playas paradisíacas del sudeste asiático, nuestros destinos ofrecen experiencias inolvidables para todo tipo de viajeros."
@@ -79,15 +85,15 @@
     "categories": {
       "bali": {
         "title": "Bali - 100% Muay Thai",
-        "description": "Muay Thai y sólo Muay Thai"
+        "description": "Solo Muay Thai"
       },
       "thailand": {
         "title": "Bali - Muay Thai & más",
-        "description": "Paraíso tropical y templos antiguos"
+        "description": "Paradiso tropical y templos antiguos"
       },
       "vietnam": {
         "title": "Tailandia 100% Muay Thai",
-        "description": "Paraíso tropical con templos y playas de ensueño"
+        "description": "Paradiso tropical con templos y playas de ensueño"
       },
       "india": {
         "title": "India",
@@ -136,8 +142,6 @@
   "experiences": {
     "title": "Experiencias Inolvidables",
     "subtitle": "Crea recuerdos que duran toda la vida con nuestras experiencias de viaje seleccionadas",
-    "exploreButton": "Explorar FLOW2BALY",
-    "viewAllButton": "Todas las Experiencias",
     "categories": {
       "cultural": {
         "title": "Inmersión Cultural",
@@ -176,7 +180,7 @@
   },
   "services": {
     "title": "Nuestros Servicios",
-    "subtitle": "Servicios personalizados para tu viaje perfecto",
+    "subtitle": "Experiencias de entrenamiento de Muay Thai personalizadas",
     "hero": {
       "title": "Nuestros Servicios",
       "subtitle": "Diseñamos experiencias de viaje personalizadas que combinan aventura, cultura y relax para crear momentos inolvidables en Asia."
@@ -209,6 +213,18 @@
       "planning": {
         "title": "Planificación Sin Estrés",
         "description": "Nos encargamos de todos los detalles logísticos para que solo te preocupes por disfrutar."
+      },
+      "training": {
+        "title": "Entrenamiento Profesional",
+        "description": "Entrenamiento de Muay Thai con instructores certificados"
+      },
+      "accommodation": {
+        "title": "Alojamiento Premium",
+        "description": "Estancias confortables en los mejores lugares"
+      },
+      "experience": {
+        "title": "Experiencia Cultural",
+        "description": "Inmersión en la cultura local y tradiciones"
       }
     },
     "process": {
@@ -282,16 +298,13 @@
     }
   },
   "contact": {
-    "title": "Contacto",
-    "subtitle": "Estamos aquí para ayudarte",
+    "title": "Contáctanos",
+    "subtitle": "Comienza tu viaje de Muay Thai hoy",
     "form": {
-      "title": "Envíanos un mensaje",
       "name": "Nombre",
       "email": "Email",
-      "phone": "Teléfono",
-      "subject": "Asunto",
       "message": "Mensaje",
-      "submit": "Enviar mensaje"
+      "submit": "Enviar"
     },
     "info": {
       "title": "Información de contacto",
@@ -446,12 +459,10 @@
   },
   "about": {
     "title": "Sobre Nosotros",
-    "subtitle": "Somos expertos en viajes asiáticos comprometidos a crear experiencias auténticas y memorables.",
-    "ourStory": {
+    "subtitle": "Tu viaje hacia la excelencia en Muay Thai comienza aquí",
+    "story": {
       "title": "Nuestra Historia",
-      "paragraph1": "Flow2bali comenzó con una simple pasión: compartir la belleza auténtica de Asia con el mundo. Fundada en 2010 por un grupo de entusiastas viajeros y expertos locales, nos hemos dedicado a crear itinerarios que van más allá del turismo convencional.",
-      "paragraph2": "Después de más de una década ofreciendo experiencias excepcionales, nos hemos convertido en especialistas en destinos asiáticos, combinando el conocimiento profundo de la cultura local con un servicio personalizado de primera clase.",
-      "paragraph3": "Nuestro equipo multinacional trabaja incansablemente para garantizar que cada viajero viva Asia de manera auténtica, sostenible y transformadora."
+      "description": "Somos apasionados del Muay Thai y nos dedicamos a ofrecer experiencias auténticas de entrenamiento en los destinos más bellos de Asia. Nuestro objetivo es combinar el entrenamiento de alta calidad con la inmersión cultural para crear experiencias únicas y transformadoras."
     },
     "values": {
       "title": "Nuestros Valores",

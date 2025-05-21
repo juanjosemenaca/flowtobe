@@ -1,6 +1,4 @@
 import React from 'react';
-import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -69,23 +67,11 @@ const Experiences = () => {
   return (
     <section className="py-20">
       <div className="container">
-        <div className="flex flex-col md:flex-row justify-between items-center mb-12">
-          <Link to="/destinations" className="mb-6 md:mb-0 md:mr-8">
-            <Button className="bg-travel-terracotta hover:bg-travel-teal text-white text-lg px-8 py-6">
-              {t('experiences.exploreButton')}
-            </Button>
-          </Link>
-          <div>
-            <h2 className="text-4xl md:text-5xl font-serif text-travel-dark mb-4">{t('experiences.title')}</h2>
-            <p className="text-travel-sage text-xl max-w-2xl">
-              {t('experiences.subtitle')}
-            </p>
-          </div>
-          <Link to="/experiences" className="mt-6 md:mt-0">
-            <Button className="bg-travel-terracotta hover:bg-travel-teal text-white px-8">
-              {t('experiences.viewAllButton')} <ArrowRight className="ml-2" />
-            </Button>
-          </Link>
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-serif text-travel-dark mb-4">{t('experiences.title')}</h2>
+          <p className="text-travel-sage text-xl max-w-2xl mx-auto">
+            {t('experiences.subtitle')}
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
