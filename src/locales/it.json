@@ -455,8 +455,7 @@
     }
   },
   "booking": {
-    "title": "Prenota la Tua Avventura",
-    "subtitle": "A pochi passi da un'esperienza indimenticabile in Asia",
+    "title": "Prenota la tua Avventura",
     "steps": {
       "details": "Dettagli",
       "payment": "Pagamento",
@@ -465,13 +464,12 @@
     "form": {
       "details": {
         "title": "Dettagli del Viaggio",
-        "subTitle": "Informazioni del Viaggio"
+        "subTitle": "Informazioni di Viaggio"
       },
       "firstName": "Nome",
       "lastName": "Cognome",
       "email": "Email",
       "phone": "Telefono",
-      "destination": "Destinazione",
       "destination": {
         "placeholder": "Seleziona una destinazione"
       },
@@ -519,17 +517,17 @@
         "subtotal": "Subtotale",
         "taxes": "Tasse",
         "total": "Totale",
-        "deposit": "Ti verrà addebitato solo un acconto del 20% (€528) ora. Il resto sarà dovuto 30 giorni prima del viaggio."
+        "deposit": "Ti verrà addebitato solo un deposito del 20% (€528) ora. Il resto sarà pagabile 30 giorni prima del viaggio."
       },
       "whyChooseUs": {
         "title": "Perché Prenotare con Noi?",
-        "item1": "Esperti locali in destinazioni asiatiche",
+        "item1": "Esperti locali nelle destinazioni asiatiche",
         "item2": "Itinerari personalizzati al tuo ritmo",
-        "item3": "Assistenza 24/7 durante tutto il viaggio",
-        "item4": "Esperienze autentiche lontane dal turismo di massa",
+        "item3": "Supporto 24/7 durante tutto il tuo viaggio",
+        "item4": "Esperienze autentiche lontano dal turismo di massa",
         "note": "Quando invii la tua richiesta, un consulente di viaggio ti contatterà entro 24 ore.",
         "customizedAttention": "Attenzione Personalizzata",
-        "customizedAttentionDescription": "Non siamo un'agenzia di viaggi di massa. Creiamo esperienze uniche su misura per i tuoi interessi e necessità."
+        "customizedAttentionDescription": "Non siamo un'agenzia di viaggi di massa. Creiamo esperienze uniche adattate ai tuoi interessi e necessità."
       },
       "faq": {
         "title": "Domande Frequenti",
@@ -539,27 +537,13 @@
         },
         "item2": {
           "question": "Devo pagare qualcosa in anticipo?",
-          "answer": "No, la consultazione iniziale è gratuita. Un acconto sarà richiesto solo dopo che avrai approvato il tuo itinerario personalizzato per confermare la prenotazione."
+          "answer": "No, la consultazione iniziale è gratuita. Sarà richiesto un deposito solo dopo che avrai approvato il tuo itinerario personalizzato per confermare la prenotazione."
         },
         "item3": {
           "question": "Posso modificare il mio itinerario in seguito?",
-          "answer": "Sì, capiamo che i piani possono cambiare. Lavoreremo con te per adattare l'itinerario in base alle tue necessità, quando possibile."
+          "answer": "Sì, capiamo che i piani possono cambiare. Lavoreremo con te per adattare l'itinerario secondo le tue necessità, quando possibile."
         }
       }
-    },
-    "success": {
-      "title": "Prenotazione Inviata con Successo!",
-      "description": "Riceverai una email di conferma a breve."
-    },
-    "confirmation": {
-      "title": "Prenotazione Confermata!",
-      "description": "Grazie per aver prenotato con Flow2bali. Abbiamo inviato un'email a {{email}} con i dettagli della tua prenotazione. Uno dei nostri consulenti di viaggio ti contatterà entro le prossime 24 ore.",
-      "reference": "Riferimento Prenotazione",
-      "destination": "Destinazione",
-      "date": "Data",
-      "travelers": "Viaggiatori",
-      "people": "persone",
-      "deposit": "Acconto pagato"
     }
   },
   "faq": {

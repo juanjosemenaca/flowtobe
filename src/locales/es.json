@@ -288,41 +288,24 @@
   },
   "booking": {
     "title": "Reserva tu Aventura",
-    "subtitle": "A pocos pasos de vivir una experiencia inolvidable en Asia",
     "steps": {
       "details": "Detalles",
-      "destinationInfo": "Información del Destino",
       "payment": "Pago",
       "confirmation": "Confirmación"
     },
     "form": {
       "details": {
-        "title": "Detalles de Viaje",
+        "title": "Detalles del Viaje",
         "subTitle": "Información del Viaje"
       },
-      "destinationInfo": {
-        "title": "Información del Destino",
-        "subTitle": "Detalles del Programa",
-        "highlights": "Puntos Destacados",
-        "requirements": "Requisitos",
-        "included": "Incluido",
-        "notIncluded": "No Incluido",
-        "terms": "Términos y Condiciones",
-        "acceptTerms": "He leído y acepto los términos y condiciones del programa",
-        "continue": "Continuar al Pago"
-      },
       "firstName": "Nombre",
-      "lastName": "Apellidos",
+      "lastName": "Apellido",
       "email": "Email",
       "phone": "Teléfono",
-      "destination": "Destino",
-      "destinationPlaceholder": "Selecciona un destino",
-      "martialArtsExperience": {
-        "label": "¿Tienes experiencia en artes marciales?",
-        "placeholder": "Selecciona una opción",
-        "yes": "Sí",
-        "no": "No"
+      "destination": {
+        "placeholder": "Selecciona una destinación"
       },
+      "dates": "Fecha del Viaje",
       "duration": {
         "label": "Duración",
         "default": "7-10",
@@ -331,18 +314,18 @@
         "long": "11-14 días",
         "veryLong": "15+ días"
       },
+      "guests": "Número de Viajeros",
       "guests": {
-        "label": "Número de Viajeros",
         "single": "1 persona",
         "couple": "2 personas",
         "three": "3 personas",
         "four": "4 personas",
         "five": "5 personas",
-        "more": "6 o más personas"
+        "more": "6+ personas"
       },
+      "notes": "Requisitos Especiales",
       "notes": {
-        "label": "Requisitos Especiales",
-        "placeholder": "Por favor, compártenos cualquier requisito dietético, necesidad de accesibilidad o preferencia especial"
+        "placeholder": "Comparte cualquier requisito dietético, necesidad de accesibilidad o preferencias especiales"
       },
       "continue": "Continuar al Pago",
       "payment": {
@@ -352,29 +335,29 @@
         "cardNamePlaceholder": "Como aparece en la tarjeta",
         "cardNumber": "Número de Tarjeta",
         "cardNumberPlaceholder": "XXXX XXXX XXXX XXXX",
-        "expiryDate": "Fecha de Expiración",
+        "expiryDate": "Fecha de Caducidad",
         "expiryDatePlaceholder": "MM/AA",
         "cvv": "Código de Seguridad (CVV)",
         "cvvPlaceholder": "XXX",
         "terms": "He leído y acepto los Términos y Condiciones y la Política de Privacidad",
-        "back": "Volver",
+        "back": "Atrás",
         "processing": "Procesando...",
         "complete": "Completar Reserva"
       },
       "summary": {
-        "title": "Resumen de Reserva",
+        "title": "Resumen de la Reserva",
         "subtotal": "Subtotal",
         "taxes": "Impuestos",
         "total": "Total",
-        "deposit": "Solo se te cobrará un depósito del 20% (€528) ahora. El resto se pagará 30 días antes del viaje."
+        "deposit": "Solo se te cobrará un depósito del 20% (€528) ahora. El resto será pagable 30 días antes del viaje."
       },
       "whyChooseUs": {
-        "title": "¿Por Qué Reservar con Nosotros?",
+        "title": "¿Por qué Reservar con Nosotros?",
         "item1": "Expertos locales en destinos asiáticos",
         "item2": "Itinerarios personalizados a tu ritmo",
-        "item3": "Asistencia 24/7 durante todo el viaje",
-        "item4": "Experiencias auténticas fuera del turismo masivo",
-        "note": "Al enviar tu solicitud, un asesor de viajes se pondrá en contacto contigo en un plazo de 24 horas.",
+        "item3": "Soporte 24/7 durante todo tu viaje",
+        "item4": "Experiencias auténticas lejos del turismo masivo",
+        "note": "Cuando envíes tu solicitud, un consultor de viajes te contactará dentro de las 24 horas.",
         "customizedAttention": "Atención Personalizada",
         "customizedAttentionDescription": "No somos una agencia de viajes masiva. Creamos experiencias únicas adaptadas a tus intereses y necesidades."
       },
@@ -382,31 +365,17 @@
         "title": "Preguntas Frecuentes",
         "item1": {
           "question": "¿Cuánto tiempo tarda en confirmarse mi reserva?",
-          "answer": "Normalmente nos ponemos en contacto contigo en un plazo de 24 horas para discutir los detalles de tu viaje y comenzar la planificación."
+          "answer": "Normalmente te contactamos dentro de las 24 horas para discutir los detalles de tu viaje y comenzar la planificación."
         },
         "item2": {
           "question": "¿Necesito pagar algo por adelantado?",
-          "answer": "No, la consulta inicial es gratuita. Solo después de que hayas aprobado tu itinerario personalizado se requerirá un depósito para asegurar la reserva."
+          "answer": "No, la consulta inicial es gratuita. Solo se requerirá un depósito después de que apruebes tu itinerario personalizado para confirmar la reserva."
         },
         "item3": {
-          "question": "¿Puedo modificar mi itinerario después?",
-          "answer": "Sí, entendemos que los planes pueden cambiar. Trabajaremos contigo para adaptar el itinerario según tus necesidades, siempre que sea posible."
+          "question": "¿Puedo modificar mi itinerario más tarde?",
+          "answer": "Sí, entendemos que los planes pueden cambiar. Trabajaremos contigo para ajustar el itinerario según tus necesidades, cuando sea posible."
         }
       }
-    },
-    "success": {
-      "title": "¡Reserva enviada con éxito!",
-      "description": "Recibirás una confirmación por email en breve."
-    },
-    "confirmation": {
-      "title": "¡Reserva Confirmada!",
-      "description": "Gracias por reservar con Flow2bali. Hemos enviado un correo electrónico a {{email}} con los detalles de tu reserva. Uno de nuestros asesores de viaje se pondrá en contacto contigo en las próximas 24 horas.",
-      "reference": "Referencia de Reserva",
-      "destination": "Destino",
-      "date": "Fecha",
-      "travelers": "Viajeros",
-      "people": "personas",
-      "deposit": "Depósito pagado"
     }
   },
   "faq": {

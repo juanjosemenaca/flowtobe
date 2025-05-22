@@ -494,7 +494,6 @@
   },
   "booking": {
     "title": "Reserva la teva Aventura",
-    "subtitle": "A pocs passos de viure una experiència inoblidable a l'Àsia",
     "steps": {
       "details": "Detalls",
       "payment": "Pagament",
@@ -506,10 +505,9 @@
         "subTitle": "Informació del Viatge"
       },
       "firstName": "Nom",
-      "lastName": "Cognoms",
+      "lastName": "Cognom",
       "email": "Email",
       "phone": "Telèfon",
-      "destination": "Destinació",
       "destination": {
         "placeholder": "Selecciona una destinació"
       },
@@ -529,11 +527,11 @@
         "three": "3 persones",
         "four": "4 persones",
         "five": "5 persones",
-        "more": "6 o més persones"
+        "more": "6+ persones"
       },
       "notes": "Requisits Especials",
       "notes": {
-        "placeholder": "Si us plau, comparteix amb nosaltres qualsevol requisit dietètic, necessitat d'accessibilitat o preferència especial"
+        "placeholder": "Comparteix qualsevol requisit dietètic, necessitat d'accessibilitat o preferències especials"
       },
       "continue": "Continuar al Pagament",
       "payment": {
@@ -548,7 +546,7 @@
         "cvv": "Codi de Seguretat (CVV)",
         "cvvPlaceholder": "XXX",
         "terms": "He llegit i accepto els Termes i Condicions i la Política de Privacitat",
-        "back": "Tornar",
+        "back": "Enrere",
         "processing": "Processant...",
         "complete": "Completar Reserva"
       },
@@ -557,47 +555,33 @@
         "subtotal": "Subtotal",
         "taxes": "Impostos",
         "total": "Total",
-        "deposit": "Només se't cobrarà un dipòsit del 20% (€528) ara. La resta es pagarà 30 dies abans del viatge."
+        "deposit": "Només se't cobrarà un dipòsit del 20% (€528) ara. La resta serà pagable 30 dies abans del viatge."
       },
       "whyChooseUs": {
         "title": "Per què Reservar amb Nosaltres?",
         "item1": "Experts locals en destinacions asiàtiques",
         "item2": "Itineraris personalitzats al teu ritme",
-        "item3": "Assistència 24/7 durant tot el viatge",
-        "item4": "Experiències autèntiques fora del turisme massiu",
-        "note": "En enviar la teva sol·licitud, un assessor de viatges es posarà en contacte amb tu en un termini de 24 hores.",
+        "item3": "Suport 24/7 durant tot el teu viatge",
+        "item4": "Experiències autèntiques lluny del turisme massiu",
+        "note": "Quan enviïs la teva sol·licitud, un consultor de viatges et contactarà dins de les 24 hores.",
         "customizedAttention": "Atenció Personalitzada",
         "customizedAttentionDescription": "No som una agència de viatges massiva. Creem experiències úniques adaptades als teus interessos i necessitats."
       },
       "faq": {
         "title": "Preguntes Freqüents",
         "item1": {
-          "question": "Quant temps triga a confirmar-se la meva reserva?",
-          "answer": "Normalment ens posem en contacte amb tu en un termini de 24 hores per discutir els detalls del teu viatge i començar la planificació."
+          "question": "Quant temps triga a confirmar la meva reserva?",
+          "answer": "Normalment et contactem dins de les 24 hores per discutir els detalls del teu viatge i començar la planificació."
         },
         "item2": {
           "question": "Necessito pagar alguna cosa per endavant?",
-          "answer": "No, la consulta inicial és gratuïta. Només després d'haver aprovat el teu itinerari personalitzat es requerirà un dipòsit per assegurar la reserva."
+          "answer": "No, la consulta inicial és gratuïta. Només es requerirà un dipòsit després que aprovïs el teu itinerari personalitzat per confirmar la reserva."
         },
         "item3": {
-          "question": "Puc modificar el meu itinerari després?",
-          "answer": "Sí, entenem que els plans poden canviar. Treballarem amb tu per adaptar l'itinerari segons les teves necessitats, sempre que sigui possible."
+          "question": "Puc modificar el meu itinerari més tard?",
+          "answer": "Sí, entenem que els plans poden canviar. Treballarem amb tu per ajustar l'itinerari segons les teves necessitats, quan sigui possible."
         }
       }
-    },
-    "success": {
-      "title": "¡Reserva enviada amb èxit!",
-      "description": "Rebràs una confirmació per email en breu."
-    },
-    "confirmation": {
-      "title": "¡Reserva Confirmada!",
-      "description": "Gràcies per reservar amb Flow2bali. Hem enviat un correu electrònic a {{email}} amb els detalls de la teva reserva. Un dels nostres assessors de viatge es posarà en contacte amb tu en les properes 24 hores.",
-      "reference": "Referència de Reserva",
-      "destination": "Destinació",
-      "date": "Data",
-      "travelers": "Viatgers",
-      "people": "persones",
-      "deposit": "Dipòsit pagat"
     }
   },
   "faq": {
