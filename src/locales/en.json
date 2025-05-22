@@ -247,7 +247,7 @@
     }
   },
   "experiences": {
-    "title": "Unforgettable Experiences",
+    "title": "Global Experiences",
     "subtitle": "Create memories that last a lifetime with our carefully selected travel experiences",
     "exploreButton": "Explore FLOW2BALY",
     "viewAllButton": "All Experiences",
@@ -406,35 +406,40 @@
   },
   "booking": {
     "title": "Book Your Adventure",
-    "subtitle": "Just a few steps away from an unforgettable experience in Asia",
+    "subtitle": "Just a few steps away from experiencing an unforgettable journey in Asia.",
     "steps": {
       "details": "Details",
+      "destinationInfo": "Destination Info",
       "payment": "Payment",
       "confirmation": "Confirmation"
     },
     "form": {
       "details": {
-        "title": "Travel Details",
-        "subTitle": "Trip Information"
+        "title": "Personal Information",
+        "subTitle": "Travel Details"
       },
       "firstName": "First Name",
       "lastName": "Last Name",
+      "email": "Email",
       "phone": "Phone",
       "destination": "Destination",
-      "destination": {
-        "placeholder": "Select a destination"
+      "destinationPlaceholder": "Select a destination",
+      "martialArtsExperience": {
+        "label": "Martial Arts Experience",
+        "placeholder": "Select an option",
+        "yes": "Yes",
+        "no": "No"
       },
-      "dates": "Travel Date",
       "duration": {
         "label": "Duration",
-        "default": "7-10",
+        "default": "Select duration",
         "short": "3-6 days",
         "medium": "7-10 days",
         "long": "11-14 days",
         "veryLong": "15+ days"
       },
-      "guests": "Number of Travelers",
       "guests": {
+        "label": "Number of Travelers",
         "single": "1 person",
         "couple": "2 people",
         "three": "3 people",
@@ -442,73 +447,59 @@
         "five": "5 people",
         "more": "6+ people"
       },
-      "notes": "Special Requirements",
       "notes": {
-        "placeholder": "Please share any dietary requirements, accessibility needs, or special preferences"
+        "label": "Special Requests",
+        "placeholder": "Any special requirements or preferences?"
       },
-      "continue": "Continue to Payment",
+      "continue": "Continue",
+      "destinationInfo": {
+        "title": "Destination Information",
+        "subTitle": "Please review the details of your chosen destination",
+        "highlights": "Highlights",
+        "requirements": "Requirements",
+        "included": "What's Included",
+        "notIncluded": "Not Included",
+        "terms": "Terms & Conditions",
+        "acceptTerms": "I have read and accept the terms and conditions",
+        "continue": "Continue to Payment"
+      },
       "payment": {
-        "title": "Payment Information",
-        "cardDetails": "Card Details",
+        "title": "Payment Details",
+        "cardDetails": "Card Information",
         "cardName": "Name on Card",
-        "cardNamePlaceholder": "As it appears on the card",
+        "cardNamePlaceholder": "Enter name as it appears on card",
         "cardNumber": "Card Number",
-        "cardNumberPlaceholder": "XXXX XXXX XXXX XXXX",
+        "cardNumberPlaceholder": "Enter card number",
         "expiryDate": "Expiry Date",
         "expiryDatePlaceholder": "MM/YY",
-        "cvv": "Security Code (CVV)",
-        "cvvPlaceholder": "XXX",
-        "terms": "I have read and agree to the Terms and Conditions and Privacy Policy",
+        "cvv": "CVV",
+        "cvvPlaceholder": "Enter CVV",
+        "terms": "I agree to the terms and conditions",
         "back": "Back",
-        "processing": "Processing...",
-        "complete": "Complete Booking"
+        "complete": "Complete Booking",
+        "processing": "Processing..."
       },
       "summary": {
-        "title": "Booking Summary",
+        "title": "Order Summary",
         "subtotal": "Subtotal",
         "taxes": "Taxes",
         "total": "Total",
-        "deposit": "You will only be charged a 20% deposit (€528) now. The remainder will be due 30 days before your trip."
-      },
-      "whyChooseUs": {
-        "title": "Why Book with Us?",
-        "item1": "Local experts in Asian destinations",
-        "item2": "Customized itineraries at your pace",
-        "item3": "24/7 assistance throughout your journey",
-        "item4": "Authentic experiences away from mass tourism",
-        "note": "When you submit your request, a travel advisor will contact you within 24 hours.",
-        "customizedAttention": "Personalized Attention",
-        "customizedAttentionDescription": "We're not a mass travel agency. We create unique experiences tailored to your interests and needs."
-      },
-      "faq": {
-        "title": "Frequently Asked Questions",
-        "item1": {
-          "question": "How long does it take to confirm my booking?",
-          "answer": "We typically contact you within 24 hours to discuss your trip details and begin planning."
-        },
-        "item2": {
-          "question": "Do I need to pay anything upfront?",
-          "answer": "No, the initial consultation is free. A deposit will only be required after you've approved your personalized itinerary to secure the booking."
-        },
-        "item3": {
-          "question": "Can I modify my itinerary later?",
-          "answer": "Yes, we understand that plans can change. We'll work with you to adapt the itinerary according to your needs, whenever possible."
-        }
+        "deposit": "A deposit of 20% is required to confirm your booking. The remaining balance will be due 30 days before your arrival."
       }
-    },
-    "success": {
-      "title": "Booking Sent Successfully!",
-      "description": "You will receive a confirmation email shortly."
     },
     "confirmation": {
       "title": "Booking Confirmed!",
-      "description": "Thank you for booking with Flow2bali. We have sent an email to {{email}} with your booking details. One of our travel advisors will contact you within the next 24 hours.",
+      "description": "Thank you for your booking! We have sent a confirmation email to {{email}} with all the details of your reservation.",
       "reference": "Booking Reference",
       "destination": "Destination",
-      "date": "Date",
+      "date": "Experience",
       "travelers": "Travelers",
       "people": "people",
-      "deposit": "Deposit paid"
+      "deposit": "Deposit Amount"
+    },
+    "success": {
+      "title": "Booking Successful",
+      "description": "Your booking has been confirmed. We will contact you shortly with more details."
     }
   },
   "faq": {

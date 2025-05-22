@@ -84,44 +84,16 @@
     "viewAllButton": "Ver Todos los Destinos",
     "categories": {
       "bali": {
-        "title": "Bali - 100% Muay Thai",
-        "description": "Solo Muay Thai"
+        "title": "Bali - Entrenamiento Muay Thai",
+        "description": "Entrenamiento intensivo de Muay Thai en el paraíso"
       },
       "thailand": {
-        "title": "Bali - Muay Thai & más",
-        "description": "Paradiso tropical y templos antiguos"
+        "title": "Tailandia - Cuna del Muay Thai",
+        "description": "Entrenamiento auténtico en la tierra del arte de las ocho extremidades"
       },
       "vietnam": {
-        "title": "Tailandia 100% Muay Thai",
-        "description": "Paradiso tropical con templos y playas de ensueño"
-      },
-      "india": {
-        "title": "India",
-        "description": "Culturas vibrantes y viajes espirituales"
-      },
-      "indonesia": {
-        "title": "Indonesia",
-        "description": "Islas impresionantes y fauna diversa"
-      },
-      "china": {
-        "title": "China",
-        "description": "Historia antigua y maravillas modernas"
-      },
-      "korea": {
-        "title": "Corea del Sur",
-        "description": "Modernidad y tradiciones ancestrales"
-      },
-      "myanmar": {
-        "title": "Myanmar",
-        "description": "La tierra de pagodas doradas"
-      },
-      "malaysia": {
-        "title": "Malasia",
-        "description": "Mezcla de culturas y selvas tropicales"
-      },
-      "japan": {
-        "title": "Japón",
-        "description": "Tierra del sol naciente y la cultura samurái"
+        "title": "Vietnam - Muay Thai & Cultura",
+        "description": "Combina entrenamiento con experiencias culturales únicas"
       }
     },
     "travelTips": {
@@ -140,7 +112,7 @@
     }
   },
   "experiences": {
-    "title": "Experiencias Inolvidables",
+    "title": "Experiencias Globales",
     "subtitle": "Crea recuerdos que duran toda la vida con nuestras experiencias de viaje seleccionadas",
     "categories": {
       "cultural": {
@@ -319,6 +291,7 @@
     "subtitle": "A pocos pasos de vivir una experiencia inolvidable en Asia",
     "steps": {
       "details": "Detalles",
+      "destinationInfo": "Información del Destino",
       "payment": "Pago",
       "confirmation": "Confirmación"
     },
@@ -327,15 +300,29 @@
         "title": "Detalles de Viaje",
         "subTitle": "Información del Viaje"
       },
+      "destinationInfo": {
+        "title": "Información del Destino",
+        "subTitle": "Detalles del Programa",
+        "highlights": "Puntos Destacados",
+        "requirements": "Requisitos",
+        "included": "Incluido",
+        "notIncluded": "No Incluido",
+        "terms": "Términos y Condiciones",
+        "acceptTerms": "He leído y acepto los términos y condiciones del programa",
+        "continue": "Continuar al Pago"
+      },
       "firstName": "Nombre",
       "lastName": "Apellidos",
       "email": "Email",
       "phone": "Teléfono",
       "destination": "Destino",
-      "destination": {
-        "placeholder": "Selecciona un destino"
+      "destinationPlaceholder": "Selecciona un destino",
+      "martialArtsExperience": {
+        "label": "¿Tienes experiencia en artes marciales?",
+        "placeholder": "Selecciona una opción",
+        "yes": "Sí",
+        "no": "No"
       },
-      "dates": "Fecha de Viaje",
       "duration": {
         "label": "Duración",
         "default": "7-10",
@@ -344,8 +331,8 @@
         "long": "11-14 días",
         "veryLong": "15+ días"
       },
-      "guests": "Número de Viajeros",
       "guests": {
+        "label": "Número de Viajeros",
         "single": "1 persona",
         "couple": "2 personas",
         "three": "3 personas",
@@ -353,8 +340,8 @@
         "five": "5 personas",
         "more": "6 o más personas"
       },
-      "notes": "Requisitos Especiales",
       "notes": {
+        "label": "Requisitos Especiales",
         "placeholder": "Por favor, compártenos cualquier requisito dietético, necesidad de accesibilidad o preferencia especial"
       },
       "continue": "Continuar al Pago",

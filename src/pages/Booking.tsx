@@ -14,7 +14,7 @@ interface FormData {
   email: string;
   phone: string;
   destination: string;
-  travelDate: string;
+  martialArtsExperience: string;
   duration: string;
   travelers: string;
   specialRequests: string;
@@ -36,7 +36,7 @@ const Booking = () => {
     email: '',
     phone: '',
     destination: '',
-    travelDate: '',
+    martialArtsExperience: '',
     duration: t('booking.form.duration.default'),
     travelers: '2',
     specialRequests: '',
@@ -201,27 +201,26 @@ const Booking = () => {
                     onChange={handleInputChange}
                     className="w-full mt-1 border border-input rounded-md h-10 px-3 py-2"
                   >
-                    <option value="">{t('booking.form.destination.placeholder')}</option>
-                    <option value="japan">{t('destinations.categories.japan.title')}</option>
+                    <option value="">{t('booking.form.destinationPlaceholder')}</option>
+                    <option value="bali">{t('destinations.categories.bali.title')}</option>
                     <option value="thailand">{t('destinations.categories.thailand.title')}</option>
                     <option value="vietnam">{t('destinations.categories.vietnam.title')}</option>
-                    <option value="china">{t('destinations.categories.china.title')}</option>
-                    <option value="india">{t('destinations.categories.india.title')}</option>
-                    <option value="indonesia">{t('destinations.categories.indonesia.title')}</option>
                   </select>
                 </div>
                 
                 <div>
-                  <Label htmlFor="travelDate">{t('booking.form.dates')}</Label>
-                  <Input
-                    id="travelDate"
-                    name="travelDate"
-                    type="date"
-                    value={formData.travelDate}
+                  <Label htmlFor="martialArtsExperience">{t('booking.form.martialArtsExperience.label')}</Label>
+                  <select
+                    id="martialArtsExperience"
+                    name="martialArtsExperience"
+                    value={formData.martialArtsExperience}
                     onChange={handleInputChange}
-                    required
-                    className="mt-1"
-                  />
+                    className="w-full mt-1 border border-input rounded-md h-10 px-3 py-2"
+                  >
+                    <option value="">{t('booking.form.martialArtsExperience.placeholder')}</option>
+                    <option value="yes">{t('booking.form.martialArtsExperience.yes')}</option>
+                    <option value="no">{t('booking.form.martialArtsExperience.no')}</option>
+                  </select>
                 </div>
                 
                 <div>
@@ -241,7 +240,7 @@ const Booking = () => {
                 </div>
                 
                 <div>
-                  <Label htmlFor="travelers">{t('booking.form.guests')}</Label>
+                  <Label htmlFor="travelers">{t('booking.form.guests.label')}</Label>
                   <select
                     id="travelers"
                     name="travelers"
@@ -260,7 +259,7 @@ const Booking = () => {
               </div>
               
               <div className="mb-8">
-                <Label htmlFor="specialRequests">{t('booking.form.notes')}</Label>
+                <Label htmlFor="specialRequests">{t('booking.form.notes.label')}</Label>
                 <textarea
                   id="specialRequests"
                   name="specialRequests"
@@ -453,17 +452,14 @@ const Booking = () => {
                   <div className="flex justify-between">
                     <span className="text-travel-sage">{t('booking.confirmation.destination')}:</span>
                     <span className="text-travel-dark font-medium">
-                      {formData.destination === 'japan' && t('destinations.categories.japan.title')}
+                      {formData.destination === 'bali' && t('destinations.categories.bali.title')}
                       {formData.destination === 'thailand' && t('destinations.categories.thailand.title')}
                       {formData.destination === 'vietnam' && t('destinations.categories.vietnam.title')}
-                      {formData.destination === 'china' && t('destinations.categories.china.title')}
-                      {formData.destination === 'india' && t('destinations.categories.india.title')}
-                      {formData.destination === 'indonesia' && t('destinations.categories.indonesia.title')}
                     </span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-travel-sage">{t('booking.confirmation.date')}:</span>
-                    <span className="text-travel-dark font-medium">{formData.travelDate}</span>
+                    <span className="text-travel-dark font-medium">{formData.martialArtsExperience === 'yes' ? t('booking.form.martialArtsExperience.yes') : t('booking.form.martialArtsExperience.no')}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-travel-sage">{t('booking.confirmation.travelers')}:</span>

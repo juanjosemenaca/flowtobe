@@ -12,65 +12,30 @@ const Destinos = () => {
 
   const destinationCards = [
     {
+      id: 1,
+      image: "/rotating/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai.jpg",
+      link: "/destinations/bali"
+    },
+    {
       id: 2,
-      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
+      image: "/rotating/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai-1.jpg",
       link: "/destinations/thailand"
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
-      link: "/destinations/thailand"
-    },
-    {
-      id: 4,
-      image: "https://images.unsplash.com/photo-1469041797191-50ace28483c3",
-      link: "/bali-muay-thai"
-    },
-    {
-      id: 5,
-      image: "https://images.unsplash.com/photo-1476158085676-e67f57ed9ed7",
-      link: "/destinations/indonesia"
-    },
-    {
-      id: 6,
-      image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb",
-      link: "/destinations/china"
-    },
-    {
-      id: 7,
-      image: "https://images.unsplash.com/photo-1517154421773-0529f29ea451",
-      link: "/destinations/korea"
-    },
-    {
-      id: 8,
-      image: "https://images.unsplash.com/photo-1504681869696-d977211a5f4c",
-      link: "/destinations/myanmar"
-    },
-    {
-      id: 9,
-      image: "https://images.unsplash.com/photo-1518439179742-a38769570499",
-      link: "/destinations/malaysia"
+      image: "/rotating/templo-de-besakih-en-bali-indonesia.jpg",
+      link: "/destinations/vietnam"
     }
   ];
 
   const getDestinationTitle = (id: number) => {
     switch (id) {
+      case 1:
+        return t('destinations.categories.bali.title');
       case 2:
         return t('destinations.categories.thailand.title');
       case 3:
         return t('destinations.categories.vietnam.title');
-      case 4:
-        return t('destinations.categories.bali.title');
-      case 5:
-        return t('destinations.categories.indonesia.title');
-      case 6:
-        return t('destinations.categories.china.title');
-      case 7:
-        return t('destinations.categories.korea.title');
-      case 8:
-        return t('destinations.categories.myanmar.title');
-      case 9:
-        return t('destinations.categories.malaysia.title');
       default:
         return '';
     }
@@ -78,22 +43,12 @@ const Destinos = () => {
 
   const getDestinationDescription = (id: number) => {
     switch (id) {
+      case 1:
+        return t('destinations.categories.bali.description');
       case 2:
         return t('destinations.categories.thailand.description');
       case 3:
         return t('destinations.categories.vietnam.description');
-      case 4:
-        return t('destinations.categories.bali.description');
-      case 5:
-        return t('destinations.categories.indonesia.description');
-      case 6:
-        return t('destinations.categories.china.description');
-      case 7:
-        return t('destinations.categories.korea.description');
-      case 8:
-        return t('destinations.categories.myanmar.description');
-      case 9:
-        return t('destinations.categories.malaysia.description');
       default:
         return '';
     }
