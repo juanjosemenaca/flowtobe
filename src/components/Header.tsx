@@ -50,16 +50,6 @@ const Header = () => {
           <LanguageSelector isScrolled={isScrolled} />
         </nav>
 
-        <div className="hidden md:flex items-center space-x-4">
-          <Link to="/booking">
-            <Button
-              className={`bg-travel-terracotta hover:bg-travel-teal text-white items-center gap-2`}
-            >
-              <MapPin size={18} /> {t('nav.bookNow')}
-            </Button>
-          </Link>
-        </div>
-
         {/* Mobile menu button */}
         <button 
           className="md:hidden text-travel-terracotta"
@@ -101,16 +91,6 @@ const Header = () => {
                 onLanguageChange={() => setIsMobileMenuOpen(false)}
               />
             </div>
-            <Link 
-              to="/booking" 
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              <Button 
-                className="bg-travel-terracotta hover:bg-travel-teal text-white w-full mt-2 flex items-center justify-center gap-2"
-              >
-                <MapPin size={18} /> {t('nav.bookNow')}
-              </Button>
-            </Link>
           </div>
         </div>
       )}

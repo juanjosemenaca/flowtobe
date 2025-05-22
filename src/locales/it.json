@@ -455,95 +455,63 @@
     }
   },
   "booking": {
-    "title": "Prenota la tua Avventura",
+    "title": "Prenota la tua Esperienza",
     "steps": {
-      "details": "Dettagli",
+      "personal": "Informazioni Personali",
       "payment": "Pagamento",
       "confirmation": "Conferma"
     },
     "form": {
-      "details": {
-        "title": "Dettagli del Viaggio",
-        "subTitle": "Informazioni di Viaggio"
-      },
       "firstName": "Nome",
       "lastName": "Cognome",
       "email": "Email",
       "phone": "Telefono",
-      "destination": {
-        "placeholder": "Seleziona una destinazione"
+      "destination": "Destinazione",
+      "startDate": "Data di Inizio",
+      "endDate": "Data di Fine",
+      "accommodation": "Tipo di Alloggio",
+      "trainingLevel": "Livello di Allenamento",
+      "specialRequirements": "Requisiti Speciali",
+      "cardNumber": "Numero di Carta",
+      "expiryDate": "Data di Scadenza",
+      "cvv": "CVV",
+      "cardholderName": "Nome sulla Carta",
+      "terms": "Accetto i termini e le condizioni",
+      "back": "Indietro",
+      "next": "Avanti",
+      "submit": "Prenota",
+      "accommodationTypes": {
+        "standard": "Standard",
+        "premium": "Premium",
+        "luxury": "Lusso"
       },
-      "dates": "Data del Viaggio",
-      "duration": {
-        "label": "Durata",
-        "default": "7-10",
-        "short": "3-6 giorni",
-        "medium": "7-10 giorni",
-        "long": "11-14 giorni",
-        "veryLong": "15+ giorni"
+      "trainingLevels": {
+        "beginner": "Principiante",
+        "intermediate": "Intermedio",
+        "advanced": "Avanzato"
       },
-      "guests": "Numero di Viaggiatori",
-      "guests": {
-        "single": "1 persona",
-        "couple": "2 persone",
-        "three": "3 persone",
-        "four": "4 persone",
-        "five": "5 persone",
-        "more": "6+ persone"
-      },
-      "notes": "Requisiti Speciali",
-      "notes": {
-        "placeholder": "Condividi eventuali requisiti dietetici, necessità di accessibilità o preferenze speciali"
-      },
-      "continue": "Continua al Pagamento",
-      "payment": {
-        "title": "Informazioni di Pagamento",
-        "cardDetails": "Dettagli della Carta",
-        "cardName": "Nome sulla Carta",
-        "cardNamePlaceholder": "Come appare sulla carta",
-        "cardNumber": "Numero della Carta",
-        "cardNumberPlaceholder": "XXXX XXXX XXXX XXXX",
-        "expiryDate": "Data di Scadenza",
-        "expiryDatePlaceholder": "MM/AA",
-        "cvv": "Codice di Sicurezza (CVV)",
-        "cvvPlaceholder": "XXX",
-        "terms": "Ho letto e accetto i Termini e Condizioni e la Privacy Policy",
-        "back": "Indietro",
-        "processing": "Elaborazione...",
-        "complete": "Completa Prenotazione"
-      },
-      "summary": {
-        "title": "Riepilogo della Prenotazione",
-        "subtotal": "Subtotale",
-        "taxes": "Tasse",
-        "total": "Totale",
-        "deposit": "Ti verrà addebitato solo un deposito del 20% (€528) ora. Il resto sarà pagabile 30 giorni prima del viaggio."
-      },
-      "whyChooseUs": {
-        "title": "Perché Prenotare con Noi?",
-        "item1": "Esperti locali nelle destinazioni asiatiche",
-        "item2": "Itinerari personalizzati al tuo ritmo",
-        "item3": "Supporto 24/7 durante tutto il tuo viaggio",
-        "item4": "Esperienze autentiche lontano dal turismo di massa",
-        "note": "Quando invii la tua richiesta, un consulente di viaggio ti contatterà entro 24 ore.",
-        "customizedAttention": "Attenzione Personalizzata",
-        "customizedAttentionDescription": "Non siamo un'agenzia di viaggi di massa. Creiamo esperienze uniche adattate ai tuoi interessi e necessità."
-      },
-      "faq": {
-        "title": "Domande Frequenti",
-        "item1": {
-          "question": "Quanto tempo ci vuole per confermare la mia prenotazione?",
-          "answer": "Di solito ti contattiamo entro 24 ore per discutere i dettagli del tuo viaggio e iniziare la pianificazione."
-        },
-        "item2": {
-          "question": "Devo pagare qualcosa in anticipo?",
-          "answer": "No, la consultazione iniziale è gratuita. Sarà richiesto un deposito solo dopo che avrai approvato il tuo itinerario personalizzato per confermare la prenotazione."
-        },
-        "item3": {
-          "question": "Posso modificare il mio itinerario in seguito?",
-          "answer": "Sì, capiamo che i piani possono cambiare. Lavoreremo con te per adattare l'itinerario secondo le tue necessità, quando possibile."
-        }
+      "validation": {
+        "required": "Questo campo è obbligatorio",
+        "invalidEmail": "Inserisci un indirizzo email valido",
+        "invalidPhone": "Inserisci un numero di telefono valido",
+        "invalidCardNumber": "Inserisci un numero di carta valido",
+        "invalidExpiryDate": "Inserisci una data di scadenza valida",
+        "invalidCVV": "Inserisci un CVV valido"
       }
+    },
+    "success": {
+      "title": "Prenotazione Inviata con Successo!",
+      "description": "Riceverai presto un'email di conferma."
+    },
+    "confirmation": {
+      "title": "Prenotazione Confermata!",
+      "description": "Grazie per aver prenotato con Flow2bali. Abbiamo inviato un'email a {{email}} con i dettagli della tua prenotazione. Uno dei nostri consulenti di viaggio ti contatterà entro le prossime 24 ore.",
+      "reference": "Riferimento Prenotazione",
+      "destination": "Destinazione",
+      "date": "Data",
+      "travelers": "Viaggiatori",
+      "people": "persone",
+      "deposit": "Deposito pagato"
     }
   },
   "faq": {

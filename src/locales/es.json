@@ -287,95 +287,78 @@
     }
   },
   "booking": {
-    "title": "Reserva tu Aventura",
+    "title": "Reserva tu Experiencia",
     "steps": {
-      "details": "Detalles",
+      "personal": "Información Personal",
       "payment": "Pago",
       "confirmation": "Confirmación"
     },
     "form": {
-      "details": {
-        "title": "Detalles del Viaje",
-        "subTitle": "Información del Viaje"
-      },
       "firstName": "Nombre",
-      "lastName": "Apellido",
+      "lastName": "Apellidos",
       "email": "Email",
       "phone": "Teléfono",
-      "destination": {
-        "placeholder": "Selecciona una destinación"
+      "destination": "Destino",
+      "startDate": "Fecha de Inicio",
+      "endDate": "Fecha de Fin",
+      "accommodation": "Tipo de Alojamiento",
+      "trainingLevel": "Nivel de Entrenamiento",
+      "specialRequirements": "Requisitos Especiales",
+      "cardNumber": "Número de Tarjeta",
+      "expiryDate": "Fecha de Caducidad",
+      "cvv": "CVV",
+      "cardholderName": "Nombre en la Tarjeta",
+      "terms": "Acepto los términos y condiciones",
+      "back": "Atrás",
+      "next": "Siguiente",
+      "submit": "Reservar",
+      "accommodationTypes": {
+        "standard": "Estándar",
+        "premium": "Premium",
+        "luxury": "Lujo"
       },
-      "dates": "Fecha del Viaje",
-      "duration": {
-        "label": "Duración",
-        "default": "7-10",
-        "short": "3-6 días",
-        "medium": "7-10 días",
-        "long": "11-14 días",
-        "veryLong": "15+ días"
+      "trainingLevels": {
+        "beginner": "Principiante",
+        "intermediate": "Intermedio",
+        "advanced": "Avanzado"
       },
-      "guests": "Número de Viajeros",
-      "guests": {
-        "single": "1 persona",
-        "couple": "2 personas",
-        "three": "3 personas",
-        "four": "4 personas",
-        "five": "5 personas",
-        "more": "6+ personas"
+      "validation": {
+        "required": "Este campo es obligatorio",
+        "invalidEmail": "Por favor, introduce un email válido",
+        "invalidPhone": "Por favor, introduce un número de teléfono válido",
+        "invalidCardNumber": "Por favor, introduce un número de tarjeta válido",
+        "invalidExpiryDate": "Por favor, introduce una fecha de caducidad válida",
+        "invalidCVV": "Por favor, introduce un CVV válido"
       },
-      "notes": "Requisitos Especiales",
-      "notes": {
-        "placeholder": "Comparte cualquier requisito dietético, necesidad de accesibilidad o preferencias especiales"
-      },
-      "continue": "Continuar al Pago",
-      "payment": {
-        "title": "Información de Pago",
-        "cardDetails": "Detalles de la Tarjeta",
-        "cardName": "Nombre en la Tarjeta",
-        "cardNamePlaceholder": "Como aparece en la tarjeta",
-        "cardNumber": "Número de Tarjeta",
-        "cardNumberPlaceholder": "XXXX XXXX XXXX XXXX",
-        "expiryDate": "Fecha de Caducidad",
-        "expiryDatePlaceholder": "MM/AA",
-        "cvv": "Código de Seguridad (CVV)",
-        "cvvPlaceholder": "XXX",
-        "terms": "He leído y acepto los Términos y Condiciones y la Política de Privacidad",
-        "back": "Atrás",
-        "processing": "Procesando...",
-        "complete": "Completar Reserva"
-      },
-      "summary": {
+      "paymentSummary": {
         "title": "Resumen de la Reserva",
         "subtotal": "Subtotal",
         "taxes": "Impuestos",
         "total": "Total",
-        "deposit": "Solo se te cobrará un depósito del 20% (€528) ahora. El resto será pagable 30 días antes del viaje."
-      },
-      "whyChooseUs": {
-        "title": "¿Por qué Reservar con Nosotros?",
-        "item1": "Expertos locales en destinos asiáticos",
-        "item2": "Itinerarios personalizados a tu ritmo",
-        "item3": "Soporte 24/7 durante todo tu viaje",
-        "item4": "Experiencias auténticas lejos del turismo masivo",
-        "note": "Cuando envíes tu solicitud, un consultor de viajes te contactará dentro de las 24 horas.",
-        "customizedAttention": "Atención Personalizada",
-        "customizedAttentionDescription": "No somos una agencia de viajes masiva. Creamos experiencias únicas adaptadas a tus intereses y necesidades."
-      },
-      "faq": {
-        "title": "Preguntas Frecuentes",
-        "item1": {
-          "question": "¿Cuánto tiempo tarda en confirmarse mi reserva?",
-          "answer": "Normalmente te contactamos dentro de las 24 horas para discutir los detalles de tu viaje y comenzar la planificación."
-        },
-        "item2": {
-          "question": "¿Necesito pagar algo por adelantado?",
-          "answer": "No, la consulta inicial es gratuita. Solo se requerirá un depósito después de que apruebes tu itinerario personalizado para confirmar la reserva."
-        },
-        "item3": {
-          "question": "¿Puedo modificar mi itinerario más tarde?",
-          "answer": "Sí, entendemos que los planes pueden cambiar. Trabajaremos contigo para ajustar el itinerario según tus necesidades, cuando sea posible."
-        }
+        "deposit": "Depósito (30%)",
+        "remaining": "Resto a pagar",
+        "paymentNotice": "Solo se cobrará el depósito inicial. El resto del pago se realizará 30 días antes de la fecha de inicio.",
+        "included": "Incluye",
+        "accommodation": "Alojamiento",
+        "training": "Entrenamiento",
+        "meals": "Comidas",
+        "transfers": "Traslados",
+        "insurance": "Seguro básico"
       }
+    },
+    "success": {
+      "title": "¡Reserva Enviada con Éxito!",
+      "description": "Recibirás un email de confirmación en breve."
+    },
+    "confirmation": {
+      "title": "¡Reserva Confirmada!",
+      "description": "Gracias por reservar con Flow2bali. Hemos enviado un email a {{email}} con los detalles de tu reserva. Uno de nuestros consultores de viajes te contactará en las próximas 24 horas.",
+      "reference": "Referencia de la Reserva",
+      "destination": "Destino",
+      "date": "Fecha",
+      "travelers": "Viajeros",
+      "people": "personas",
+      "deposit": "Depósito pagado"
     }
   },
   "faq": {

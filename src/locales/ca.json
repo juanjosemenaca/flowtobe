@@ -493,95 +493,63 @@
     }
   },
   "booking": {
-    "title": "Reserva la teva Aventura",
+    "title": "Reserva la teva Experiència",
     "steps": {
-      "details": "Detalls",
+      "personal": "Informació Personal",
       "payment": "Pagament",
       "confirmation": "Confirmació"
     },
     "form": {
-      "details": {
-        "title": "Detalls del Viatge",
-        "subTitle": "Informació del Viatge"
-      },
       "firstName": "Nom",
-      "lastName": "Cognom",
+      "lastName": "Cognoms",
       "email": "Email",
       "phone": "Telèfon",
-      "destination": {
-        "placeholder": "Selecciona una destinació"
+      "destination": "Destí",
+      "startDate": "Data d'Inici",
+      "endDate": "Data de Fi",
+      "accommodation": "Tipus d'Allotjament",
+      "trainingLevel": "Nivell d'Entrenament",
+      "specialRequirements": "Requisits Especials",
+      "cardNumber": "Número de Targeta",
+      "expiryDate": "Data de Caducitat",
+      "cvv": "CVV",
+      "cardholderName": "Nom a la Targeta",
+      "terms": "Accepto els termes i condicions",
+      "back": "Enrere",
+      "next": "Següent",
+      "submit": "Reservar",
+      "accommodationTypes": {
+        "standard": "Estàndard",
+        "premium": "Premium",
+        "luxury": "Luxe"
       },
-      "dates": "Data del Viatge",
-      "duration": {
-        "label": "Durada",
-        "default": "7-10",
-        "short": "3-6 dies",
-        "medium": "7-10 dies",
-        "long": "11-14 dies",
-        "veryLong": "15+ dies"
+      "trainingLevels": {
+        "beginner": "Principiant",
+        "intermediate": "Intermedi",
+        "advanced": "Avançat"
       },
-      "guests": "Nombre de Viatgers",
-      "guests": {
-        "single": "1 persona",
-        "couple": "2 persones",
-        "three": "3 persones",
-        "four": "4 persones",
-        "five": "5 persones",
-        "more": "6+ persones"
-      },
-      "notes": "Requisits Especials",
-      "notes": {
-        "placeholder": "Comparteix qualsevol requisit dietètic, necessitat d'accessibilitat o preferències especials"
-      },
-      "continue": "Continuar al Pagament",
-      "payment": {
-        "title": "Informació de Pagament",
-        "cardDetails": "Detalls de la Targeta",
-        "cardName": "Nom a la Targeta",
-        "cardNamePlaceholder": "Com apareix a la targeta",
-        "cardNumber": "Número de Targeta",
-        "cardNumberPlaceholder": "XXXX XXXX XXXX XXXX",
-        "expiryDate": "Data de Caducitat",
-        "expiryDatePlaceholder": "MM/AA",
-        "cvv": "Codi de Seguretat (CVV)",
-        "cvvPlaceholder": "XXX",
-        "terms": "He llegit i accepto els Termes i Condicions i la Política de Privacitat",
-        "back": "Enrere",
-        "processing": "Processant...",
-        "complete": "Completar Reserva"
-      },
-      "summary": {
-        "title": "Resum de la Reserva",
-        "subtotal": "Subtotal",
-        "taxes": "Impostos",
-        "total": "Total",
-        "deposit": "Només se't cobrarà un dipòsit del 20% (€528) ara. La resta serà pagable 30 dies abans del viatge."
-      },
-      "whyChooseUs": {
-        "title": "Per què Reservar amb Nosaltres?",
-        "item1": "Experts locals en destinacions asiàtiques",
-        "item2": "Itineraris personalitzats al teu ritme",
-        "item3": "Suport 24/7 durant tot el teu viatge",
-        "item4": "Experiències autèntiques lluny del turisme massiu",
-        "note": "Quan enviïs la teva sol·licitud, un consultor de viatges et contactarà dins de les 24 hores.",
-        "customizedAttention": "Atenció Personalitzada",
-        "customizedAttentionDescription": "No som una agència de viatges massiva. Creem experiències úniques adaptades als teus interessos i necessitats."
-      },
-      "faq": {
-        "title": "Preguntes Freqüents",
-        "item1": {
-          "question": "Quant temps triga a confirmar la meva reserva?",
-          "answer": "Normalment et contactem dins de les 24 hores per discutir els detalls del teu viatge i començar la planificació."
-        },
-        "item2": {
-          "question": "Necessito pagar alguna cosa per endavant?",
-          "answer": "No, la consulta inicial és gratuïta. Només es requerirà un dipòsit després que aprovïs el teu itinerari personalitzat per confirmar la reserva."
-        },
-        "item3": {
-          "question": "Puc modificar el meu itinerari més tard?",
-          "answer": "Sí, entenem que els plans poden canviar. Treballarem amb tu per ajustar l'itinerari segons les teves necessitats, quan sigui possible."
-        }
+      "validation": {
+        "required": "Aquest camp és obligatori",
+        "invalidEmail": "Si us plau, introdueix un email vàlid",
+        "invalidPhone": "Si us plau, introdueix un número de telèfon vàlid",
+        "invalidCardNumber": "Si us plau, introdueix un número de targeta vàlid",
+        "invalidExpiryDate": "Si us plau, introdueix una data de caducitat vàlida",
+        "invalidCVV": "Si us plau, introdueix un CVV vàlid"
       }
+    },
+    "success": {
+      "title": "Reserva Enviada amb Èxit!",
+      "description": "Rebràs un email de confirmació aviat."
+    },
+    "confirmation": {
+      "title": "Reserva Confirmada!",
+      "description": "Gràcies per reservar amb Flow2bali. Hem enviat un email a {{email}} amb els detalls de la teva reserva. Un dels nostres consultors de viatges et contactarà en les properes 24 hores.",
+      "reference": "Referència de la Reserva",
+      "destination": "Destí",
+      "date": "Data",
+      "travelers": "Viatgers",
+      "people": "persones",
+      "deposit": "Dipòsit pagat"
     }
   },
   "faq": {

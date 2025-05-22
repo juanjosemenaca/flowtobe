@@ -405,95 +405,55 @@
     }
   },
   "booking": {
-    "title": "Book Your Adventure",
+    "title": "Book Your Experience",
     "steps": {
-      "details": "Details",
+      "personal": "Personal Information",
       "payment": "Payment",
       "confirmation": "Confirmation"
     },
     "form": {
-      "details": {
-        "title": "Travel Details",
-        "subTitle": "Travel Information"
-      },
       "firstName": "First Name",
       "lastName": "Last Name",
       "email": "Email",
       "phone": "Phone",
-      "destination": {
-        "placeholder": "Select a destination"
+      "destination": "Destination",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "accommodation": "Accommodation Type",
+      "trainingLevel": "Training Level",
+      "specialRequirements": "Special Requirements",
+      "accommodationTypes": {
+        "standard": "Standard",
+        "premium": "Premium",
+        "luxury": "Luxury"
       },
-      "dates": "Travel Date",
-      "duration": {
-        "label": "Duration",
-        "default": "7-10",
-        "short": "3-6 days",
-        "medium": "7-10 days",
-        "long": "11-14 days",
-        "veryLong": "15+ days"
+      "trainingLevels": {
+        "beginner": "Beginner",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced"
       },
-      "guests": "Number of Travelers",
-      "guests": {
-        "single": "1 person",
-        "couple": "2 people",
-        "three": "3 people",
-        "four": "4 people",
-        "five": "5 people",
-        "more": "6+ people"
-      },
-      "notes": "Special Requirements",
-      "notes": {
-        "placeholder": "Share any dietary requirements, accessibility needs, or special preferences"
-      },
-      "continue": "Continue to Payment",
-      "payment": {
-        "title": "Payment Information",
-        "cardDetails": "Card Details",
-        "cardName": "Name on Card",
-        "cardNamePlaceholder": "As it appears on card",
-        "cardNumber": "Card Number",
-        "cardNumberPlaceholder": "XXXX XXXX XXXX XXXX",
-        "expiryDate": "Expiry Date",
-        "expiryDatePlaceholder": "MM/YY",
-        "cvv": "Security Code (CVV)",
-        "cvvPlaceholder": "XXX",
-        "terms": "I have read and agree to the Terms & Conditions and Privacy Policy",
-        "back": "Back",
-        "processing": "Processing...",
-        "complete": "Complete Booking"
-      },
-      "summary": {
-        "title": "Booking Summary",
-        "subtotal": "Subtotal",
-        "taxes": "Taxes",
-        "total": "Total",
-        "deposit": "You will only be charged a 20% deposit (€528) now. The rest will be payable 30 days before the trip."
-      },
-      "whyChooseUs": {
-        "title": "Why Book with Us?",
-        "item1": "Local experts in Asian destinations",
-        "item2": "Customized itineraries at your pace",
-        "item3": "24/7 support throughout your journey",
-        "item4": "Authentic experiences away from mass tourism",
-        "note": "When you submit your request, a travel consultant will contact you within 24 hours.",
-        "customizedAttention": "Customized Attention",
-        "customizedAttentionDescription": "We are not a mass travel agency. We create unique experiences tailored to your interests and needs."
-      },
-      "faq": {
-        "title": "Frequently Asked Questions",
-        "item1": {
-          "question": "How long does it take to confirm my booking?",
-          "answer": "We typically contact you within 24 hours to discuss your trip details and begin planning."
-        },
-        "item2": {
-          "question": "Do I need to pay anything upfront?",
-          "answer": "No, the initial consultation is free. A deposit will only be required after you approve your customized itinerary to confirm the booking."
-        },
-        "item3": {
-          "question": "Can I modify my itinerary later?",
-          "answer": "Yes, we understand that plans can change. We'll work with you to adjust the itinerary according to your needs, when possible."
-        }
+      "validation": {
+        "required": "This field is required",
+        "invalidEmail": "Please enter a valid email address",
+        "invalidPhone": "Please enter a valid phone number",
+        "invalidCardNumber": "Please enter a valid card number",
+        "invalidExpiryDate": "Please enter a valid expiry date",
+        "invalidCVV": "Please enter a valid CVV"
       }
+    },
+    "success": {
+      "title": "Booking Successfully Sent!",
+      "description": "You will receive a confirmation email shortly."
+    },
+    "confirmation": {
+      "title": "Booking Confirmed!",
+      "description": "Thank you for booking with Flow2bali. We have sent an email to {{email}} with your booking details. One of our travel consultants will contact you within the next 24 hours.",
+      "reference": "Booking Reference",
+      "destination": "Destination",
+      "date": "Date",
+      "travelers": "Travelers",
+      "people": "people",
+      "deposit": "Deposit paid"
     }
   },
   "faq": {
