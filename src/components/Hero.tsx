@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
     '/rotating/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai.jpg',
     '/rotating/playa.jpg',
     '/rotating/templo-de-besakih-en-bali-indonesia.jpg',
-    '/rotating/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai-1.jpg'
+    '/rotating/wellness-practices-self-care-world-health-day.jpg'
   ];
 
   useEffect(() => {

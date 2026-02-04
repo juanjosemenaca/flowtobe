@@ -35,9 +35,16 @@ const Header = () => {
           {!isHomePage && (
             <img src="/noBgBlack.png" alt="Flow2B Logo" className="h-10 w-10 mr-3 rounded-full object-cover" />
           )}
-          <h1 className={`text-2xl sm:text-3xl font-serif font-bold ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            FLOW2B
-          </h1>
+          <div className="flex items-baseline">
+            <h1 className={`text-2xl sm:text-3xl font-serif font-bold ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
+              FLOW2B
+            </h1>
+            {isHomePage && (
+              <span className={`ml-2 text-xs sm:text-sm italic ${isScrolled ? 'text-travel-dark' : 'text-white'} opacity-80 font-normal`}>
+                let it flow
+              </span>
+            )}
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
