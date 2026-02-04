@@ -26,7 +26,7 @@ const Privacy = () => {
           <div className="prose prose-lg mx-auto">
             <h2>Introducción</h2>
             <p>
-              FLOW2BALY S.L. (en adelante, "Flow2bali") se compromete a proteger y respetar tu privacidad. Esta política de privacidad establece la base sobre la cual cualquier dato personal que recopilemos de ti, o que tú nos proporciones, será procesado por nosotros.
+              FLOW2BALY S.L. (en adelante, "Flow2b") se compromete a proteger y respetar tu privacidad. Esta política de privacidad establece la base sobre la cual cualquier dato personal que recopilemos de ti, o que tú nos proporciones, será procesado por nosotros.
             </p>
 
             <h2>Información que recopilamos</h2>
@@ -74,7 +74,7 @@ const Privacy = () => {
 
             <h2>Contacto</h2>
             <p>
-              Las preguntas, comentarios y solicitudes relacionadas con esta política de privacidad son bienvenidas y deben dirigirse a info@Flow2bali.com o a nuestra dirección postal.
+              Las preguntas, comentarios y solicitudes relacionadas con esta política de privacidad son bienvenidas y deben dirigirse a info@flow2b.com o a nuestra dirección postal.
             </p>
 
             <p className="text-sm text-travel-sage mt-8">

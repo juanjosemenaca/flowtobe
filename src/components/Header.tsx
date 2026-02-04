@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { MapPin, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "./LanguageSelector";
 
@@ -9,6 +9,8 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t } = useTranslation();
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,9 +32,11 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <img src="/logo.jfif" alt="Flow2Bali Logo" className="h-10 w-10 mr-3 rounded-full object-cover" />
+          {!isHomePage && (
+            <img src="/noBgBlack.png" alt="Flow2B Logo" className="h-10 w-10 mr-3 rounded-full object-cover" />
+          )}
           <h1 className={`text-2xl sm:text-3xl font-serif font-bold ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            FLOW2BALI
+            FLOW2B
           </h1>
         </Link>
 

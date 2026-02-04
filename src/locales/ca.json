@@ -543,7 +543,7 @@
     },
     "confirmation": {
       "title": "Reserva Confirmada!",
-      "description": "Gràcies per reservar amb Flow2bali. Hem enviat un email a {{email}} amb els detalls de la teva reserva. Un dels nostres consultors de viatges et contactarà en les properes 24 hores.",
+      "description": "Gràcies per reservar amb Flow2b. Hem enviat un email a {{email}} amb els detalls de la teva reserva. Un dels nostres consultors de viatges et contactarà en les properes 24 hores.",
       "reference": "Referència de la Reserva",
       "destination": "Destí",
       "date": "Data",
@@ -623,7 +623,7 @@
     "title": "El Que Diuen Els Viatgers",
     "subtitle": "Històries reals de viatgers que van experimentar la màgia d'Àsia amb nosaltres",
     "japan": {
-      "quote": "El nostre viatge al Japó amb Flow2bali va ser absolutament increïble. Cada detall estava perfectament organitzat i els guies locals van fer que l'experiència fos especial.",
+      "quote": "El nostre viatge al Japó amb Flow2b va ser absolutament increïble. Cada detall estava perfectament organitzat i els guies locals van fer que l'experiència fos especial.",
       "author": "Sara J.",
       "location": "Kioto, Japó"
     },
@@ -633,7 +633,7 @@
       "location": "Phuket, Tailàndia"
     },
     "vietnam": {
-      "quote": "La cultura i els paisatges del Vietnam són impressionants, i Flow2bali ens va ajudar a explorar-ho tot. Els tours gastronòmics van ser quelcom que mai oblidarem.",
+      "quote": "La cultura i els paisatges del Vietnam són impressionants, i Flow2b ens va ajudar a explorar-ho tot. Els tours gastronòmics van ser quelcom que mai oblidarem.",
       "author": "Elena i David",
       "location": "Hanoi, Vietnam"
     }

@@ -505,7 +505,7 @@
     },
     "confirmation": {
       "title": "Prenotazione Confermata!",
-      "description": "Grazie per aver prenotato con Flow2bali. Abbiamo inviato un'email a {{email}} con i dettagli della tua prenotazione. Uno dei nostri consulenti di viaggio ti contatterà entro le prossime 24 ore.",
+      "description": "Grazie per aver prenotato con Flow2b. Abbiamo inviato un'email a {{email}} con i dettagli della tua prenotazione. Uno dei nostri consulenti di viaggio ti contatterà entro le prossime 24 ore.",
       "reference": "Riferimento Prenotazione",
       "destination": "Destinazione",
       "date": "Data",
@@ -585,7 +585,7 @@
     "title": "Cosa Dicono i Viaggiatori",
     "subtitle": "Storie vere di viaggiatori che hanno sperimentato la magia dell'Asia con noi",
     "japan": {
-      "quote": "Il nostro viaggio in Giappone con Flow2bali è stato assolutamente incredibile. Ogni dettaglio è stato perfettamente organizzato e le guide locali hanno reso l'esperienza davvero speciale.",
+      "quote": "Il nostro viaggio in Giappone con Flow2b è stato assolutamente incredibile. Ogni dettaglio è stato perfettamente organizzato e le guide locali hanno reso l'esperienza davvero speciale.",
       "author": "Sara J.",
       "location": "Kyoto, Giappone"
     },
@@ -595,7 +595,7 @@
       "location": "Phuket, Thailandia"
     },
     "vietnam": {
-      "quote": "La cultura e i paesaggi del Vietnam sono mozzafiato, e Flow2bali ci ha aiutato a esplorarli tutti. I tour gastronomici sono stati qualcosa che non dimenticheremo mai.",
+      "quote": "La cultura e i paesaggi del Vietnam sono mozzafiato, e Flow2b ci ha aiutato a esplorarli tutti. I tour gastronomici sono stati qualcosa che non dimenticheremo mai.",
       "author": "Elena e David",
       "location": "Hanoi, Vietnam"
     }

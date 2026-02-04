@@ -14,7 +14,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="inline-block mb-6">
               <h2 className="text-2xl font-serif font-bold">
-                FLOW2BALI
+                FLOW2B
               </h2>
             </Link>
             <p className="text-gray-300 mb-6">
@@ -111,7 +111,7 @@ const Footer = () => {
               </div>
               <div className="flex items-start">
                 <Mail size={20} className="text-travel-terracotta mr-3 mt-1" />
-                <p className="text-gray-300">info@flow2bali.com</p>
+                <p className="text-gray-300">info@flow2b.com</p>
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} FLOW2BALI. {t('footer.copyright')}
+            &copy; {new Date().getFullYear()} FLOW2B. {t('footer.copyright')}
           </p>
           <div className="flex space-x-6">
             <Link to="/privacy" className="text-gray-400 hover:text-travel-terracotta text-sm">

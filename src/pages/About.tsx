@@ -19,7 +19,7 @@ const About = () => {
       <div className="bg-travel-teal text-white pt-32 pb-16">
         <div className="container text-center flex flex-col items-center justify-center">
           <div className="flex items-center justify-center mb-4">
-            <img src="/logo.jfif" alt="Flow2Bali Logo" className="h-20 w-20 rounded-full object-cover mr-4" />
+            <img src="/noBgBlack.png" alt="Flow2B Logo" className="h-20 w-20 rounded-full object-cover mr-4" />
             <h1 className="text-4xl md:text-5xl font-serif">{t('about.title')}</h1>
           </div>
           <p className="text-lg max-w-3xl mx-auto opacity-90">
@@ -47,7 +47,7 @@ const About = () => {
             <div>
               <img 
                 src="/general/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai.jpg" 
-                alt="El equipo de Flow2bali" 
+                alt="El equipo de Flow2b" 
                 className="rounded-lg shadow-lg w-full h-[400px] object-cover"
               />
             </div>
