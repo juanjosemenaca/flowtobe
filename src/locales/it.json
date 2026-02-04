@@ -31,7 +31,7 @@
   },
   "footer": {
     "about": "Chi Siamo",
-    "aboutText": "Siamo esperti di viaggi asiatici impegnati a creare esperienze autentiche e memorabili.",
+    "aboutText": "Viaggi, allenamenti, paradisi... Lascia che ti guidiamo nella tua nuova avventura.",
     "quickLinks": "Link Rapidi",
     "contact": "Contatti",
     "address": "Indirizzo",
@@ -47,7 +47,7 @@
   },
   "home": {
     "hero": {
-      "title": "Scopri l'Asia Attraverso il Muay Thai",
+      "title": "Scopri l'Asia allenando la tua passione",
       "subtitle": "Esperienze autentiche di allenamento nelle destinazioni più belle",
       "cta": "Esplora Destinazioni"
     },
@@ -439,19 +439,30 @@
   },
   "contact": {
     "title": "Contattaci",
-    "subtitle": "Inizia oggi il tuo percorso nel Muay Thai",
+    "subtitle": "Scrivici e inizia la tua avventura",
     "form": {
       "name": "Nome",
       "email": "Email",
+      "subject": "Oggetto",
       "message": "Messaggio",
-      "submit": "Invia Messaggio"
+      "submit": "Invia Messaggio",
+      "success": "Messaggio inviato",
+      "successMessage": "Ti risponderemo il prima possibile.",
+      "error": "Errore",
+      "errorMessage": "Invio fallito. Riprova."
     },
     "info": {
       "title": "Informazioni di contatto",
       "address": "Indirizzo",
       "phone": "Telefono",
       "email": "Email",
-      "hours": "Orari di apertura"
+      "hours": "Orari di apertura",
+      "addressValue": "",
+      "phoneValue": "",
+      "emailValue": "",
+      "hoursLine1": "Lunedì - Venerdì: 9:00 - 18:00",
+      "hoursLine2": "Sabato: 10:00 - 14:00",
+      "hoursLine3": "Domenica: Chiuso"
     }
   },
   "booking": {

@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Users, Compass, Globe, HeartHandshake, Shield, Clock } from 'lucide-react';
-import Newsletter from '@/components/Newsletter';
 import { useTranslation } from 'react-i18next';
 
 const ServicesHero = () => {
@@ -198,7 +197,6 @@ const Servicios = () => {
       <ServiceFeatures />
       <ServiceProcess />
       <IncludedFeatures />
-      <Newsletter />
       <Footer />
     </div>
   );

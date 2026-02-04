@@ -10,7 +10,7 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t } = useTranslation();
   const location = useLocation();
-  const isHomePage = location.pathname === "/";
+  const useMinimalHeader = location.pathname === "/" || location.pathname === "/contact";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,14 +32,14 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          {!isHomePage && (
+          {!useMinimalHeader && (
             <img src="/noBgBlack.png" alt="Flow2B Logo" className="h-10 w-10 mr-3 rounded-full object-cover" />
           )}
           <div className="flex items-baseline">
             <h1 className={`text-2xl sm:text-3xl font-serif font-bold ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
               FLOW2B
             </h1>
-            {isHomePage && (
+            {useMinimalHeader && (
               <span className={`ml-2 text-xs sm:text-sm italic ${isScrolled ? 'text-travel-dark' : 'text-white'} opacity-80 font-normal`}>
                 let it flow
               </span>
@@ -49,12 +49,16 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          <Link to="/" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            {t('nav.home')}
-          </Link>
-          <Link to="/destinations" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
-            {t('nav.destinations')}
-          </Link>
+          {!useMinimalHeader && (
+            <>
+              <Link to="/" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
+                {t('nav.home')}
+              </Link>
+              <Link to="/destinations" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
+                {t('nav.destinations')}
+              </Link>
+            </>
+          )}
           <Link to="/contact" className={`font-medium hover:text-travel-terracotta transition-colors ${isScrolled ? 'text-travel-dark' : 'text-white'}`}>
             {t('nav.contact')}
           </Link>
@@ -74,20 +78,24 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 animate-fade-in">
           <div className="container flex flex-col space-y-3">
-            <Link 
-              to="/" 
-              className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              {t('nav.home')}
-            </Link>
-            <Link 
-              to="/destinations" 
-              className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              {t('nav.destinations')}
-            </Link>
+            {!useMinimalHeader && (
+              <>
+                <Link 
+                  to="/" 
+                  className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {t('nav.home')}
+                </Link>
+                <Link 
+                  to="/destinations" 
+                  className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {t('nav.destinations')}
+                </Link>
+              </>
+            )}
             <Link 
               to="/contact" 
               className="font-medium text-travel-dark hover:text-travel-terracotta px-2 py-2"

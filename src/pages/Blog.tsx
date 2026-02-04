@@ -255,30 +255,6 @@ const Blog = () => {
         </div>
       </section>
       
-      {/* Newsletter */}
-      <section className="py-16 bg-white">
-        <div className="container max-w-4xl">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-serif text-travel-dark mb-4">
-              Suscríbete a Nuestro Newsletter
-            </h2>
-            <p className="text-travel-sage text-lg">
-              Recibe las últimas actualizaciones, consejos de viaje y ofertas especiales directamente en tu bandeja de entrada
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-3">
-            <input 
-              type="email"
-              placeholder="Tu correo electrónico"
-              className="flex-1 px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-travel-terracotta"
-            />
-            <Button className="bg-travel-terracotta hover:bg-travel-teal text-white px-6">
-              Suscribirme
-            </Button>
-          </div>
-        </div>
-      </section>
-      
       <Footer />
     </div>
   );

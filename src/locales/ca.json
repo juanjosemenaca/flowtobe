@@ -31,7 +31,7 @@
   },
   "footer": {
     "about": "Sobre Nosaltres",
-    "aboutText": "Som experts en viatges asiàtics compromesos a crear experiències autèntiques i memorables.",
+    "aboutText": "Viatges, entrenaments, paradisos... Deixa'ns guiar-te en la teva nova aventura.",
     "quickLinks": "Enllaços Ràpids",
     "contact": "Contacte",
     "address": "Adreça",
@@ -47,7 +47,7 @@
   },
   "home": {
     "hero": {
-      "title": "Descobreix Àsia a través del Muay Thai",
+      "title": "Descobreix Àsia entrenant la teva passió",
       "subtitle": "Experiències autèntiques d'entrenament a les destinacions més boniques",
       "cta": "Explora Destinacions"
     },
@@ -477,19 +477,30 @@
   },
   "contact": {
     "title": "Contacta'ns",
-    "subtitle": "Comença avui el teu camí en Muay Thai",
+    "subtitle": "Escriu-nos i comença la teva aventura",
     "form": {
       "name": "Nom",
       "email": "Correu electrònic",
+      "subject": "Assumpte",
       "message": "Missatge",
-      "submit": "Enviar Missatge"
+      "submit": "Enviar Missatge",
+      "success": "Missatge enviat",
+      "successMessage": "Et respondrem el més aviat possible.",
+      "error": "Error",
+      "errorMessage": "No s'ha pogut enviar. Torna-ho a provar."
     },
     "info": {
       "title": "Informació de contacte",
       "address": "Adreça",
       "phone": "Telèfon",
       "email": "Correu electrònic",
-      "hours": "Horari d'atenció"
+      "hours": "Horari d'atenció",
+      "addressValue": "",
+      "phoneValue": "",
+      "emailValue": "",
+      "hoursLine1": "Dilluns - Divendres: 9:00 - 18:00",
+      "hoursLine2": "Dissabte: 10:00 - 14:00",
+      "hoursLine3": "Diumenge: Tancat"
     }
   },
   "booking": {

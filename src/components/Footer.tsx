@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, Facebook, Instagram, Twitter } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
@@ -9,92 +9,18 @@ const Footer = () => {
   return (
     <footer className="bg-travel-dark text-white pt-16 pb-8">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <Link to="/" className="inline-block mb-6">
+            <Link to="/" className="inline-block mb-6 flex items-baseline">
               <h2 className="text-2xl font-serif font-bold">
                 FLOW2B
               </h2>
+              <span className="ml-2 text-sm italic text-gray-300">let it flow</span>
             </Link>
             <p className="text-gray-300 mb-6">
               {t('footer.aboutText')}
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-travel-terracotta">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-travel-terracotta">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-travel-terracotta">
-                <Twitter size={20} />
-              </a>
-            </div>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-serif mb-6">{t('footer.quickLinks')}</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link to="/about" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  {t('footer.about')}
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  {t('nav.services')}
-                </Link>
-              </li>
-              <li>
-                <Link to="/destinations" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  {t('nav.destinations')}
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  {t('nav.blog')}
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  {t('nav.contact')}
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Top Destinations */}
-          <div>
-            <h3 className="text-lg font-serif mb-6">{t('destinations.title')}</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link to="/destinations/japan" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  Japón
-                </Link>
-              </li>
-              <li>
-                <Link to="/destinations/thailand" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  Tailandia
-                </Link>
-              </li>
-              <li>
-                <Link to="/destinations/vietnam" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  Vietnam
-                </Link>
-              </li>
-              <li>
-                <Link to="/destinations/india" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  India
-                </Link>
-              </li>
-              <li>
-                <Link to="/destinations/indonesia" className="text-gray-300 hover:text-travel-terracotta transition-colors">
-                  Indonesia
-                </Link>
-              </li>
-            </ul>
           </div>
 
           {/* Contact Info */}
@@ -103,15 +29,15 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start">
                 <MapPin size={20} className="text-travel-terracotta mr-3 mt-1" />
-                <p className="text-gray-300">123 Calle Viajera, Singapur 123456</p>
+                <p className="text-gray-300">&nbsp;</p>
               </div>
               <div className="flex items-start">
                 <Phone size={20} className="text-travel-terracotta mr-3 mt-1" />
-                <p className="text-gray-300">+65 1234 5678</p>
+                <p className="text-gray-300">&nbsp;</p>
               </div>
               <div className="flex items-start">
                 <Mail size={20} className="text-travel-terracotta mr-3 mt-1" />
-                <p className="text-gray-300">info@flow2b.com</p>
+                <p className="text-gray-300">&nbsp;</p>
               </div>
             </div>
           </div>

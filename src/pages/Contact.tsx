@@ -88,11 +88,8 @@ const Contact = () => {
       {/* Hero Section */}
       <div className="bg-travel-teal text-white pt-32 pb-16">
         <div className="container text-center flex flex-col items-center justify-center">
-          <div className="flex items-center justify-center mb-4">
-            <img src="/noBgBlack.png" alt="Flow2B Logo" className="h-20 w-20 rounded-full object-cover mr-4" />
-            <h1 className="text-4xl md:text-5xl font-serif">{t('contact.title')}</h1>
-          </div>
-          <p className="text-lg max-w-3xl mx-auto opacity-90">
+          <img src="/noBgBlack.png" alt="Flow2B Logo" className="h-32 md:h-40 w-auto object-contain mb-4 mx-auto block" />
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90">
             {t('contact.subtitle')}
           </p>
         </div>
@@ -101,56 +98,8 @@ const Contact = () => {
       <section className="py-16">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Information */}
-            <div>
-              <h2 className="text-3xl font-serif text-travel-dark mb-8">{t('contact.info.title')}</h2>
-              
-              <div className="space-y-8">
-                <div className="flex items-start">
-                  <div className="bg-travel-terracotta rounded-full p-3 text-white mr-4">
-                    <MapPin size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-serif text-travel-dark mb-2">{t('contact.info.address')}</h3>
-                    <p className="text-travel-sage">123 Calle Viajera, Singapur 123456</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="bg-travel-teal rounded-full p-3 text-white mr-4">
-                    <Phone size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-serif text-travel-dark mb-2">{t('contact.info.phone')}</h3>
-                    <p className="text-travel-sage">+65 1234 5678</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="bg-travel-sage rounded-full p-3 text-white mr-4">
-                    <Mail size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-serif text-travel-dark mb-2">{t('contact.info.email')}</h3>
-                    <p className="text-travel-sage">info@flow2b.com</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="mt-8">
-                <h3 className="text-xl font-serif text-travel-dark mb-4">{t('contact.info.hours')}</h3>
-                <div className="space-y-2 text-travel-sage">
-                  <p>Lunes - Viernes: 9:00 AM - 6:00 PM</p>
-                  <p>Sábado: 10:00 AM - 2:00 PM</p>
-                  <p>Domingo: Cerrado</p>
-                </div>
-              </div>
-            </div>
-            
-            {/* Contact Form */}
-            <div>
-              <h2 className="text-3xl font-serif text-travel-dark mb-8">{t('contact.form.title')}</h2>
-              
+            {/* Contact Form - primero */}
+            <div className="order-1">
               <form onSubmit={handleSubmit} className="space-y-6" ref={formRef}>
                 <div>
                   <Label htmlFor="name">{t('contact.form.name')}</Label>
@@ -212,6 +161,43 @@ const Contact = () => {
                 </Button>
               </form>
             </div>
+            
+            {/* Contact Information - después */}
+            <div className="order-2">
+              <h2 className="text-3xl font-serif text-travel-dark mb-8">{t('contact.info.title')}</h2>
+              
+              <div className="space-y-8">
+                <div className="flex items-start">
+                  <div className="bg-travel-terracotta rounded-full p-3 text-white mr-4">
+                    <MapPin size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-serif text-travel-dark mb-2">{t('contact.info.address')}</h3>
+                    <p className="text-travel-sage">&nbsp;</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="bg-travel-teal rounded-full p-3 text-white mr-4">
+                    <Phone size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-serif text-travel-dark mb-2">{t('contact.info.phone')}</h3>
+                    <p className="text-travel-sage">&nbsp;</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="bg-travel-sage rounded-full p-3 text-white mr-4">
+                    <Mail size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-serif text-travel-dark mb-2">{t('contact.info.email')}</h3>
+                    <p className="text-travel-sage">&nbsp;</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -221,8 +207,8 @@ const Contact = () => {
         <div className="container">
           <div className="h-96 rounded-lg overflow-hidden">
             <img 
-              src="/general/mujer-asiatica-recortada-entrenando-en-guantes-de-boxeo-en-la-practica-de-muay-thai.jpg" 
-              alt="Entrenando Muay Thai" 
+              src="/general/scene-with-diverse-young-people-being-digital-nomads-working-remotely-from-dreamy-locations.jpg" 
+              alt="Trabajo remoto en destinos soñados" 
               className="w-full h-full object-cover"
               loading="lazy"
               width={1200}

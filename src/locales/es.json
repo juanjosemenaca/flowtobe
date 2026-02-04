@@ -31,7 +31,7 @@
   },
   "footer": {
     "about": "Sobre Nosotros",
-    "aboutText": "Somos expertos en viajes asiáticos comprometidos a crear experiencias auténticas y memorables.",
+    "aboutText": "Viajes, entrenos, paraísos... Déjanos guiarte en tu nueva aventura.",
     "quickLinks": "Enlaces Rápidos",
     "contact": "Contacto",
     "address": "Dirección",
@@ -271,19 +271,30 @@
   },
   "contact": {
     "title": "Contáctanos",
-    "subtitle": "Comienza tu viaje de Muay Thai hoy",
+    "subtitle": "Escríbenos y comienza tu aventura",
     "form": {
       "name": "Nombre",
       "email": "Email",
+      "subject": "Asunto",
       "message": "Mensaje",
-      "submit": "Enviar"
+      "submit": "Enviar",
+      "success": "Mensaje enviado",
+      "successMessage": "Te responderemos lo antes posible.",
+      "error": "Error",
+      "errorMessage": "No se pudo enviar. Inténtalo de nuevo."
     },
     "info": {
       "title": "Información de contacto",
       "address": "Dirección",
       "phone": "Teléfono",
       "email": "Correo electrónico",
-      "hours": "Horario de atención"
+      "hours": "Horario de atención",
+      "addressValue": "",
+      "phoneValue": "",
+      "emailValue": "",
+      "hoursLine1": "Lunes - Viernes: 9:00 AM - 6:00 PM",
+      "hoursLine2": "Sábado: 10:00 AM - 2:00 PM",
+      "hoursLine3": "Domingo: Cerrado"
     }
   },
   "booking": {
