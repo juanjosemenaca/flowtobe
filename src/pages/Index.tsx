@@ -13,8 +13,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="FLOW2BALY - Tu Puerta a Experiencias Únicas en Asia"
-        description="Descubre los destinos más fascinantes de Asia con FLOW2BALY. Ofrecemos experiencias auténticas, tours personalizados y aventuras inolvidables en los lugares más increíbles del continente asiático."
+        title="FLOW2B - Tu Puerta a Experiencias Únicas en Asia"
+        description="Descubre los destinos más fascinantes de Asia con FLOW2B. Ofrecemos experiencias auténticas, tours personalizados y aventuras inolvidables en los lugares más increíbles del continente asiático."
         keywords="viajes Asia, turismo Asia, destinos asiáticos, experiencias culturales Asia, paquetes de viaje Asia, tours personalizados Asia, aventuras Asia"
         canonical="/"
       />

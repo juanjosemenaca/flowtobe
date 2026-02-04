@@ -10,14 +10,14 @@ interface SEOProps {
 }
 
 const SEO = ({
-  title = 'FLOW2BALY - Explora Increíbles Destinos Asiáticos',
+  title = 'FLOW2B - Explora Increíbles Destinos Asiáticos',
   description = 'Descubre experiencias únicas de viaje por Asia con nuestra selección de destinos, experiencias culturales y paquetes de aventura.',
   keywords = 'viajes Asia, turismo Asia, destinos asiáticos, experiencias culturales Asia, paquetes de viaje Asia',
   ogImage = 'https://lovable.dev/opengraph-image-p98pqg.png',
   ogType = 'website',
   canonical,
 }: SEOProps) => {
-  const siteUrl = 'https://flow2baly.com';
+  const siteUrl = 'https://flow2b.org';
   const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
 
   return (
@@ -33,7 +33,7 @@ const SEO = ({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
-      <meta property="og:site_name" content="FLOW2BALY" />
+      <meta property="og:site_name" content="FLOW2B" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />

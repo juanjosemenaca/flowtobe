@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://flow2baly.com/sitemap.xml
+Sitemap: https://flow2b.org/sitemap.xml
 
 # Disallow admin and private routes
 Disallow: /admin/

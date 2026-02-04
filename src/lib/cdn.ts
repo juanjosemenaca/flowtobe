@@ -1,5 +1,5 @@
 // CDN configuration
-export const CDN_URL = 'https://cdn.FLOW2BALY.com';
+export const CDN_URL = 'https://cdn.flow2b.org';
 
 // Image optimization settings
 export const imageSettings = {
