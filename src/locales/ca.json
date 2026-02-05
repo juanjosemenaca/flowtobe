@@ -483,6 +483,7 @@
     "title": "Contacta'ns",
     "subtitle": "Escriu-nos i comença la teva aventura",
     "form": {
+      "intro": "Flow2B té una única missió: facilitar-te la teva experiència. Digues-nos en què estàs interessat, quan, amb qui, què et preocupa, quins temors tens o alguna cosa que sí o sí vulguis fer al teu viatge ;) ens adaptem a tot!",
       "name": "Nom",
       "email": "Correu electrònic",
       "subject": "Assumpte",
@@ -654,9 +655,9 @@
       "location": "Phuket, Tailàndia"
     },
     "vietnam": {
-      "quote": "La cultura i els paisatges del Vietnam són impressionants, i Flow2b ens va ajudar a explorar-ho tot. Els tours gastronòmics van ser quelcom que mai oblidarem.",
-      "author": "Elena i David",
-      "location": "Hanoi, Vietnam"
+      "quote": "Un somni fet realitat, però mai m'havia atrevit pel embolic d'organitzar-ho tot, mirar llocs, hotels... em feia por, però amb aquesta gent de Flow ha estat tot super fàcil! sense problemes!",
+      "author": "Elena",
+      "location": "Ubud, Bali"
     }
   }
 } 
