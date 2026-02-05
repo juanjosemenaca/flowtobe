@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail } from 'lucide-react';
+import { Mail, Youtube } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
@@ -30,6 +30,17 @@ const Footer = () => {
               <div className="flex items-start">
                 <Mail size={20} className="text-travel-terracotta mr-3 mt-1" />
                 <p className="text-gray-300">admin@flow2b.org</p>
+              </div>
+              <div className="flex items-start">
+                <Youtube size={20} className="text-travel-terracotta mr-3 mt-1" />
+                <a 
+                  href="https://www.youtube.com/channel/UCrcOd1oUB1xMNMBwDxNrmkQ" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-travel-terracotta transition-colors"
+                >
+                  YouTube
+                </a>
               </div>
             </div>
           </div>
