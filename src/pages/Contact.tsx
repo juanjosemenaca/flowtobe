@@ -42,15 +42,16 @@ const Contact = () => {
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
+        to_email: 'admin@flow2b.org',
         subject: formData.subject,
         message: formData.message,
       };
 
       await emailjs.send(
-        'service_8wui46p',
-        'template_unv20j4',
+        'service_cv54ukd',
+        'template_yb9grrn',
         templateParams,
-        'zpJqcZ9zcplXgZ_tI'
+        'OkgZusH9KfDxFHjOq'
       );
 
       toast({
@@ -65,9 +66,10 @@ const Contact = () => {
         message: ''
       });
     } catch (error) {
+      console.error('Error sending email:', error);
       toast({
         title: t('contact.form.error'),
-        description: t('contact.form.errorMessage'),
+        description: error instanceof Error ? error.message : t('contact.form.errorMessage'),
         variant: "destructive",
       });
     } finally {

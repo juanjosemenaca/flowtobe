@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
@@ -28,16 +28,8 @@ const Footer = () => {
             <h3 className="text-lg font-serif mb-6">{t('contact.info.title')}</h3>
             <div className="space-y-4">
               <div className="flex items-start">
-                <MapPin size={20} className="text-travel-terracotta mr-3 mt-1" />
-                <p className="text-gray-300">&nbsp;</p>
-              </div>
-              <div className="flex items-start">
-                <Phone size={20} className="text-travel-terracotta mr-3 mt-1" />
-                <p className="text-gray-300">&nbsp;</p>
-              </div>
-              <div className="flex items-start">
                 <Mail size={20} className="text-travel-terracotta mr-3 mt-1" />
-                <p className="text-gray-300">&nbsp;</p>
+                <p className="text-gray-300">admin@flow2b.org</p>
               </div>
             </div>
           </div>
