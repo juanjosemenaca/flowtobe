@@ -85,11 +85,11 @@
     "categories": {
       "bali": {
         "title": "Bali - Yoga y Naturaleza",
-        "description": "Entrenamiento intensivo de Muay Thai en el paraíso"
+        "description": "Combina Yoga con naturaleza en un paraiso de paz y calma"
       },
       "thailand": {
         "title": "Tailandia - Cuna del Muay Thai",
-        "description": "Entrenamiento auténtico en la tierra del arte de las ocho extremidades"
+        "description": "Entrenos intensivos, experiencias auténticas cuidando cuerpo y mente"
       },
       "vietnam": {
         "title": "Vietnam - Muay Thai & Cultura",
@@ -281,7 +281,9 @@
       "success": "Mensaje enviado",
       "successMessage": "Te responderemos lo antes posible.",
       "error": "Error",
-      "errorMessage": "No se pudo enviar. Inténtalo de nuevo."
+      "errorMessage": "No se pudo enviar. Inténtalo de nuevo.",
+      "subjectBali": "Información sobre BALI _ YOGA",
+      "subjectThailand": "Información TAILANDIA Muay Thai"
     },
     "info": {
       "title": "Información de contacto",

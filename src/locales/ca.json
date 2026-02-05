@@ -133,11 +133,11 @@
     "categories": {
       "bali": {
         "title": "Bali - Ioga i Natura",
-        "description": "Només Muay Thai"
+        "description": "Combina Ioga amb natura en un paradís de pau i calma"
       },
       "thailand": {
-        "title": "Bali - Muay Thai & més",
-        "description": "Paradís tropical i temples antics"
+        "title": "Tailàndia - Bressol del Muay Thai",
+        "description": "Entrenaments intensius, experiències autèntiques cuidant cos i ment"
       },
       "vietnam": {
         "title": "Tailàndia 100% Muay Thai",
@@ -487,7 +487,9 @@
       "success": "Missatge enviat",
       "successMessage": "Et respondrem el més aviat possible.",
       "error": "Error",
-      "errorMessage": "No s'ha pogut enviar. Torna-ho a provar."
+      "errorMessage": "No s'ha pogut enviar. Torna-ho a provar.",
+      "subjectBali": "Informació sobre BALI _ YOGA",
+      "subjectThailand": "Informació TAILÀNDIA Muay Thai"
     },
     "info": {
       "title": "Informació de contacte",

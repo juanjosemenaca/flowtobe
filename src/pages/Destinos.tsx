@@ -18,14 +18,15 @@ const Destinos = () => {
     },
     {
       id: 2,
-      image: "/rotating/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai-1.jpg",
+      image: "/general/kickboxers-sparring-thailand.png",
       link: "/destinations/thailand"
-    },
-    {
-      id: 3,
-      image: "/rotating/templo-de-besakih-en-bali-indonesia.jpg",
-      link: "/destinations/vietnam"
     }
+    // Vietnam oculto temporalmente
+    // {
+    //   id: 3,
+    //   image: "/rotating/templo-de-besakih-en-bali-indonesia.jpg",
+    //   link: "/destinations/vietnam"
+    // }
   ];
 
   const getDestinationTitle = (id: number) => {

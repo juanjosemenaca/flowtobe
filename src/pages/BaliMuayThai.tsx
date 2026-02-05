@@ -77,7 +77,7 @@ const BaliMuayThai = () => {
           <div className="container text-white">
             <h1 className="text-5xl md:text-7xl font-serif mb-4">Bali - Yoga y Naturaleza</h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl">
-              Entrenamiento profesional en el paraíso tropical de Bali
+              Combina Yoga con naturaleza en un paraiso de paz y calma
             </p>
             <Link to="/booking">
               <Button className="bg-travel-terracotta hover:bg-travel-teal text-white text-lg px-8 py-6">

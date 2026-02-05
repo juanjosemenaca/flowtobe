@@ -8,11 +8,13 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
+import { useSearchParams } from 'react-router-dom';
 import SEO from '@/components/SEO';
 
 const Contact = () => {
   const { t } = useTranslation();
   const { toast } = useToast();
+  const [searchParams] = useSearchParams();
   const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     name: '',
@@ -24,7 +26,20 @@ const Contact = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+    // Pre-llenar el asunto si viene de una experiencia específica
+    const experience = searchParams.get('experience');
+    if (experience === 'bali') {
+      setFormData(prev => ({
+        ...prev,
+        subject: t('contact.form.subjectBali')
+      }));
+    } else if (experience === 'thailand') {
+      setFormData(prev => ({
+        ...prev,
+        subject: t('contact.form.subjectThailand')
+      }));
+    }
+  }, [searchParams, t]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;

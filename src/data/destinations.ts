@@ -53,7 +53,7 @@ export const destinationsInfo: Record<string, DestinationInfo> = {
   thailand: {
     id: 'thailand',
     title: 'Tailandia - Cuna del Muay Thai',
-    description: 'Vive la auténtica experiencia del Muay Thai en su lugar de origen. Entrena en los mejores campamentos de Tailandia, donde el arte de las ocho extremidades se ha perfeccionado durante siglos.',
+    description: 'Entrenos intensivos, experiencias auténticas cuidando cuerpo y mente. Entrena en los mejores campamentos de Tailandia mientras desarrollas tu potencial físico y mental.',
     highlights: [
       'Entrenamiento en campamentos tradicionales tailandeses',
       'Instructores con experiencia en competición profesional',

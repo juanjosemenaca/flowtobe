@@ -38,22 +38,19 @@ const DestinationCard = ({ id, image, link }: {
   };
 
   return (
-    <div className="group relative h-[400px] overflow-hidden rounded-lg cursor-pointer">
-      <div 
-        className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-        style={{ backgroundImage: `url(${image})` }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70" />
-      <div className="absolute bottom-0 left-0 w-full p-6 text-white">
-        <h3 className="text-2xl font-serif mb-1">{getDestinationTitle(id)}</h3>
-        <p className="text-sm opacity-90 mb-3">{getDestinationDescription(id)}</p>
-        <Link to={link} className="hidden">
-          <Button variant="white" size="sm">
-            {t('destinations.exploreButton')} <ArrowRight className="ml-1 h-4 w-4" />
-          </Button>
-        </Link>
+    <Link to={link} className="block">
+      <div className="group relative h-[400px] overflow-hidden rounded-lg cursor-pointer">
+        <div 
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+          style={{ backgroundImage: `url(${image})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70" />
+        <div className="absolute bottom-0 left-0 w-full p-6 text-white">
+          <h3 className="text-2xl font-serif mb-1">{getDestinationTitle(id)}</h3>
+          <p className="text-sm opacity-90 mb-3">{getDestinationDescription(id)}</p>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -64,18 +61,19 @@ const Destinations = () => {
     {
       id: 1,
       image: "/general/people-exercising-practicing-sports-with-use-foam-roller.jpg",
-      link: "/destinations/bali"
+      link: "/contact?experience=bali"
     },
     {
       id: 2,
-      image: "/rotating/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai-1.jpg",
-      link: "/destinations/thailand"
-    },
-    {
-      id: 3,
-      image: "/rotating/templo-de-besakih-en-bali-indonesia.jpg",
-      link: "/destinations/vietnam"
+      image: "/general/kickboxers-sparring-thailand.png",
+      link: "/contact?experience=thailand"
     }
+    // Vietnam oculto temporalmente
+    // {
+    //   id: 3,
+    //   image: "/rotating/templo-de-besakih-en-bali-indonesia.jpg",
+    //   link: "/destinations/vietnam"
+    // }
   ];
 
   return (
@@ -103,13 +101,14 @@ const Destinations = () => {
           ))}
         </div>
         
-        <div className="text-center mt-12">
+        {/* Botón "Ver todos los destinos" oculto temporalmente */}
+        {/* <div className="text-center mt-12">
           <Link to="/destinations">
             <Button className="bg-travel-teal hover:bg-travel-terracotta text-white px-8">
               {t('home.destinations.viewAll')} <ArrowRight className="ml-2" />
             </Button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

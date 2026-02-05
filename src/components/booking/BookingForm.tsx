@@ -184,7 +184,8 @@ export function BookingForm() {
                         <SelectContent>
                           <SelectItem value="bali">Bali</SelectItem>
                           <SelectItem value="thailand">Thailand</SelectItem>
-                          <SelectItem value="vietnam">Vietnam</SelectItem>
+                          {/* Vietnam oculto temporalmente */}
+                          {/* <SelectItem value="vietnam">Vietnam</SelectItem> */}
                         </SelectContent>
                       </Select>
                       <FormMessage />

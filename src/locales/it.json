@@ -133,11 +133,11 @@
     "categories": {
       "bali": {
         "title": "Bali - Yoga e Natura",
-        "description": "Solo Muay Thai"
+        "description": "Combina Yoga con natura in un paradiso di pace e calma"
       },
       "thailand": {
-        "title": "Bali - Muay Thai & altro",
-        "description": "Paradiso tropicale e templi antichi"
+        "title": "Thailandia - Culla del Muay Thai",
+        "description": "Allenamenti intensivi, esperienze autentiche prendendosi cura di corpo e mente"
       },
       "vietnam": {
         "title": "Thailandia 100% Muay Thai",
@@ -449,7 +449,9 @@
       "success": "Messaggio inviato",
       "successMessage": "Ti risponderemo il prima possibile.",
       "error": "Errore",
-      "errorMessage": "Invio fallito. Riprova."
+      "errorMessage": "Invio fallito. Riprova.",
+      "subjectBali": "Informazioni su BALI _ YOGA",
+      "subjectThailand": "Informazioni TAILANDIA Muay Thai"
     },
     "info": {
       "title": "Informazioni di contatto",
