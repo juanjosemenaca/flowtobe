@@ -10,7 +10,6 @@ const Hero: React.FC = () => {
 
   const images = [
     '/rotating/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai.jpg',
-    '/rotating/man-climbing-mountain-with-safety-equipment.jpg',
     '/rotating/man-jumping-into-natural-pond.jpg',
     '/rotating/templo-de-besakih-en-bali-indonesia.jpg',
     '/rotating/wellness-practices-self-care-world-health-day.jpg'
