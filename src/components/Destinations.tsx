@@ -90,14 +90,15 @@ const Destinations = () => {
           )}
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8 max-w-5xl mx-auto">
           {destinationCards.map((destination) => (
-            <DestinationCard
-              key={destination.id}
-              id={destination.id}
-              image={destination.image}
-              link={destination.link}
-            />
+            <div key={destination.id} className="w-full md:w-[calc(50%-1rem)] max-w-md">
+              <DestinationCard
+                id={destination.id}
+                image={destination.image}
+                link={destination.link}
+              />
+            </div>
           ))}
         </div>
         
