@@ -67,15 +67,15 @@
       }
     },
     "destinations": {
-      "title": "Nuestros Destinos",
-      "subtitle": "Entrenamiento de Muay Thai en los lugares más increíbles de Asia",
+      "title": "EXPERIENCIAS",
+      "subtitle": "",
       "cta": "Ver Todos los Destinos",
       "viewAll": "Ver Todos los Destinos"
     }
   },
   "destinations": {
-    "title": "Nuestros Destinos",
-    "subtitle": "Entrenamiento de Muay Thai en los lugares más increíbles de Asia",
+    "title": "EXPERIENCIAS",
+    "subtitle": "",
     "discover": {
       "title": "Descubre el Encanto de Asia",
       "description": "Desde los majestuosos Himalayas hasta las playas paradisíacas del sudeste asiático, nuestros destinos ofrecen experiencias inolvidables para todo tipo de viajeros."
@@ -84,7 +84,7 @@
     "viewAllButton": "Ver Todos los Destinos",
     "categories": {
       "bali": {
-        "title": "Bali - Entrenamiento Muay Thai",
+        "title": "Bali - Yoga y Naturaleza",
         "description": "Entrenamiento intensivo de Muay Thai en el paraíso"
       },
       "thailand": {

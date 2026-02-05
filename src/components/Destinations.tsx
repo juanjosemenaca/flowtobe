@@ -47,7 +47,7 @@ const DestinationCard = ({ id, image, link }: {
       <div className="absolute bottom-0 left-0 w-full p-6 text-white">
         <h3 className="text-2xl font-serif mb-1">{getDestinationTitle(id)}</h3>
         <p className="text-sm opacity-90 mb-3">{getDestinationDescription(id)}</p>
-        <Link to={link}>
+        <Link to={link} className="hidden">
           <Button variant="white" size="sm">
             {t('destinations.exploreButton')} <ArrowRight className="ml-1 h-4 w-4" />
           </Button>
@@ -63,7 +63,7 @@ const Destinations = () => {
   const destinationCards = [
     {
       id: 1,
-      image: "/rotating/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai.jpg",
+      image: "/general/people-exercising-practicing-sports-with-use-foam-roller.jpg",
       link: "/destinations/bali"
     },
     {
@@ -85,9 +85,11 @@ const Destinations = () => {
           <h2 className="text-3xl md:text-4xl font-serif text-travel-dark mb-4">
             {t('home.destinations.title')}
           </h2>
-          <p className="text-travel-sage text-lg">
-            {t('home.destinations.subtitle')}
-          </p>
+          {t('home.destinations.subtitle') && (
+            <p className="text-travel-sage text-lg">
+              {t('home.destinations.subtitle')}
+            </p>
+          )}
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">

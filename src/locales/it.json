@@ -67,14 +67,14 @@
       }
     },
     "destinations": {
-      "title": "Le Nostre Destinazioni",
-      "subtitle": "Scopri le nostre esclusive destinazioni di allenamento Muay Thai",
+      "title": "ESPERIENZE",
+      "subtitle": "",
       "viewAll": "Vedi Tutte le Destinazioni"
     }
   },
   "destinations": {
-    "title": "Destinazioni",
-    "subtitle": "Esplora le nostre esclusive destinazioni di allenamento Muay Thai",
+    "title": "ESPERIENZE",
+    "subtitle": "",
     "filter": {
       "title": "Filtra per",
       "region": "Regione",
@@ -132,7 +132,7 @@
     "viewAllButton": "Vedi Tutte le Destinazioni",
     "categories": {
       "bali": {
-        "title": "Bali - 100% Muay Thai",
+        "title": "Bali - Yoga e Natura",
         "description": "Solo Muay Thai"
       },
       "thailand": {

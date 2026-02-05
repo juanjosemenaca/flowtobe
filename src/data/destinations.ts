@@ -12,7 +12,7 @@ export interface DestinationInfo {
 export const destinationsInfo: Record<string, DestinationInfo> = {
   bali: {
     id: 'bali',
-    title: 'Bali - Entrenamiento Muay Thai',
+    title: 'Bali - Yoga y Naturaleza',
     description: 'Sumérgete en el paraíso tropical de Bali mientras perfeccionas tus habilidades en Muay Thai. Nuestro programa combina entrenamiento intensivo con la belleza natural y la rica cultura de la isla.',
     highlights: [
       'Entrenamiento diario con instructores profesionales de Muay Thai',

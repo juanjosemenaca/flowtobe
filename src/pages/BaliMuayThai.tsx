@@ -58,9 +58,9 @@ const BaliMuayThai = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Bali 100% Muay Thai - Entrenamiento Profesional en el Paraíso"
-        description="Vive una experiencia única de entrenamiento de Muay Thai en Bali. Combina el arte marcial tailandés con la belleza natural de la isla."
-        keywords="Muay Thai Bali, entrenamiento Muay Thai, campamento Muay Thai, artes marciales Bali, entrenamiento profesional Bali"
+        title="Bali - Yoga y Naturaleza"
+        description="Vive una experiencia única de yoga y conexión con la naturaleza en Bali. Combina la práctica de yoga con la belleza natural de la isla."
+        keywords="Yoga Bali, naturaleza Bali, retiros yoga, bienestar Bali, experiencias naturales Bali"
         canonical="/bali-muay-thai"
       />
       <Header />
@@ -69,13 +69,13 @@ const BaliMuayThai = () => {
       <section className="relative h-[70vh] min-h-[600px]">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(/rotating/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai.jpg)` }}
+          style={{ backgroundImage: `url(/general/people-exercising-practicing-sports-with-use-foam-roller.jpg)` }}
         >
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
         <div className="absolute inset-0 flex items-center">
           <div className="container text-white">
-            <h1 className="text-5xl md:text-7xl font-serif mb-4">Bali 100% Muay Thai</h1>
+            <h1 className="text-5xl md:text-7xl font-serif mb-4">Bali - Yoga y Naturaleza</h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl">
               Entrenamiento profesional en el paraíso tropical de Bali
             </p>
@@ -156,8 +156,8 @@ const BaliMuayThai = () => {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <img 
-                src="/rotating/playa.jpg" 
-                alt="Bali Training Camp" 
+                src="/general/people-exercising-practicing-sports-with-use-foam-roller.jpg" 
+                alt="Bali - Yoga y Naturaleza" 
                 className="w-full h-full object-cover"
               />
             </div>

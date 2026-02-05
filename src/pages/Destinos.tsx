@@ -13,7 +13,7 @@ const Destinos = () => {
   const destinationCards = [
     {
       id: 1,
-      image: "/rotating/dos-boxeadores-luchan-con-las-artes-marciales-del-muay-thai.jpg",
+      image: "/general/people-exercising-practicing-sports-with-use-foam-roller.jpg",
       link: "/destinations/bali"
     },
     {
@@ -100,9 +100,11 @@ const Destinos = () => {
         <div className="absolute inset-0 flex items-center">
           <div className="container text-white">
             <h1 className="text-5xl md:text-7xl font-serif mb-4">{t('destinations.title')}</h1>
-            <p className="text-xl md:text-2xl mb-6 max-w-3xl">
-              {t('destinations.subtitle')}
-            </p>
+            {t('destinations.subtitle') && (
+              <p className="text-xl md:text-2xl mb-6 max-w-3xl">
+                {t('destinations.subtitle')}
+              </p>
+            )}
           </div>
         </div>
       </div>
