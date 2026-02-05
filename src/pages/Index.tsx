@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import Destinations from '@/components/Destinations';
 import Experiences from '@/components/Experiences';
 import Features from '@/components/Features';
+import Memories from '@/components/Memories';
 import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
@@ -20,9 +21,11 @@ const Index = () => {
       <Header />
       <Hero />
       <Destinations />
-      <Experiences />
-      <Testimonials />
+      {/* Sección "Experiencias Globales" oculta temporalmente */}
+      {/* <Experiences /> */}
       <Features />
+      <Memories />
+      <Testimonials />
       <Footer />
     </div>
   );

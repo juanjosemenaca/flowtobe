@@ -3,13 +3,6 @@ import { useTranslation } from 'react-i18next';
 
 const testimonials = [
   {
-    id: 1,
-    quote: "testimonials.japan.quote",
-    author: "testimonials.japan.author",
-    location: "testimonials.japan.location",
-    rating: 5
-  },
-  {
     id: 2,
     quote: "testimonials.thailand.quote",
     author: "testimonials.thailand.author",
@@ -69,7 +62,7 @@ const Testimonials = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="py-20 bg-travel-cream">
+    <section className="py-20 bg-white">
       <div className="container">
         <div className="text-center mb-14">
           <h2 className="text-4xl md:text-5xl font-serif text-travel-dark mb-4">{t('testimonials.title')}</h2>
@@ -78,15 +71,16 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8 max-w-4xl mx-auto">
           {testimonials.map((testimonial) => (
-            <TestimonialCard
-              key={testimonial.id}
-              quote={testimonial.quote}
-              author={testimonial.author}
-              location={testimonial.location}
-              rating={testimonial.rating}
-            />
+            <div key={testimonial.id} className="w-full md:w-[calc(50%-1rem)] max-w-md">
+              <TestimonialCard
+                quote={testimonial.quote}
+                author={testimonial.author}
+                location={testimonial.location}
+                rating={testimonial.rating}
+              />
+            </div>
           ))}
         </div>
       </div>

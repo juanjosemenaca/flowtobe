@@ -64,6 +64,10 @@
       "sustainable": {
         "title": "Sustainable Tourism",
         "description": "Committed to responsible and sustainable travel practices"
+      },
+      "personalized": {
+        "title": "Personalized Travel",
+        "description": "We create tailor-made experiences adapted to your interests and needs"
       }
     },
     "destinations": {
@@ -536,6 +540,10 @@
       "subtitle": "Meet the passionate experts behind each unforgettable journey"
     }
   },
+  "memories": {
+    "title": "Memories",
+    "subtitle": "Special moments from our travelers"
+  },
   "testimonials": {
     "title": "What Our Travelers Say",
     "subtitle": "Real stories from travelers who experienced the magic of Asia with us",
@@ -545,7 +553,7 @@
       "location": "Kyoto, Japan"
     },
     "thailand": {
-      "quote": "The tour of Thailand's beaches exceeded all our expectations. From pristine beaches to vibrant nightlife, everything was just as promised and more!",
+      "quote": "An incredible experience: training, cold baths, massages, and culture. With an amazing group of people, we'll definitely repeat next year. Flow2B's tips, advice, and guides make you feel at home, but be prepared: the training sessions are intense!!!",
       "author": "Michael T.",
       "location": "Phuket, Thailand"
     },

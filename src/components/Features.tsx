@@ -22,8 +22,8 @@ const Features = () => {
     },
     {
       id: 4,
-      title: t('services.customized.title'),
-      description: t('services.customized.description')
+      title: t('home.features.personalized.title'),
+      description: t('home.features.personalized.description')
     }
   ];
 

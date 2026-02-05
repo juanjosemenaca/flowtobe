@@ -64,6 +64,10 @@
       "sustainable": {
         "title": "Turisme Sostenible",
         "description": "Compromesos amb pràctiques de viatge responsables i sostenibles"
+      },
+      "personalized": {
+        "title": "Viatges Personalitzats",
+        "description": "Creem experiències a mida adaptades als teus interessos i necessitats"
       }
     },
     "destinations": {
@@ -632,6 +636,10 @@
       "subtitle": "Coneix els apassionats experts darrere de cada viatge inoblidable"
     }
   },
+  "memories": {
+    "title": "Records",
+    "subtitle": "Moments especials dels nostres viatgers"
+  },
   "testimonials": {
     "title": "El Que Diuen Els Viatgers",
     "subtitle": "Històries reals de viatgers que van experimentar la màgia d'Àsia amb nosaltres",
@@ -641,7 +649,7 @@
       "location": "Kioto, Japó"
     },
     "thailand": {
-      "quote": "El tour per les platges de Tailàndia va superar totes les nostres expectatives. Des de les platges verges fins a la vibrant vida nocturna, tot va ser tal com ho van prometre i més!",
+      "quote": "Una experiència brutal, entrenaments, banys freds, massatges i cultura. Amb un grup de gent màxim que, per descomptat, repetirem l'any vinent. Els consells, recomanacions i guies de Flow2B fan que estiguis com a casa, això sí: prepara't que els entrenaments són forts!!!",
       "author": "Miquel T.",
       "location": "Phuket, Tailàndia"
     },
