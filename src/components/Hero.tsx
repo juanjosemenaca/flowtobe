@@ -51,7 +51,24 @@ const Hero: React.FC = () => {
   }, [images.length]);
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-screen w-full overflow-hidden bg-gray-200">
+      {/* Logo de fondo durante transiciones */}
+      <div className="absolute inset-0 flex items-center justify-center z-0">
+        <motion.img
+          src="/noBgBlack.png"
+          alt="Flow2B Logo"
+          className="h-64 md:h-80 lg:h-96 w-auto object-contain opacity-20"
+          animate={{
+            opacity: [0.15, 0.25, 0.15]
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        />
+      </div>
+
       <AnimatePresence mode="wait">
         <motion.div
           key={currentImageIndex}
@@ -59,7 +76,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
-          className="absolute inset-0"
+          className="absolute inset-0 z-10"
         >
           <img
             src={images[currentImageIndex]}
@@ -74,7 +91,7 @@ const Hero: React.FC = () => {
         </motion.div>
       </AnimatePresence>
 
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+      <div className="relative z-20 flex flex-col items-center justify-center h-full text-white text-center px-4">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
